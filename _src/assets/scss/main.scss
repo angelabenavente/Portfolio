@@ -94,7 +94,7 @@ body {
     color: white;
     border: none;
     padding-bottom: 40px;
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
     &__about-me {
       font-style: italic;
@@ -124,47 +124,71 @@ body {
       }
       &__content {
         color: #0c0c0c;
-        padding: 35px;
+        padding: 25px;
           
       }
     }
     &__formation {
-      padding: 0px 35px 10px 35px;
+      padding: 0px 25px 10px 25px;
       font-style: italic;
       color:  #0c0c0c;
       .bootcamp-view {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
+        margin-top: 10px;
       }
       .master__header-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
+        margin-top: 10px;
       }
       .master__form {
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
+        
       }
       .validateInputsSection {
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
       }
       .view-hidden {
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
       }
       .formation-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
+        margin-top: 10px;
       }
       .courses-view {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-bottom: 2px solid #33323242;
+        border-bottom: 1px solid #33323242;
+        border-left: 1px solid #33323242;
+        padding: 3px 5px;
+        margin-top: 10px;
       }
+    }
+    .box {
+      box-shadow: 5px 5px 5px #2f434470;
+      border-bottom: 1px solid #33323242;
+      border-left: 1px solid #33323242;
     }
     .paragraph-linkedin {
       padding: 24px 0 10px;
@@ -173,6 +197,9 @@ body {
       border: 1px solid #2d9;
       padding: 5px;
       text-align: center;
+      a {
+        color:  #0c0c0c;
+      }
     }
     &__skills {
       background-color: #fff;

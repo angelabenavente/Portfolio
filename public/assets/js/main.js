@@ -30,19 +30,19 @@ function toggle () {
   
   if (elementHidden.classList.contains('hidden')) {
   hideNotDesignElements ()
-    div.style.border = "none";
+    div.style.borderBottom = "none";
     elementHidden.classList.remove('hidden');
     designArrowButton.classList.remove('fa-chevron-down');
     designArrowButton.classList.add('fa-chevron-up');
-    formationIntroElement.style.borderBottom = "2px solid #33323242";
-    courses.style.borderBottom = "2px solid #33323242";
-    headerForm.style.borderBottom = "2px solid #33323242";
+    formationIntroElement.style.borderBottom = "1px solid #33323242";
+    courses.style.borderBottom = "1px solid #33323242";
+    headerForm.style.borderBottom = "1px solid #33323242";
     coursesHidden.classList.add('hidden'); 
   coursesArrowButton.classList.remove('fa-chevron-up');
   coursesArrowButton.classList.add('fa-chevron-down');
   } else {
     elementHidden.classList.add('hidden'); 
-    div.style.borderBottom = "2px solid #33323242";
+    div.style.borderBottom = "1px solid #33323242";
     designArrowButton.classList.remove('fa-chevron-up');
     designArrowButton.classList.add('fa-chevron-down');
     coursesHidden.classList.add('hidden');
@@ -59,14 +59,14 @@ const formationmaster = document.querySelector('.formation__fill');
 
 function hideNotFormElements () {
   elementHidden.classList.add('hidden');
-  div.style.borderBottom = "2px solid #33323242";
+  div.style.borderBottom = "1px solid #33323242";
   designArrowButton.classList.remove('fa-chevron-up');
   designArrowButton.classList.add('fa-chevron-down');
   formationCardSection.classList.add('hidden');
   arrowActiveShare.classList.remove('fa-chevron-up');
   arrowActiveShare.classList.add('fa-chevron-down');
-  formationIntroElement.style.borderBottom = "2px solid #33323242";
-  courses.style.borderBottom = "2px solid #33323242";
+  formationIntroElement.style.borderBottom = "1px solid #33323242";
+  courses.style.borderBottom = "1px solid #33323242";
   coursesHidden.classList.add('hidden'); 
   coursesArrowButton.classList.remove('fa-chevron-up');
   coursesArrowButton.classList.add('fa-chevron-down');
@@ -77,17 +77,17 @@ function showOrHideForm () {
   hideNotFormElements()
   if (form.classList.contains('hidden')) {
     form.classList.remove('hidden');
-    headerForm.style.border = "none";
+    headerForm.style.borderBottom = "none";
     arrowActiveForm.classList.remove('fa-chevron-down');
     arrowActiveForm.classList.add('fa-chevron-up');
   } else {
     form.classList.add('hidden');
-    headerForm.style.borderBottom = "2px solid #33323242";
+    headerForm.style.borderBottom = "1px solid #33323242";
     arrowActiveForm.classList.remove('fa-chevron-up');
     arrowActiveForm.classList.add('fa-chevron-down');
     coursesArrowButton.classList.remove('fa-chevron-up');
     coursesArrowButton.classList.add('fa-chevron-down');
-    courses.style.borderBottom = "2px solid #33323242";
+    courses.style.borderBottom = "1px solid #33323242";
   }
 }
 
@@ -105,15 +105,15 @@ const validateInputsSection = document.querySelector(".validateInputsSection");
 
 function hiddeNotShareElements() {
   form.classList.add('hidden');
-  headerForm.style.borderBottom = "2px solid #33323242";
-  div.style.borderBottom = "2px solid #33323242";
+  headerForm.style.borderBottom = "1px solid #33323242";
+  div.style.borderBottom = "1px solid #33323242";
   designArrowButton.classList.remove('fa-chevron-up');
   designArrowButton.classList.add('fa-chevron-down');
   elementHidden.classList.add('hidden');
-  formationIntroElement.style.borderBottom = "2px solid #33323242";
+  formationIntroElement.style.borderBottom = "1px solid #33323242";
   arrowActiveForm.classList.remove('fa-chevron-up');
   arrowActiveForm.classList.add('fa-chevron-down');
-  courses.style.borderBottom = "2px solid #33323242";
+  courses.style.borderBottom = "1px solid #33323242";
   coursesHidden.classList.add('hidden'); 
   coursesArrowButton.classList.remove('fa-chevron-up');
   coursesArrowButton.classList.add('fa-chevron-down');
@@ -123,12 +123,12 @@ function showOrHideShare() {
   hiddeNotShareElements();
   if (formationCardSection.classList.contains('hidden')){
     formationCardSection.classList.remove('hidden');
-    formationIntroElement.style.border = "none";
+    formationIntroElement.style.borderBottom = "none";
     arrowActiveShare.classList.remove('fa-chevron-down');
     arrowActiveShare.classList.add('fa-chevron-up');
   } else {
     formationCardSection.classList.add('hidden');
-    formationIntroElement.style.borderBottom = "2px solid #33323242";
+    formationIntroElement.style.borderBottom = "1px solid #33323242";
     arrowActiveShare.classList.remove('fa-chevron-up');
     arrowActiveShare.classList.add('fa-chevron-down');
     shareCardButton.classList.add('hidden');
@@ -156,10 +156,10 @@ function hideNotDesignElements () {
   formationCardSection.classList.add('hidden');
   arrowActiveShare.classList.remove('fa-chevron-up');
   arrowActiveShare.classList.add('fa-chevron-down');
-  formationIntroElement.style.borderBottom = "2px solid #33323242";
-  headerForm.style.borderBottom = "2px solid #33323242";
-  elementHidden.style.borderBottom = "2px solid #33323242";
-  div.style.borderBottom = "2px solid #33323242";
+  formationIntroElement.style.borderBottom = "1px solid #33323242";
+  headerForm.style.borderBottom = "1px solid #33323242";
+  elementHidden.style.borderBottom = "1px solid #33323242";
+  div.style.borderBottom = "1px solid #33323242";
   //shareCardButton.classList.add('hidden')
 }
 
@@ -167,18 +167,18 @@ function toggleCourses () {
   hideNotDesignElements ()
   if (coursesHidden.classList.contains('hidden')) {
       coursesHidden.classList.remove('hidden');
-      courses.style.border = "none";
+      courses.style.borderBottom = "none";
       coursesArrowButton.classList.remove('fa-chevron-down');
       coursesArrowButton.classList.add('fa-chevron-up');
       elementHidden.classList.add('hidden'); 
       shareCardButton.classList.add('hidden');
       formationCardSection.classList.add('hidden');
-      formationIntroElement.style.borderBottom = "2px solid #33323242";
-      elementHidden.style.borderBottom = "2px solid #33323242";
-      headerForm.style.borderBottom = "2px solid #33323242";
+      formationIntroElement.style.borderBottom = "1px solid #33323242";
+      elementHidden.style.borderBottom = "1px solid #33323242";
+      headerForm.style.borderBottom = "1px solid #33323242";
   } else {
       coursesHidden.classList.add('hidden'); 
-      courses.style.borderBottom = "2px solid #33323242";
+      courses.style.borderBottom = "1px solid #33323242";
       coursesArrowButton.classList.remove('fa-chevron-up');
       coursesArrowButton.classList.add('fa-chevron-down');
   }

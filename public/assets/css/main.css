@@ -624,7 +624,7 @@ body .main {
   color: white;
   border: none;
   padding-bottom: 40px;
-  font-size: 16px;
+  font-size: 15px;
   width: 100%;
 }
 
@@ -672,11 +672,11 @@ body .main__about-me__cover .navigation-about a:hover {
 
 body .main__about-me__content {
   color: #0c0c0c;
-  padding: 35px;
+  padding: 25px;
 }
 
 body .main__formation {
-  padding: 0px 35px 10px 35px;
+  padding: 0px 25px 10px 25px;
   font-style: italic;
   color: #0c0c0c;
 }
@@ -692,7 +692,10 @@ body .main__formation .bootcamp-view {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
+  margin-top: 10px;
 }
 
 body .main__formation .master__header-container {
@@ -706,19 +709,28 @@ body .main__formation .master__header-container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
+  margin-top: 10px;
 }
 
 body .main__formation .master__form {
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
 }
 
 body .main__formation .validateInputsSection {
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
 }
 
 body .main__formation .view-hidden {
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
 }
 
 body .main__formation .formation-container {
@@ -732,7 +744,10 @@ body .main__formation .formation-container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
+  margin-top: 10px;
 }
 
 body .main__formation .courses-view {
@@ -746,7 +761,17 @@ body .main__formation .courses-view {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 2px solid #33323242;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
+  padding: 3px 5px;
+  margin-top: 10px;
+}
+
+body .main .box {
+  -webkit-box-shadow: 5px 5px 5px #2f434470;
+  box-shadow: 5px 5px 5px #2f434470;
+  border-bottom: 1px solid #33323242;
+  border-left: 1px solid #33323242;
 }
 
 body .main .paragraph-linkedin {
@@ -757,6 +782,10 @@ body .main .download-cv-button {
   border: 1px solid #2d9;
   padding: 5px;
   text-align: center;
+}
+
+body .main .download-cv-button a {
+  color: #0c0c0c;
 }
 
 body .main__skills {
