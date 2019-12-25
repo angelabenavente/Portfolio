@@ -48,7 +48,7 @@
                             </li>
                         </ul>
             </header>
-            <div class="hero">
+            <div id="home" class="hero">
                 <div class="hero__logo">
                     <img>
                 </div>
@@ -59,44 +59,136 @@
                 <div class="hero__button(down)"></div>
             </div>
             <main class=main>
-                <section class="main__about-me">
-                     <h2 class="heading-secondary">How/Who I am?</h2>
+                <section id="about" class="main__about-me">
+                    <div class=main__about-me__cover>
+                         <h2>About</h2>
 
-                    <p>I am a enthusiastic, creative Frontend developer and Graphic Designer
-                        with SEO/SEM tools knowledge.</p>
-                    <p>I enjoy experimenting with the new development trends and working regularly
-                        on my own and colaboratibe Web design projects.</p>
-                    <p>I'm familiar with using HTML5, CSS3, SASS, PUG, JavaScript & frameworks
-                        like REACT,</p>
-                    <p>In a quest for always keeping myself updated, I read books and attend
-                        conferences & meetups.</p>
+                        <nav class=navigation-about> <a href="./index.html#home">Home</a>
+ <span>&nbsp/&nbsp</span>
+ <a href="./index.html#work">Work</a>
+ <span>&nbsp/&nbsp</span>
+
+                            <a
+                            href="./index.html#contact">Contact</a>
+                        </nav>
+                    </div>
+                    <article class="main__about-me__content">
+                         <h2 class="heading-secondary">How/Who I am?</h2>
+
+                        <p>I am a enthusiastic, creative Frontend developer and Graphic Designer
+                            with SEO/SEM tools knowledge.</p>
+                        <p>I enjoy experimenting with the new development trends and working regularly
+                            on my own and colaboratibe Web design projects.</p>
+                        <p>I'm familiar with using HTML5, CSS3, SASS, PUG, JavaScript & frameworks
+                            like REACT,</p>
+                        <p>In a quest for always keeping myself updated, I read books and attend
+                            conferences & meetups.</p>
                 </section>
                 <section class="main__formation">
                      <h2 class="heading-secondary">What's my formation?</h2>
 
-                    <p>
-                        <ul>
-                            <li>Adalab FrontEnd development Bootcamp <span class=study-place>in Adalab</span>
+                    <div id="js-toggle" class="bootcamp-view">
+                        <div class="view-left"> <span class=formation__bootcamp--icon><i class="far fa-object-ungroup"></i>&nbsp</span>
 
-                                <p>HTML, CSS, SASS, GULP, NPM, NOdeJS, React</p>
-                            </li>
-                            <li>Web and Ghaphic Design Master <span class=study-place>in Azpe</span>
+                            <div>
+                                <p class="formation__bootcamp--title">FrontEnd development Bootcamp</p> <span class=study-place>in Adalab</span>
 
-                                <p>Responsive Design cross-platform, SEO & SEM, Multimedia production.</p>
-                            </li>
-                            <li>Modern Languages, Culture and Communication Grade <span class=study-place>in Universidad Autónoma de Madrid </span>
-
-                                <p>Marketing, Digital Edition, french (C1) and mandarin chinese (HSK3) languages</p</li>
-                                    <li>Especialize courses</li>
-                        </ul>
-                        </p>
-                        <p class="paragraph-linkedin">You can see more details in my
-                            <!--<a href="https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/"
-                            class="btn-text">LinkedIn &rarr;</a> or downloading my CV-->
-                        </p>
-                        <div class="download-cv-button"> <a class="download-cv-link" href="../pdfs/reporte2-05-10.pdf" download="Reporte2Mayo2010">Curriculum Vitae (PDF)</a>
+                            </div>
+                        </div>
+                        <div class="formation__bootcamp--arrow"> <span><i class="bootcamp-arrow-button fas fa-chevron-down"></i></span>
 
                         </div>
+                    </div>
+                    <div class="view-hidden hidden" id="toggle">
+                        <ul>
+                            <li>- Maquetación y Diseño Responsive con HTML5, CSS3 y SASS.</li>
+                            <li>- Programación con JavaScript (ES6) y Node.</li>
+                            <li>- Frameworks de desarrollo web: React.</li>
+                            <li>- Control de versiones con Git y Github.</li>
+                            <li>- Automatización de tareas con Gulp.</li>
+                            <li>- Gestión de dependencias con NPM.</li>
+                            <li>- Desarrollo de proyectos con Scrum y filosofía Agile.</li>
+                        </ul>
+                    </div>
+                    <div class="formation__master">
+                        <div class="master__header-container">
+                            <div class="master__header">
+                                <div>
+                                    <p class="master__title"><i class="far fa-keyboard"></i>&nbspWeb and Ghaphic Design Master</p>
+                                    <span
+                                    class=study-place>in AZPE</span>
+                                </div>
+                            </div>
+                            <div class="button-form"> <span><i class="arrow-button-form fas fa-chevron-down"></i></span>
+
+                            </div>
+                        </div>
+                        <form class="master__form hidden" action="" method="post">
+                            <ul>
+                                <li>- Maquetación y Diseño Responsive con HTML5, CSS3 y SASS.</li>
+                                <li>- Programación con JavaScript (ES6) y Node.</li>
+                                <li>- Frameworks de desarrollo web: React.</li>
+                                <li>- Control de versiones con Git y Github.</li>
+                                <li>- Automatización de tareas con Gulp.</li>
+                                <li>- Gestión de dependencias con NPM.</li>
+                                <li>- Desarrollo de proyectos con Scrum y filosofía Agile.</li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="formation__grade">
+                        <div class="formation-container">
+                            <div>
+                                <p class="title"><i class="logo fas fa-share-alt"></i>&nbspLanguages and Communication
+                                    Grade</p> <span class=study-place>in Universidad Autónoma de Madrid </span>
+
+                            </div>
+                            <div class="button-form"> <span><i class="arrow-button-share fas fa-chevron-down"></i></span>
+
+                            </div>
+                        </div>
+                        <div id="formation-button-section" class="validateInputsSection hidden">
+                            <ul>
+                                <li>- Maquetación y Diseño Responsive con HTML5, CSS3 y SASS.</li>
+                                <li>- Programación con JavaScript (ES6) y Node.</li>
+                                <li>- Frameworks de desarrollo web: React.</li>
+                                <li>- Control de versiones con Git y Github.</li>
+                                <li>- Automatización de tareas con Gulp.</li>
+                                <li>- Gestión de dependencias con NPM.</li>
+                                <li>- Desarrollo de proyectos con Scrum y filosofía Agile.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="js-toggle-courses" class="courses-view">
+                        <div class="view-left"> <span class=formation__courses--icon><i class="far fa-object-ungroup"></i></span>
+
+                            <div>
+                                <p class="formation__courses--title">&nbspEspecialize courses</p> <span class=study-place>in Adalab</span>
+
+                            </div>
+                        </div>
+                        <div class="formation__courses--arrow"> <span><i class="courses-arrow-button fas fa-chevron-down"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="view-hidden hidden" id="toggle-courses">
+                        <ul>
+                            <li>- Maquetación y Diseño Responsive con HTML5, CSS3 y SASS.</li>
+                            <li>- Programación con JavaScript (ES6) y Node.</li>
+                            <li>- Frameworks de desarrollo web: React.</li>
+                            <li>- Control de versiones con Git y Github.</li>
+                            <li>- Automatización de tareas con Gulp.</li>
+                            <li>- Gestión de dependencias con NPM.</li>
+                            <li>- Desarrollo de proyectos con Scrum y filosofía Agile.</li>
+                        </ul>
+                    </div>
+                    <p class="paragraph-linkedin">You can see more details in my
+                        <!--<a href="https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/"
+                        class="btn-text">LinkedIn &rarr;</a> or downloading my CV-->
+                    </p>
+                    <div class="download-cv-button"> <a class="download-cv-link" href="../pdfs/reporte2-05-10.pdf" download="Reporte2Mayo2010">Curriculum Vitae (PDF)</a>
+
+                    </div>
+                    </article>
                 </section>
                 <section class="main__skills">
                      <h2 class="heading-secondary">Skills</h2>
@@ -160,9 +252,42 @@
                         </ul>
                     </div>
                 </section>
-                <section class="main__contact">
-                     <h2>Contact</h2>
+                <section id="work" class="main__work">
+                    <div class=main__work__cover>
+                         <h2>Work</h2>
 
+                        <nav class=navigation-work> <a href="./index.html#home">Home</a>
+ <span>&nbsp/&nbsp</span>
+ <a href="./index.html#about">About</a>
+ <span>&nbsp/&nbsp</span>
+
+                            <a
+                            href="./index.html#contact">Contact</a>
+                        </nav>
+                    </div>
+                    <!--<div class="desktop"><img class= "desktop-image" src="./assets/images/pantalla.svg">-->
+                    <div class=adalab-about-us>
+                        <img class="about-us-image" src="./assets/images/about-us.png">
+                    </div>
+                    <!--<div class=adalab-about-us><img class="about-us-image" src="./assets/images/dice-game-image.png"></div>
+    <div class=adalab-about-us><img class="about-us-image" src="./assets/images/budgety-image.png"></div>-->
+                    <div class=adalab-about-us>
+                        <img class="about-us-image" src="./assets/images/proxy-image.png">
+                    </div>
+                </section>
+                <section id="contact" class="main__contact">
+                    <div class=main__contact__cover>
+                         <h2>Contact</h2>
+
+                        <nav class=navigation-contact> <a href="./index.html#home">Home</a>
+ <span>&nbsp/&nbsp</span>
+ <a href="./index.html#about">About</a>
+ <span>&nbsp/&nbsp</span>
+
+                            <a
+                            href="./index.html#work">Work</a>
+                        </nav>
+                    </div>
                     <p class="heading-final u-margin-bottom-small">If you want to collaborate you are very welcome to contact me.</p>
                     <p class="paragraph">I am available for freelance projects and full-time employment.
                          <h4 class="heading-final u-margin-bottom-small">Ángela benavente</h3>
@@ -171,21 +296,6 @@
       </p>
 
       <a href="https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/" class="btn-text">LinkedIn &rarr;</a>
-  </section>
-  <section class="main__work">
-    <h2 class="heading-secondary-works">Works</h2>
-    <!--<div class="desktop"><img class= "desktop-image" src="./assets/images/pantalla.svg">-->
-    <div class="information">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nisi excepturi minima assumenda animi perferendis accusamus? Dicta velit provident magni. Doloribus alias, doloremque laboriosam corporis accusamus provident nobis totam impedit?</p>
-    </div>
-    <div class=adalab-about-us><img class="about-us-image" src="./assets/images/about-us.png"></div>
-    <!--<div class=adalab-about-us><img class="about-us-image" src="./assets/images/dice-game-image.png"></div>
-    <div class=adalab-about-us><img class="about-us-image" src="./assets/images/budgety-image.png"></div>-->
-    <div class=adalab-about-us><img class="about-us-image" src="./assets/images/proxy-image.png"></div>
-
-
-
-
   </section>
 </main>
     </div>
