@@ -97,7 +97,6 @@ body {
     font-size: 15px;
     width: 100%;
     &__about-me {
-      font-style: italic;
       width: 100%;
       &__cover{
         display: flex;
@@ -140,6 +139,9 @@ body {
         border-left: 1px solid #33323242;
         padding: 3px 5px;
         margin-top: 10px;
+        &:hover  > .formation__bootcamp--arrow {
+          color: orange;
+        }
       }
       .master__header-container {
         display: flex;
@@ -149,6 +151,9 @@ body {
         border-left: 1px solid #33323242;
         padding: 3px 5px;
         margin-top: 10px;
+        &:hover  > .button-form {
+          color: orange;
+        }
       }
       .master__form {
         border-bottom: 1px solid #33323242;
@@ -174,6 +179,9 @@ body {
         border-left: 1px solid #33323242;
         padding: 3px 5px;
         margin-top: 10px;
+        &:hover  > .button-form {
+          color: orange;
+        }
       }
       .courses-view {
         display: flex;
@@ -183,6 +191,9 @@ body {
         border-left: 1px solid #33323242;
         padding: 3px 5px;
         margin-top: 10px;
+        &:hover  > .formation__courses--arrow {
+          color: orange;
+        }
       }
     }
     .box {
@@ -274,7 +285,6 @@ body {
       }
     }
     &__contact {
-      font-style: italic;
       color: aqua;
         &__cover{
           display: flex;
@@ -306,9 +316,9 @@ body {
         }
     }
     &__work {
+      width: 100vw;
       color: black;
       background-color: #fff;
-      padding: 24px 0 40px;
       &__cover{
         display: flex;
         justify-content: center;
@@ -318,7 +328,7 @@ body {
         color: white;
         width: 100vw;
         height: 100vh;
-        background-color:#f7484e;
+        background-color:#292929;;
         .navigation-work {
           margin-top: 200px;
           a {
@@ -344,18 +354,18 @@ body {
       .information {
         background-color: #2d9;
         margin-top: 15px;
-        z-index: -2;
+        //z-index: -2;
         
        
       }
       .adalab-about-us{
+        width: 100vw;
         display:flex;
         justify-content: center;
-        padding-bottom: 20px;
         position: relative;
         //top: -210px;;
-        &:hover > .information {
-          z-index: 2;}
+        //&:hover > .information {
+          //z-index: 2;}
 
         }
        
@@ -364,9 +374,6 @@ body {
         .about-us-image {
           width: 100%;
           margin: auto;
-          &:hover{
-            z-index: -2;
-          }
         }
       }
     }

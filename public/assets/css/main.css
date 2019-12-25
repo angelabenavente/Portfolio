@@ -629,7 +629,6 @@ body .main {
 }
 
 body .main__about-me {
-  font-style: italic;
   width: 100%;
 }
 
@@ -698,6 +697,10 @@ body .main__formation .bootcamp-view {
   margin-top: 10px;
 }
 
+body .main__formation .bootcamp-view:hover > .formation__bootcamp--arrow {
+  color: orange;
+}
+
 body .main__formation .master__header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,6 +716,10 @@ body .main__formation .master__header-container {
   border-left: 1px solid #33323242;
   padding: 3px 5px;
   margin-top: 10px;
+}
+
+body .main__formation .master__header-container:hover > .button-form {
+  color: orange;
 }
 
 body .main__formation .master__form {
@@ -750,6 +757,10 @@ body .main__formation .formation-container {
   margin-top: 10px;
 }
 
+body .main__formation .formation-container:hover > .button-form {
+  color: orange;
+}
+
 body .main__formation .courses-view {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -765,6 +776,10 @@ body .main__formation .courses-view {
   border-left: 1px solid #33323242;
   padding: 3px 5px;
   margin-top: 10px;
+}
+
+body .main__formation .courses-view:hover > .formation__courses--arrow {
+  color: orange;
 }
 
 body .main .box {
@@ -890,7 +905,6 @@ body .main__skills ul li i {
 }
 
 body .main__contact {
-  font-style: italic;
   color: aqua;
 }
 
@@ -937,9 +951,9 @@ body .main__contact__content {
 }
 
 body .main__work {
+  width: 100vw;
   color: black;
   background-color: #fff;
-  padding: 24px 0 40px;
 }
 
 body .main__work__cover {
@@ -960,7 +974,7 @@ body .main__work__cover {
   color: white;
   width: 100vw;
   height: 100vh;
-  background-color: #f7484e;
+  background-color: #292929;
 }
 
 body .main__work__cover .navigation-work {
@@ -991,31 +1005,22 @@ body .main__work .heading-secondary-works {
 body .main__work .information {
   background-color: #2d9;
   margin-top: 15px;
-  z-index: -2;
 }
 
 body .main__work .adalab-about-us {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-bottom: 20px;
   position: relative;
-}
-
-body .main__work .adalab-about-us:hover > .information {
-  z-index: 2;
 }
 
 body .main .about-us-image {
   width: 100%;
   margin: auto;
-}
-
-body .main .about-us-image:hover {
-  z-index: -2;
 }
 
 .create {
