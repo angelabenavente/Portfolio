@@ -676,7 +676,6 @@ body .main__about-me__content {
 
 body .main__formation {
   padding: 0px 25px 10px 25px;
-  font-style: italic;
   color: #0c0c0c;
 }
 
@@ -726,18 +725,21 @@ body .main__formation .master__form {
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   padding: 3px 5px;
+  font-size: 13px;
 }
 
 body .main__formation .validateInputsSection {
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   padding: 3px 5px;
+  font-size: 13px;
 }
 
 body .main__formation .view-hidden {
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   padding: 3px 5px;
+  font-size: 13px;
 }
 
 body .main__formation .formation-container {
@@ -794,7 +796,7 @@ body .main .paragraph-linkedin {
 }
 
 body .main .download-cv-button {
-  border: 1px solid #2d9;
+  border: 1px solid #f7484e;
   padding: 5px;
   text-align: center;
 }
@@ -905,7 +907,7 @@ body .main__skills ul li i {
 }
 
 body .main__contact {
-  color: aqua;
+  color: #0c0c0c;
 }
 
 body .main__contact__cover {
@@ -947,7 +949,7 @@ body .main__contact__cover .navigation-contact a:hover {
 
 body .main__contact__content {
   color: #0c0c0c;
-  padding: 35px;
+  padding: 25px;
 }
 
 body .main__work {

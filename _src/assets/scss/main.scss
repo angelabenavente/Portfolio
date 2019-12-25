@@ -129,7 +129,6 @@ body {
     }
     &__formation {
       padding: 0px 25px 10px 25px;
-      font-style: italic;
       color:  #0c0c0c;
       .bootcamp-view {
         display: flex;
@@ -159,17 +158,20 @@ body {
         border-bottom: 1px solid #33323242;
         border-left: 1px solid #33323242;
         padding: 3px 5px;
+        font-size: 13px;
         
       }
       .validateInputsSection {
         border-bottom: 1px solid #33323242;
         border-left: 1px solid #33323242;
         padding: 3px 5px;
+        font-size: 13px;
       }
       .view-hidden {
         border-bottom: 1px solid #33323242;
         border-left: 1px solid #33323242;
         padding: 3px 5px;
+        font-size: 13px;
       }
       .formation-container {
         display: flex;
@@ -205,7 +207,7 @@ body {
       padding: 24px 0 10px;
     }
     .download-cv-button {
-      border: 1px solid #2d9;
+      border: 1px solid #f7484e;
       padding: 5px;
       text-align: center;
       a {
@@ -285,7 +287,7 @@ body {
       }
     }
     &__contact {
-      color: aqua;
+      color: #0c0c0c;
         &__cover{
           display: flex;
           justify-content: center;
@@ -309,11 +311,11 @@ body {
             }
         }
       }
-        &__content {
-          color: #0c0c0c;
-          padding: 35px;
-            
-        }
+      &__content {
+        color: #0c0c0c;
+        padding: 25px;
+          
+      }
     }
     &__work {
       width: 100vw;
