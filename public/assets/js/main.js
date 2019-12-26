@@ -184,6 +184,9 @@ function toggleCourses () {
   }
 }
 
+
+
+
 courses.addEventListener('click', toggleCourses);
 
 //Desplegar ventana de compartir card
@@ -192,5 +195,7 @@ function removeClass () {
 }
 
 //formationCardButton.addEventListener('click',removeClass);
+
+
 
 //# sourceMappingURL=main.js.map

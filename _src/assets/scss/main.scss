@@ -1,6 +1,7 @@
 @import 'core/settings';
 @import 'core/links';
 @import 'vendors/normalize';
+@import 'components/proxyHero';
 
 *{
 	box-sizing: border-box;
@@ -386,6 +387,9 @@ body {
             align-self: center;
             border: 2px solid white;
             background-color: blue;
+            &:hover {
+              transform: scale(1.3);
+            }
             a{
               color: white;
               text-transform: uppercase;
@@ -393,6 +397,8 @@ body {
           }
       .first-proyect{
         height: 100vh;
+        display: flex;
+        flex-direction: column;
         &-description{
           text-align: center;
           color: white;
@@ -409,6 +415,9 @@ body {
             align-self: center;
             border: 2px solid white;
             background-color: blue;
+            &:hover {
+              transform: scale(1.1);
+            }
             a{
               color: white;
               text-transform: uppercase;
@@ -419,7 +428,10 @@ body {
     }
     .first-proyect-image{
       height: 50vh;
-      background-image: url(./assets/images/proxy-image.png)
+      background-image: url('/assets/images/proxy-image.png'); //_src/assets/images/proxy-image.png
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
       }
       .second-proyect-description{
@@ -438,6 +450,9 @@ body {
           align-self: center;
           border: 2px solid white;
           background-color: blue;
+          &:hover {
+            transform: scale(1.1);
+          }
           a{
             color: white;
             text-transform: uppercase;
@@ -465,6 +480,9 @@ body {
           align-self: center;
           border: 2px solid white;
           background-color: blue;
+          &:hover {
+            transform: scale(1.1);
+          }
           a{
             color: white;
             text-transform: uppercase;
@@ -492,6 +510,9 @@ body {
           align-self: center;
           border: 2px solid white;
           background-color: blue;
+          &:hover {
+            transform: scale(1.1);
+          }
           a{
             color: white;
             text-transform: uppercase;
@@ -593,4 +614,5 @@ body {
       display: none;
   }
   
-  
+  ////////////@at-root
+ 
