@@ -1035,6 +1035,199 @@ body .main__work__cover .navigation-work a:hover {
   border-bottom: 5px solid white;
 }
 
+body .main__work .first-proyect {
+  height: 100vh;
+}
+
+body .main__work .first-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vw;
+  background-color: blue;
+}
+
+body .main__work .first-proyect-description .seeMore-button {
+  width: 55%;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: blue;
+}
+
+body .main__work .first-proyect-description .seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+body .main__work .first-proyect-description .first-proyect {
+  height: 100vh;
+}
+
+body .main__work .first-proyect-description .first-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vw;
+  background-color: blue;
+}
+
+body .main__work .first-proyect-description .first-proyect-description .seeMore-button {
+  width: 55%;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: blue;
+}
+
+body .main__work .first-proyect-description .first-proyect-description .seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+body .main__work .first-proyect .first-proyect-image {
+  height: 50vh;
+  background-image: url(./assets/images/proxy-image.png);
+}
+
+body .main__work .second-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vw;
+  background-color: blue;
+}
+
+body .main__work .second-proyect-description .second-seeMore-button {
+  width: 55%;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: blue;
+}
+
+body .main__work .second-proyect-description .second-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+body .main__work .second-proyect-image {
+  height: 50vh;
+  background-image: url(./assets/images/proxy-image.png);
+}
+
+body .main__work .third-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vw;
+  background-color: blue;
+}
+
+body .main__work .third-proyect-description .third-seeMore-button {
+  width: 55%;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: blue;
+}
+
+body .main__work .third-proyect-description .third-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+body .main__work .third-proyect-image {
+  height: 50vh;
+  background-image: url(./assets/images/proxy-image.png);
+}
+
+body .main__work .fourth-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vw;
+  background-color: blue;
+}
+
+body .main__work .fourth-proyect-description .fourth-seeMore-button {
+  width: 55%;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: blue;
+}
+
+body .main__work .fourth-proyect-description .fourth-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+body .main__work .fourth-proyect-image {
+  height: 50vh;
+  background-image: url(./assets/images/proxy-image.png);
+}
+
 body .main__work__content {
   color: #0c0c0c;
   padding: 35px;

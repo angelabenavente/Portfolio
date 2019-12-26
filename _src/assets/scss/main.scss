@@ -368,9 +368,145 @@ body {
 
         }
       }
+      .first-proyect{
+        height: 100vh;
+        &-description{
+          text-align: center;
+          color: white;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          height: 100vw;
+          background-color: blue;
+          .seeMore-button {
+            width: 55%;
+            display: inline;
+            padding: 10px;
+            margin: 10px;
+            align-self: center;
+            border: 2px solid white;
+            background-color: blue;
+            a{
+              color: white;
+              text-transform: uppercase;
+            }
+          }
+      .first-proyect{
+        height: 100vh;
+        &-description{
+          text-align: center;
+          color: white;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          height: 100vw;
+          background-color: blue;
+          .seeMore-button {
+            width: 55%;
+            display: inline;
+            padding: 10px;
+            margin: 10px;
+            align-self: center;
+            border: 2px solid white;
+            background-color: blue;
+            a{
+              color: white;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+    .first-proyect-image{
+      height: 50vh;
+      background-image: url(./assets/images/proxy-image.png)
+    }
+      }
+      .second-proyect-description{
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vw;
+        background-color: blue;
+        .second-seeMore-button {
+          width: 55%;
+          display: inline;
+          padding: 10px;
+          margin: 10px;
+          align-self: center;
+          border: 2px solid white;
+          background-color: blue;
+          a{
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .second-proyect-image{
+        height: 50vh;
+        background-image: url(./assets/images/proxy-image.png)
+      }
+    
+      .third-proyect-description{
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vw;
+        background-color: blue;
+        .third-seeMore-button {
+          width: 55%;
+          display: inline;
+          padding: 10px;
+          margin: 10px;
+          align-self: center;
+          border: 2px solid white;
+          background-color: blue;
+          a{
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .third-proyect-image{
+        height: 50vh;
+        background-image: url(./assets/images/proxy-image.png)
+      }
+
+      .fourth-proyect-description{
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vw;
+        background-color: blue;
+        .fourth-seeMore-button {
+          width: 55%;
+          display: inline;
+          padding: 10px;
+          margin: 10px;
+          align-self: center;
+          border: 2px solid white;
+          background-color: blue;
+          a{
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .fourth-proyect-image{
+        height: 50vh;
+        background-image: url(./assets/images/proxy-image.png)
+      }
+
       &__content {
         color: #0c0c0c;
         padding: 35px;
+       
           
       }
       .heading-secondary-works {
