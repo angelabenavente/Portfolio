@@ -2,6 +2,8 @@
 @import 'core/mixins';
 @import 'vendors/normalize';
 @import 'components/proxyHero';
+@import 'layout/about';
+//@import 'layout/works';
 
 *{
 	box-sizing: border-box;
@@ -97,159 +99,7 @@ body {
     //padding-bottom: 40px;
     font-size: 15px;
     width: 100%;
-    &__about-me {
-      width: 100%;
-      &__cover{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-transform: uppercase;
-        color: white;
-        width: 100vw;
-        height: 100vh;
-        background-color:#f7484e;
-        .navigation-about {
-          margin-top: 200px;
-          a {
-            font-weight: 700;
-            cursor: pointer;
-            padding: 10px 10px 6px 10px;
-            &:hover {
-              box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-              border-bottom: 5px solid white;
-            }
-          }
-        }
-      }
-      &__content {
-        color: #0c0c0c;
-        padding: 25px;
-          
-      }
-      @include tablet {
-        display: flex;
-        flex-direction: row;
-        &__cover{
-          width: 50vw;
-         //position: fixed;
-         height: 100vh;
-        }
-        &__content{
-          width: 50vw;
-          .skillsContainer{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            .box {
-              //width: 400px;
-              //margin: auto;
-              margin-top: 20px;
-            }
-            .skillsWraper{
-              width: 248px;
-            }
-            .seo{
-              margin-top: 15px;
-            }
-
-          }
-        }
-      }
-    }
-    &__formation {
-      padding: 15px 0;
-      color:  #0c0c0c;
-      .bootcamp-view {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        margin-top: 10px;
-        &:hover  > .formation__bootcamp--arrow {
-          color: orange;
-        }
-      }
-      .master__header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        margin-top: 10px;
-        &:hover  > .button-form {
-          color: orange;
-        }
-      }
-      .master__form {
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        font-size: 13px;
-        
-      }
-      .validateInputsSection {
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        font-size: 13px;
-      }
-      .view-hidden {
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        font-size: 13px;
-      }
-      .formation-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        margin-top: 10px;
-        &:hover  > .button-form {
-          color: orange;
-        }
-      }
-      .courses-view {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid #33323242;
-        border-left: 1px solid #33323242;
-        padding: 3px 5px;
-        margin-top: 10px;
-        &:hover  > .formation__courses--arrow {
-          color: orange;
-        }
-      }
-    }
-    .box {
-      box-shadow: 5px 5px 5px #2f434470;
-      border-bottom: 1px solid #33323242;
-      border-left: 1px solid #33323242;
-    }
-    .paragraph-linkedin {
-      padding: 24px 0 10px;
-      cursor: pointer;
-
-    }
-    .download-cv-button {
-      padding: 5px;
-      text-align: center;
-      width: 180px;
-      margin: auto;
-      border: 3px solid #33323242;
-      padding: 8px;
-      box-shadow: 5px 5px 5px #2f434470;
-      a {
-        color:  #0c0c0c;
-      }
-    }
+    
     &__skills {
       background-color: #fff;
       padding: 15px 0;
@@ -348,6 +198,7 @@ body {
     }
     &__contact {
       color: #0c0c0c;
+      width: 100vw;
         &__cover{
           display: flex;
           justify-content: center;
@@ -450,16 +301,22 @@ body {
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          height: 100vw;
           background-color: #2a4d68;
+          @include tablet  {
+            height: 100vh;
+            font-size: 18px;
+          }
           .seeMore-button {
-            width: 120px;
+            width: 160px;
             display: inline;
             padding: 10px;
             margin: 10px;
             align-self: center;
             border: 2px solid white;
             background-color: #2a4d68;
+            @include tablet  {
+              font-size: 14px;
+            }
             &:hover {
               transform: scale(1.3);
             }
@@ -483,9 +340,17 @@ body {
       align-items: center;
       text-align: center;
       font-family: 'Roboto Slab', serif;
+      text-shadow: 1px 1px 2px black; 
       font-size: 22px;
+      @include tablet  {
+        height: 100vh;
+        font-size: 28px;
+      }
       small {
         font-size: 12px;
+        @include tablet  {
+          font-size: 18px;
+        }
       }
     }
       }
@@ -498,16 +363,23 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100vw;
+        height: 50vh;
         background-color: #1d4e4e;
+        @include tablet  {
+          height: 100vh;
+          font-size: 18px;
+        }
         .second-seeMore-button {
-          width: 120px;
+          width: 160px;
           display: inline;
           padding: 10px;
           margin: 10px;
           align-self: center;
           border: 2px solid white;
           background-color: #1d4e4e;
+          @include tablet  {
+            font-size: 14px;
+          }
           &:hover {
             transform: scale(1.1);
           }
@@ -531,8 +403,11 @@ body {
         height: 50vh;
         background-image: url('/assets/images/cardsCover.svg');
         background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+      @include tablet  {
+        height: 100vh;
+      }
       .cardIcons{
         position: relative;
         top: 40px;
@@ -549,16 +424,23 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100vw;
+        height: 50vh;
         background-color: #721503e8;
+        @include tablet  {
+          height: 100vh;
+          font-size: 18px;
+        }
         .third-seeMore-button {
-          width: 120px;
+          width: 160px;
           display: inline;
           padding: 10px;
           margin: 10px;
           align-self: center;
           border: 2px solid white;
           background-color: transparent;
+          @include tablet  {
+            font-size: 14px;
+          }
           &:hover {
             transform: scale(1.1);
           }
@@ -582,6 +464,9 @@ body {
         align-items: center;
         flex-direction: column;
         text-align: center;
+        @include tablet  {
+          height: 100vh;
+        }
         .diceGame {
           background-color: black;
           border: 5px solid white;
@@ -590,8 +475,13 @@ body {
           display: flex;
           justify-content: center;
           flex-direction: column;
-          width: 60%;
-          height: 70%;
+          width: 250px;
+          height: 220px;
+          @include tablet {
+            width: 300px;
+            height: 270px;
+            font-size: 28px;
+          }
           .gameHero {
             display: flex;
             flex-direction: row;
@@ -604,7 +494,11 @@ body {
             img {
               width: 71px;
               margin: auto;
+              margin-right: 0;
               transform: rotate(100deg);
+              @include tablet {
+                width: 91px;
+              }
             }
           }
           
@@ -617,8 +511,12 @@ body {
           width: 80px;
           font-size: 14px;
           margin: auto;
-          margin-top: 10px;
+          margin-top: 40px;
           margin-bottom: 10px;
+          @include tablet {
+            width: 120px;
+            font-size: 18px;
+          }
         }
       }
 
@@ -628,19 +526,27 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100vw;
+        height: 50vh;
         background-color: #377e65;
+        @include tablet  {
+          font-size: 18px;
+          height: 100vh;
+        }
         .fourth-seeMore-button {
-          width: 120px;
+          width: 160px;
           display: inline;
           padding: 10px;
           margin: 10px;
           align-self: center;
           border: 2px solid white;
           background-color: #377e65;
+          @include tablet  {
+            font-size: 14px;
+          }
           &:hover {
             transform: scale(1.1);
           }
+          
           a{
             color: white;
             text-transform: uppercase;
@@ -662,6 +568,15 @@ body {
         align-items: center;
         flex-direction: column;
         text-align: center;
+        @include tablet  {
+          height: 100vh;
+          img {
+            height: 65%;
+            width: 99%;
+            position: relative;
+            top: 30px;
+          }
+        }
         .contactMenu {
           background-color: #099d8d;
           width: 100%;
@@ -671,8 +586,12 @@ body {
           font-size: 10px;
           justify-content: space-between;
           align-items: center;
-          padding: 5px;
+          padding: 10px;
           font-weight: 500;
+          @include tablet {
+            height: 40px;
+            font-size: 12px;
+          }
           &-items{
             display: flex;
             flex-direction: row;
@@ -682,19 +601,25 @@ body {
               justify-content: center;
               top: 2px;
               position: relative;
-              padding-right: 5px;
+              padding-left: 5px;
+              @include tablet {
+                padding-left: 8px;
+              }
             }
           }
           .contactIcon{
             display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 9px;
-              position: relative;
-              border-radius: 5px;
-              border: 1px solid white;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            position: relative;
+            border-radius: 5px;
+            border: 1px solid white;
             font-weight: 600;
             padding: 1px 2px 0;
+            @include tablet {
+              font-size: 12px;
+            }
           }
         }
         .frontSide {
@@ -703,6 +628,10 @@ body {
           margin-top: 7px;
           text-shadow: 0px 3px 3px rgb(240, 243, 192); 
           //text-decoration-line: underline;
+          @include tablet {
+            font-size: 40px;
+            margin-top: 30px;
+          }
           .fa-shoe-prints {
             transform: rotate(-90deg);
             padding-bottom: 3px;
