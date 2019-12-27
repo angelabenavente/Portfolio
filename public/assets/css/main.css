@@ -1,12 +1,4 @@
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff;
-}
-
-.link__github:hover {
-  background-color: #CCC;
-  color: #000;
-}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *//* Document
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *//* Document
    ========================================================================== *//**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -259,6 +251,11 @@ a {
   color: white;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .proxy__hero {
   background-image: url(../assets/images/proxy-image.png);
 }
@@ -313,8 +310,7 @@ span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: black;
-  opacity: 0.8;
+  background-color: transparent;
   z-index: 999;
 }
 
@@ -628,7 +624,6 @@ body .main {
   background-color: white;
   color: white;
   border: none;
-  padding-bottom: 40px;
   font-size: 15px;
   width: 100%;
 }
@@ -680,7 +675,7 @@ body .main__about-me__content {
 }
 
 body .main__formation {
-  padding: 0px 25px 10px 25px;
+  padding: 15px 0;
   color: #0c0c0c;
 }
 
@@ -798,12 +793,18 @@ body .main .box {
 
 body .main .paragraph-linkedin {
   padding: 24px 0 10px;
+  cursor: pointer;
 }
 
 body .main .download-cv-button {
-  border: 1px solid #f7484e;
   padding: 5px;
   text-align: center;
+  width: 180px;
+  margin: auto;
+  border: 3px solid #33323242;
+  padding: 8px;
+  -webkit-box-shadow: 5px 5px 5px #2f434470;
+  box-shadow: 5px 5px 5px #2f434470;
 }
 
 body .main .download-cv-button a {
@@ -812,7 +813,7 @@ body .main .download-cv-button a {
 
 body .main__skills {
   background-color: #fff;
-  padding: 24px 24px 40px;
+  padding: 15px 0;
   color: #0c0c0c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,7 +826,7 @@ body .main__skills {
 
 body .main__skills .frontend-wrapper {
   border: 3px solid #33323242;
-  padding: 12px;
+  padding: 8px;
   -webkit-box-shadow: 5px 5px 5px #2f434470;
   box-shadow: 5px 5px 5px #2f434470;
   margin-bottom: 18px;
@@ -833,7 +834,7 @@ body .main__skills .frontend-wrapper {
 
 body .main__skills .graphic-design-wrapper {
   border: 3px solid #33323242;
-  padding: 12px;
+  padding: 6px;
   -webkit-box-shadow: 5px 5px 5px #2f434470;
   box-shadow: 5px 5px 5px #2f434470;
   margin-bottom: 18px;
@@ -841,9 +842,16 @@ body .main__skills .graphic-design-wrapper {
 
 body .main__skills .seo-wrapper {
   border: 3px solid #33323242;
-  padding: 12px;
+  padding: 10px;
   -webkit-box-shadow: 5px 5px 5px #2f434470;
   box-shadow: 5px 5px 5px #2f434470;
+}
+
+body .main__skills .seo-wrapper .skillsWraper .skills {
+  width: 107px;
+  margin: 2px;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 body .main__skills .category-front {
@@ -853,6 +861,7 @@ body .main__skills .category-front {
   width: 40%;
   margin: auto;
   text-align: center;
+  width: 110px;
 }
 
 body .main__skills .category-design {
@@ -862,6 +871,7 @@ body .main__skills .category-design {
   width: 60%;
   margin: auto;
   text-align: center;
+  width: 150px;
 }
 
 body .main__skills .category-seo {
@@ -871,9 +881,15 @@ body .main__skills .category-seo {
   width: 60%;
   margin: auto;
   text-align: center;
+  width: 140px;
 }
 
-body .main__skills ul {
+body .main__skills .skillsWraper {
+  width: 260px;
+  margin: auto;
+}
+
+body .main__skills .skillsWraper ul {
   width: 100%;
   margin: auto;
   display: -webkit-box;
@@ -883,13 +899,21 @@ body .main__skills ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin-top: 8px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-body .main__skills ul li {
+body .main__skills .skillsWraper ul .skill {
+  width: 107px;
+  margin: 2px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body .main__skills .skillsWraper ul li {
   background-color: #fff;
   padding: 1px 0;
   display: -webkit-box;
@@ -905,7 +929,7 @@ body .main__skills ul li {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-body .main__skills ul li i {
+body .main__skills .skillsWraper ul li i {
   display: inline-block;
   margin: 0 5px 0 8px;
   text-shadow: 1px 1px 1px #635f5f78;
@@ -1061,18 +1085,18 @@ body .main__work .first-proyect-description {
   -ms-flex-align: center;
   align-items: center;
   height: 100vw;
-  background-color: blue;
+  background-color: #2a4d68;
 }
 
 body .main__work .first-proyect-description .seeMore-button {
-  width: 55%;
+  width: 120px;
   display: inline;
   padding: 10px;
   margin: 10px;
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: blue;
+  background-color: #2a4d68;
 }
 
 body .main__work .first-proyect-description .seeMore-button:hover {
@@ -1133,18 +1157,18 @@ body .main__work .second-proyect-description {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vw;
-  background-color: blue;
+  background-color: #1d4e4e;
 }
 
 body .main__work .second-proyect-description .second-seeMore-button {
-  width: 55%;
+  width: 120px;
   display: inline;
   padding: 10px;
   margin: 10px;
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: blue;
+  background-color: #1d4e4e;
 }
 
 body .main__work .second-proyect-description .second-seeMore-button:hover {
@@ -1159,7 +1183,6 @@ body .main__work .second-proyect-description .second-seeMore-button a {
 
 body .main__work .second-proyect-image {
   background-color: #eef5f7;
-  margin: 0 20px;
   color: #e17334;
   font-family: 'Merriweather', serif;
   font-weight: 900;
@@ -1208,18 +1231,18 @@ body .main__work .third-proyect-description {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vw;
-  background-color: blue;
+  background-color: #721503e8;
 }
 
 body .main__work .third-proyect-description .third-seeMore-button {
-  width: 55%;
+  width: 120px;
   display: inline;
   padding: 10px;
   margin: 10px;
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: blue;
+  background-color: transparent;
 }
 
 body .main__work .third-proyect-description .third-seeMore-button:hover {
@@ -1326,18 +1349,18 @@ body .main__work .fourth-proyect-description {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vw;
-  background-color: blue;
+  background-color: #377e65;
 }
 
 body .main__work .fourth-proyect-description .fourth-seeMore-button {
-  width: 55%;
+  width: 120px;
   display: inline;
   padding: 10px;
   margin: 10px;
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: blue;
+  background-color: #377e65;
 }
 
 body .main__work .fourth-proyect-description .fourth-seeMore-button:hover {
@@ -1383,11 +1406,71 @@ body .main__work .fourth-proyect-image .contactMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 12px;
+  font-size: 10px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 5px;
+  font-weight: 500;
+}
+
+body .main__work .fourth-proyect-image .contactMenu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+body .main__work .fourth-proyect-image .contactMenu-items span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 2px;
+  position: relative;
+  padding-right: 5px;
+}
+
+body .main__work .fourth-proyect-image .contactMenu .contactIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 9px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-weight: 600;
+  padding: 1px 2px 0;
+}
+
+body .main__work .fourth-proyect-image .frontSide {
+  color: #099d8d;
+  font-size: 20px;
+  margin-top: 7px;
+  text-shadow: 0px 3px 3px #f0f3c0;
+}
+
+body .main__work .fourth-proyect-image .frontSide .fa-shoe-prints {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  padding-bottom: 3px;
 }
 
 body .main__work .fourth-proyect-image .about-us-image-inside {
@@ -1494,6 +1577,126 @@ body .main .about-us-image {
 @media all and (min-width: 768) {
   .header .header__navigation-tablet {
     display: block !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  body .main__about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  body .main__about-me__cover {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  body .main__about-me__content {
+    width: 50vw;
+  }
+
+  body .main__about-me__content .skillsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  body .main__about-me__content .skillsContainer .box {
+    margin-top: 20px;
+  }
+
+  body .main__about-me__content .skillsContainer .skillsWraper {
+    width: 248px;
+  }
+
+  body .main__about-me__content .skillsContainer .seo {
+    margin-top: 15px;
+  }
+
+  body .main__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  body .main__contact__cover {
+    width: 50vw;
+  }
+
+  body .main__contact__content {
+    width: 50vw;
+  }
+
+  .first-proyect-image {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .image {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .main__work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main__work .description {
+    width: 50vw;
+  }
+
+  .main__work__cover {
+    height: 100vh;
+  }
+
+  .proyect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  .image {
+    width: 50vw;
+    height: auto;
+  }
+
+  .first-proyect-image {
+    width: 50vw;
+    height: auto;
+  }
+
+  .third-proyect-image {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .description {
+    width: 50vw;
+    height: 100vh;
   }
 }
 

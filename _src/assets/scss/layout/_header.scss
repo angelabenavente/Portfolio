@@ -15,8 +15,8 @@ span {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  opacity: 0.8;
+  background-color: transparent;
+  //opacity: 1;
   z-index: 999;
   .header__navigation-tablet {
     display: none;
