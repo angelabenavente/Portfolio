@@ -372,11 +372,13 @@ body {
       .first-proyect{
         height: 100vh;
         &-description{
+          height: 50vh;
           text-align: center;
           color: white;
           display: flex;
           justify-content: center;
           flex-direction: column;
+          align-items: center;
           height: 100vw;
           background-color: blue;
           .seeMore-button {
@@ -395,44 +397,29 @@ body {
               text-transform: uppercase;
             }
           }
-      .first-proyect{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        &-description{
-          text-align: center;
-          color: white;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          height: 100vw;
-          background-color: blue;
-          .seeMore-button {
-            width: 55%;
-            display: inline;
-            padding: 10px;
-            margin: 10px;
-            align-self: center;
-            border: 2px solid white;
-            background-color: blue;
-            &:hover {
-              transform: scale(1.1);
-            }
-            a{
-              color: white;
-              text-transform: uppercase;
-            }
-          }
-        }
-      }
     }
     .first-proyect-image{
       height: 50vh;
-      background-image: url('/assets/images/proxy-image.png'); //_src/assets/images/proxy-image.png
+      background-image: url('/assets/images/proxyCover.jpg'); //_src/assets/images/proxy-image.png
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      color: white;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 22px;
+      small {
+        font-size: 12px;
+      }
     }
+      }
+      .second-proyect{
+        background-color: #eef5f7;
       }
       .second-proyect-description{
         text-align: center;
@@ -460,8 +447,29 @@ body {
         }
       }
       .second-proyect-image{
+        background-color: #eef5f7;
+        margin: 0 20px;
+        color: #e17334;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: right;
+        flex-direction: column;
+        text-align: right;
         height: 50vh;
-        background-image: url(./assets/images/proxy-image.png)
+        background-image: url('/assets/images/cardsCover.svg');
+        background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      .cardIcons{
+        position: relative;
+        top: 40px;
+        font-size: 18px;
+        i{
+          margin: 3px;
+        }
+      }
       }
     
       .third-proyect-description{
@@ -491,7 +499,56 @@ body {
       }
       .third-proyect-image{
         height: 50vh;
-        background-image: url(./assets/images/proxy-image.png)
+        background-image: url('/assets/images/diceCover.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Audiowide', cursive;
+        font-size: 22px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        .diceGame {
+          background-color: black;
+          border: 5px solid white;
+          text-align: center;
+          padding: 15px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 60%;
+          height: 70%;
+          .gameHero {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            .gameTitle {
+              display: inline-block;
+              width: 50%;
+              text-align: left;
+            }
+            img {
+              width: 71px;
+              margin: auto;
+              transform: rotate(100deg);
+            }
+          }
+          
+        }
+        .rollUp {
+          text-align: center;
+          background-color: black;
+          border: 2px solid white;
+          border-radius: 20px;
+          width: 80px;
+          font-size: 14px;
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
       }
 
       .fourth-proyect-description{
@@ -521,7 +578,32 @@ body {
       }
       .fourth-proyect-image{
         height: 50vh;
-        background-image: url(./assets/images/proxy-image.png)
+        background-color: rgb(228, 228, 228);
+        //background-image: url('/assets/images/aboutImage.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Audiowide', cursive;
+        font-size: 16px;
+        color: white;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        .contactMenu {
+          background-color: #099d8d;
+          width: 100%;
+          font-family: 'Rubik', sans-serif;
+          text-transform: uppercase;
+          display: flex;
+          font-size: 12px;
+          justify-content: space-between;
+          padding: 5px;
+        }
+        .about-us-image-inside{
+          height: 70%;
+        }
       }
 
       &__content {

@@ -1044,6 +1044,7 @@ body .main__work .first-proyect {
 }
 
 body .main__work .first-proyect-description {
+  height: 50vh;
   text-align: center;
   color: white;
   display: -webkit-box;
@@ -1056,6 +1057,9 @@ body .main__work .first-proyect-description {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vw;
   background-color: blue;
 }
@@ -1081,61 +1085,38 @@ body .main__work .first-proyect-description .seeMore-button a {
   text-transform: uppercase;
 }
 
-body .main__work .first-proyect-description .first-proyect {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-body .main__work .first-proyect-description .first-proyect-description {
-  text-align: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100vw;
-  background-color: blue;
-}
-
-body .main__work .first-proyect-description .first-proyect-description .seeMore-button {
-  width: 55%;
-  display: inline;
-  padding: 10px;
-  margin: 10px;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border: 2px solid white;
-  background-color: blue;
-}
-
-body .main__work .first-proyect-description .first-proyect-description .seeMore-button:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-body .main__work .first-proyect-description .first-proyect-description .seeMore-button a {
-  color: white;
-  text-transform: uppercase;
-}
-
 body .main__work .first-proyect .first-proyect-image {
   height: 50vh;
-  background-image: url("/assets/images/proxy-image.png");
+  background-image: url("/assets/images/proxyCover.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+}
+
+body .main__work .first-proyect .first-proyect-image small {
+  font-size: 12px;
+}
+
+body .main__work .second-proyect {
+  background-color: #eef5f7;
 }
 
 body .main__work .second-proyect-description {
@@ -1177,8 +1158,40 @@ body .main__work .second-proyect-description .second-seeMore-button a {
 }
 
 body .main__work .second-proyect-image {
+  background-color: #eef5f7;
+  margin: 0 20px;
+  color: #e17334;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
   height: 50vh;
-  background-image: url(./assets/images/proxy-image.png);
+  background-image: url("/assets/images/cardsCover.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .main__work .second-proyect-image .cardIcons {
+  position: relative;
+  top: 40px;
+  font-size: 18px;
+}
+
+body .main__work .second-proyect-image .cardIcons i {
+  margin: 3px;
 }
 
 body .main__work .third-proyect-description {
@@ -1221,7 +1234,82 @@ body .main__work .third-proyect-description .third-seeMore-button a {
 
 body .main__work .third-proyect-image {
   height: 50vh;
-  background-image: url(./assets/images/proxy-image.png);
+  background-image: url("/assets/images/diceCover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Audiowide', cursive;
+  font-size: 22px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+body .main__work .third-proyect-image .diceGame {
+  background-color: black;
+  border: 5px solid white;
+  text-align: center;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60%;
+  height: 70%;
+}
+
+body .main__work .third-proyect-image .diceGame .gameHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: left;
+}
+
+body .main__work .third-proyect-image .diceGame .gameHero .gameTitle {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+body .main__work .third-proyect-image .diceGame .gameHero img {
+  width: 71px;
+  margin: auto;
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+
+body .main__work .third-proyect-image .rollUp {
+  text-align: center;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 80px;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 body .main__work .fourth-proyect-description {
@@ -1264,7 +1352,46 @@ body .main__work .fourth-proyect-description .fourth-seeMore-button a {
 
 body .main__work .fourth-proyect-image {
   height: 50vh;
-  background-image: url(./assets/images/proxy-image.png);
+  background-color: #e4e4e4;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Audiowide', cursive;
+  font-size: 16px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+body .main__work .fourth-proyect-image .contactMenu {
+  background-color: #099d8d;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+body .main__work .fourth-proyect-image .about-us-image-inside {
+  height: 70%;
 }
 
 body .main__work__content {
