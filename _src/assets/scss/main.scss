@@ -314,6 +314,7 @@ body {
             align-self: center;
             border: 2px solid white;
             background-color: #2a4d68;
+            cursor: pointer;
             @include tablet  {
               font-size: 14px;
             }
@@ -377,6 +378,7 @@ body {
           align-self: center;
           border: 2px solid white;
           background-color: #1d4e4e;
+          cursor: pointer;
           @include tablet  {
             font-size: 14px;
           }
@@ -438,6 +440,7 @@ body {
           align-self: center;
           border: 2px solid white;
           background-color: transparent;
+          cursor: pointer;
           @include tablet  {
             font-size: 14px;
           }
@@ -540,11 +543,13 @@ body {
           align-self: center;
           border: 2px solid white;
           background-color: #377e65;
+          cursor: pointer;
           @include tablet  {
             font-size: 14px;
           }
           &:hover {
             transform: scale(1.1);
+            border-radius: 20px;
           }
           
           a{
