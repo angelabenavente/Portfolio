@@ -862,6 +862,15 @@ span {
   background-color: transparent;
 }
 
+.expandedWidth {
+  -webkit-animation: expande 1s ease-in-out;
+  animation: expande 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2172,6 +2181,30 @@ body .main .about-us-image {
 
   100% {
     color: #f7484e;
+  }
+}
+
+@-webkit-keyframes expande {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+  }
+}
+
+@keyframes expande {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
   }
 }
 

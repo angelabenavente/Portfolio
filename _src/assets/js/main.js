@@ -217,6 +217,31 @@ function removeClass () {
 const navigation = document.querySelector('.navigation__button');
 
 function showNavigationItems (){
-  navigation.style.width = '200%';
+  if(navigation.classList.contains('expandedWidth')){
+    navigation.classList.remove('expandedWidth')
+    //navigation.classList.remove('expandedHeight')
+  } else {
+    navigation.classList.add('expandedWidth');
+    //navigation.classList.add('expandedHeight')
+  }
 }
 navigation.addEventListener('click', showNavigationItems);
+
+
+///////////
+
+const author = document.getElementById('author');
+
+function resizeAuthor () {
+  if (x.matches) { // If media query matches
+    author.innerHTML="AB | "
+  } else {
+    author.innerHTML="Ángela Benavene | "
+  }
+}
+
+let x = window.matchMedia("(max-width: 550px)")
+resizeAuthor(x) // Call listener function at run time
+x.addListener(resizeAuthor)
+
+//window.addEventListener(resizeAuthor);
