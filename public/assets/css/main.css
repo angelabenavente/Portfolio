@@ -266,6 +266,8 @@ a {
 }
 
 .main__aboutMe__cover {
+  top: 0;
+  display: table;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,12 +283,13 @@ a {
   flex-direction: column;
   text-transform: uppercase;
   color: white;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #f7484e;
 }
 
 .main__aboutMe__content {
+  background-color: #00000075;
   background-color: #252525;
   color: white;
   padding: 25px;
@@ -299,10 +302,11 @@ a {
 }
 
 .main__aboutMe__content--formation--box {
-  -webkit-box-shadow: 5px 5px 5px #2f434470;
-  box-shadow: 5px 5px 5px #2f434470;
-  border-bottom: 1px solid #33323242;
-  border-left: 1px solid #33323242;
+  background-color: #27272773;
+  -webkit-box-shadow: #000000b5 5px 5px 5px;
+  box-shadow: #000000b5 5px 5px 5px;
+  border-bottom: 2px solid #00000042;
+  border-left: 2px solid #00000042;
 }
 
 .main__aboutMe__content--formation--box .bootcamp-view {
@@ -425,6 +429,11 @@ a {
   padding: 8px;
   -webkit-box-shadow: 5px 5px 5px #2f434470;
   box-shadow: 5px 5px 5px #2f434470;
+  -webkit-box-shadow: #000000b5 5px 5px 5px;
+  box-shadow: #000000b5 5px 5px 5px;
+  border: 3px solid #00000042;
+  background: -webkit-gradient(linear, left bottom, left top, from(#272727), to(#252525));
+  background: linear-gradient(0deg, #272727 0%, #252525 100%);
 }
 
 .main__aboutMe__content .download-cv-button a {
@@ -506,8 +515,9 @@ span {
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 60px;
+  padding-right: 24px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +538,7 @@ span {
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
   z-index: 999;
+  margin: 0;
 }
 
 .header .navigationAuthor {
@@ -570,7 +581,6 @@ span {
   background-color: #0202020d;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
   border: 1px solid white;
-  margin-right: 10px;
   padding: 5px;
   z-index: 10;
   opacity: .85;
@@ -652,7 +662,7 @@ span {
   font-size: 40px;
   letter-spacing: 10px;
   color: white;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   opacity: 0;
   -webkit-transition: .4s;
@@ -754,7 +764,7 @@ span {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .header .navigation__item {
@@ -796,7 +806,7 @@ span {
 
 .header .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%;
+  width: 100vw;
 }
 
 .header .navigation__icon {
@@ -959,11 +969,13 @@ body .main__skills {
 }
 
 body .main__skills .frontend-wrapper {
-  border: 3px solid #33323242;
   padding: 8px;
-  -webkit-box-shadow: 5px 5px 5px #2f434470;
-  box-shadow: 5px 5px 5px #2f434470;
   margin-bottom: 18px;
+  -webkit-box-shadow: #000000b5 5px 5px 5px;
+  box-shadow: #000000b5 5px 5px 5px;
+  border: 3px solid #00000042;
+  background: -webkit-gradient(linear, left bottom, left top, from(#272727), to(#252525));
+  background: linear-gradient(0deg, #272727 0%, #252525 100%);
 }
 
 body .main__skills .graphic-design-wrapper {
@@ -972,6 +984,11 @@ body .main__skills .graphic-design-wrapper {
   -webkit-box-shadow: 5px 5px 5px #2f434470;
   box-shadow: 5px 5px 5px #2f434470;
   margin-bottom: 18px;
+  -webkit-box-shadow: #000000b5 5px 5px 5px;
+  box-shadow: #000000b5 5px 5px 5px;
+  border: 3px solid #00000042;
+  background: -webkit-gradient(linear, left bottom, left top, from(#272727), to(#252525));
+  background: linear-gradient(0deg, #272727 0%, #252525 100%);
 }
 
 body .main__skills .seo-wrapper {
@@ -979,6 +996,11 @@ body .main__skills .seo-wrapper {
   padding: 10px;
   -webkit-box-shadow: 5px 5px 5px #2f434470;
   box-shadow: 5px 5px 5px #2f434470;
+  -webkit-box-shadow: #000000b5 5px 5px 5px;
+  box-shadow: #000000b5 5px 5px 5px;
+  border: 3px solid #00000042;
+  background: -webkit-gradient(linear, left bottom, left top, from(#272727), to(#252525));
+  background: linear-gradient(0deg, #272727 0%, #252525 100%);
 }
 
 body .main__skills .seo-wrapper .skillsWraper .skills {
@@ -986,6 +1008,8 @@ body .main__skills .seo-wrapper .skillsWraper .skills {
   margin: 2px;
   font-size: 14px;
   margin-top: 5px;
+  background-color: #232222;
+  border: 2px solid #1d1c1c94;
 }
 
 body .main__skills .category-front {
@@ -1044,10 +1068,12 @@ body .main__skills .skillsWraper ul {
 }
 
 body .main__skills .skillsWraper ul .skill {
+  background-color: #232222;
   width: 107px;
   margin: 2px;
   font-size: 14px;
   margin-top: 5px;
+  border: 2px solid #1d1c1c94;
 }
 
 body .main__skills .skillsWraper ul li {
@@ -1075,7 +1101,7 @@ body .main__skills .skillsWraper ul li i {
 
 body .main__contact {
   color: #0c0c0c;
-  width: 100vw;
+  width: 100%;
 }
 
 body .main__contact__cover {
@@ -1094,7 +1120,7 @@ body .main__contact__cover {
   flex-direction: column;
   text-transform: uppercase;
   color: white;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #f7484e;
 }
@@ -1160,7 +1186,7 @@ body .main__contact__content .contact-button .btn-text:hover > .social-icon {
 }
 
 body .main__work {
-  width: 100vw;
+  width: 100%;
   color: black;
   background-color: #fff;
   background-color: #252525;
@@ -1182,7 +1208,7 @@ body .main__work__cover {
   flex-direction: column;
   text-transform: uppercase;
   color: white;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #292929;
 }
@@ -1638,7 +1664,7 @@ body .main__work .information {
 }
 
 body .main__work .adalab-about-us {
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1734,6 +1760,8 @@ body .main .about-us-image {
   .main__aboutMe__cover {
     width: 50vw;
     height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
   }
 
   .main__aboutMe__content {
@@ -1913,7 +1941,7 @@ body .main .about-us-image {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
   }
 
   .image {
