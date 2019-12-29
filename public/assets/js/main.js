@@ -248,23 +248,83 @@ windowSize.addListener(resizeAuthor)
 
 
 ////////////////////
-
-const navigationBackground = document.querySelector('.navigation-background');
+const navigationButton = document.querySelector('#navigation__button')
+const navigationBackground = document.querySelector('#navigation-background');
 const aboutSection = document.querySelector('#about');
 const firstProjectSection = document.querySelector('#first-project');
 const secondProjectSection = document.querySelector('#second-project');
 const thirdProjectSection = document.querySelector('#third-project');
 const fourthProjectSection = document.querySelector('#fourth-project');
-let firstProjectTop = firstProjectSection.scrollTop;
+let firstProjectTop = firstProjectSection.getBoundingClientRect().top;
+
 
 function changeNavigationColor () {
 
-  console.log( firstProjectSection.offsetTop);
-    let top =  firstProjectSection.offsetTop;
-    let left =  firstProjectSection.offsetLeft;
-      while ( firstProjectSection= firstProjectSection.offsetParent) left +=  firstProjectSection.offsetLeft;
-      while( firstProjectSection= firstProjectSection.offsetParent) top+= firstProjectSection.offsetTop;
-      return [left,top];
+  //console.log( firstProjectTop);
+  let firstProjectyPos = firstProjectSection.getBoundingClientRect().top;
+  let secondProjectyPos = secondProjectSection.getBoundingClientRect().top;
+  let thirdProjectyPos = thirdProjectSection.getBoundingClientRect().top;
+  let fourthProjectyPos = fourthProjectSection.getBoundingClientRect().top;
+  let aboutSectionyPos = aboutSection.getBoundingClientRect().top;
+
+  if (Math.sign(firstProjectyPos) === -1 ) {
+    const navigationBackground = document.querySelector('#navigation-background');
+    console.log( firstProjectyPos);
+    navigationBackground.style.backgroundColor = "#2a4d68";
+    navigationButton.style.backgroundColor = "#2a4d68";
+  }
+  if
+    (Math.sign(secondProjectyPos) === -1 ) {
+      const navigationBackground = document.querySelector('#navigation-background');
+      console.log( secondProjectyPos);
+      navigationBackground.style.backgroundColor = "#1d4e4e";
+      navigationButton.style.backgroundColor = "#1d4e4e";
+  }
+
+  if
+    (Math.sign(thirdProjectyPos) === -1 ) {
+      const navigationBackground = document.querySelector('#navigation-background');
+      console.log(thirdProjectyPos);
+      navigationBackground.style.backgroundColor = "#6b1607";
+      navigationButton.style.backgroundColor = "#6b1607";
+  }
+
+  if
+    (Math.sign(fourthProjectyPos) === -1 ) {
+      const navigationBackground = document.querySelector('#navigation-background');
+      console.log(fourthProjectyPos);
+      navigationBackground.style.backgroundColor = "#377e65";
+      navigationButton.style.backgroundColor = "#377e65";
+  }
+
+  // else {
+  //   // (Math.sign(aboutSectionyPos) === -1 ) {
+  //   //   const navigationBackground = document.querySelector('#navigation-background');
+  //     console.log(aboutSectionyPos);
+  //     navigationBackground.style.backgroundColor = "#f7484e";
+  //     navigationButton.style.backgroundColor = "#f7484e";
+  // }
+
+  window.addEventListener("DOMContentLoaded" , () => {
+  document.addEventListener("scroll", changeNavigationColor) });
+
+    
+// window.onscroll = () => {
+//   /* Obtenemos la posición absoluta del elemento en cuestión */
+//   var div = document.getElementById('pp');
+//   var yPos = div.getBoundingClientRect().top;
+//   /* Si está cerca del borde superior (pondremos un margen de 20px) mostramos el texto */
+//   if (Math.abs(yPos) < 20) {
+//     div.innerHTML = "Altura es: " + yPos;
+//   }
+// }
+
+
+    // let top =  firstProjectSection.offsetTop;
+    // let left =  firstProjectSection.offsetLeft;
+    //   while ( firstProjectSection= firstProjectSection.offsetParent) left +=  firstProjectSection.offsetLeft;
+    //   while( firstProjectSection= firstProjectSection.offsetParent) top+= firstProjectSection.offsetTop;
+    //   return [left,top];
   // if (windowSize.matches) { // If media query matches
   //   author.innerHTML="AB | "
   // } else {
