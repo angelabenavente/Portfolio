@@ -1107,7 +1107,7 @@ body .main__skills .skillsWraper ul li i {
 }
 
 body .main__contact {
-  color: #0c0c0c;
+  color: white;
   width: 100%;
 }
 
@@ -1149,7 +1149,7 @@ body .main__contact__cover .navigation-contact a:hover {
 }
 
 body .main__contact__content {
-  color: #0c0c0c;
+  color: white;
   padding: 25px;
 }
 
@@ -1183,7 +1183,7 @@ body .main__contact__content .contact-button .social:hover > .social-icon {
 
 body .main__contact__content .contact-button .btn-text {
   padding: 0px 7px;
-  color: #0c0c0c;
+  color: white;
 }
 
 body .main__contact__content .contact-button .btn-text:hover > .social-icon {

@@ -233,16 +233,16 @@ navigation.addEventListener('click', showNavigationItems);
 const author = document.getElementById('author');
 
 function resizeAuthor () {
-  if (x.matches) { // If media query matches
+  if (windowSize.matches) { // If media query matches
     author.innerHTML="AB | "
   } else {
-    author.innerHTML="Ángela Benavene | "
+    author.innerHTML="Ángela Benavente | "
   }
 }
 
-let x = window.matchMedia("(max-width: 550px)")
-resizeAuthor(x) // Call listener function at run time
-x.addListener(resizeAuthor)
+let windowSize = window.matchMedia("(max-width: 550px)")
+resizeAuthor(windowSize) // Call listener function at run time
+windowSize.addListener(resizeAuthor)
 
 //window.addEventListener(resizeAuthor);
 //# sourceMappingURL=main.js.map
