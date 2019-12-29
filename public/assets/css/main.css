@@ -292,7 +292,7 @@ a {
   background-color: #00000075;
   background-color: #252525;
   color: white;
-  padding: 25px;
+  padding: 50px 25px;
 }
 
 .main__aboutMe__content--formation {
@@ -739,8 +739,6 @@ span {
 .header .navigation__nav {
   height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1500;
   opacity: 0;
   width: 0;
