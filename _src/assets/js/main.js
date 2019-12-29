@@ -185,6 +185,20 @@ function toggleCourses () {
 }
 
 
+////////////////HEADER///////////////
+
+document.getElementById('author');
+
+function header(){
+if (window.matchMedia("(min-width: 400px)").matches) {
+  autor.innerHTML('AB');
+} else {
+  autor.innerHTML('Ángela Benavente');
+}
+}
+
+window.addEventListener(header)
+
 
 
 courses.addEventListener('click', toggleCourses);

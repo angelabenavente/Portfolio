@@ -13,14 +13,47 @@ span {
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
+  justify-content: baseline;
   background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
   //opacity: 1;
   z-index: 999;
-  text-transform: uppercase;
+  .navigationAuthor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .header__logo{
-    margin-left: 15px;
+    height: fit-content;
+    margin-left: 8px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
+    background-color: #0202020d;
+    border-radius: 15px;
+    z-index: 10;
+    opacity: .90;
+    letter-spacing: .2em;
+    padding: 5px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    .pageCategory{
+      text-transform: capitalize;
+    }
+    &-aboutMe{
+      background-color: #0202020d;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
+      border: 1px solid white;
+      margin-right: 10px;
+      padding: 5px;
+    z-index: 10;
+    opacity: .85;
+    letter-spacing: .2em;
+    padding: 5px 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    }
   }
   .header__navigation-tablet {
     display: none;
