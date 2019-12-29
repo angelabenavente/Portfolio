@@ -187,19 +187,19 @@ function toggleCourses () {
 
 ////////////////HEADER///////////////
 
-document.getElementById('author');
+const autor = document.getElementById('author');
 
-// function header(){
-// if (window.matchMedia("(min-width: 400px)").matches) {
-//   autor.innerHTML('AB');
-// } else {
-//   autor.innerHTML('Ángela Benavente');
-// }
-// }
+function header(){
+if (window.matchMedia("(max-width: 550px)").matches) {
+  autor.innerHTML= 'AB | ';
+} else {
+  autor.innerHTML= 'Ángela Benavente |';
+}
+}
 
-// window.addEventListener(header)
+window.addEventListener("resize", header)
 
-
+window.addEventListener("load", header)
 //////////////////
 
 
@@ -217,6 +217,10 @@ function removeClass () {
 const navigation = document.querySelector('.navigation__button');
 
 function showNavigationItems (){
-  navigation.style.width = '200%';
+  if(navigation.classList.contains('navigationShowed')){
+    navigation.classList.remove('navigationShowed');
+  } else {
+    navigation.classList.add('navigationShowed');
+  }
 }
 navigation.addEventListener('click', showNavigationItems);
