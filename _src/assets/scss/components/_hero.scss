@@ -1,51 +1,67 @@
 @keyframes notShow {
   0% {
-    opacity: 1;
     width: 100vw;
-    height: 100vh;}
+    height: 100vh;
+  top:0;
+  bottom:0;
+  right: 0;}
   100% {
-    opacity: 0;
-    width: 60px;
-    height: 60px; } }
+    right: 5vh;
+    top: 10vh;
+    bottom:10vh;
+    width: 90vw;
+    height: 80vh; } }
 
     @keyframes disappearToLeft {
       0% {
         width: 100vw;
         height: 50vh;
       left: 0;
-      top: 0vh;}
+      //top: 0vh;
+    }
       50% {
-        width: 90vw;
-        height: 40vh;
-        left: 5vw;
-        top: 10vh;
+        //width: 90vw;
+        //height: 40vh;
+        //left: 25vh;
+        //top: 10vh;
       }
       100% {
         width: 90vw;
             height: 40vh;
-        top: 10vh;
-        left: 100%;} }
+        //top: 10vh;
+        left: 100vw;
+      } }
         @keyframes disappearToRight {
           0% {
             width: 100vw;
             height: 50vh;
           right: 0;
-          top: 50vh;}
+          //top: 50vh;
+        }
           50% {
             width: 90vw;
             height: 40vh;
-            right: 5vw;
-            top: 50vh;
+            right: 0vw;
+            //top: 50vh;
           }
           100% {
             width: 90vw;
             height: 40vh;
-            top: 50vh;
-            right: 100%;} }
+            //top: 50vh;
+            right: 100%;
+          } }
 
   @keyframes moveToLeft {
-    0% { left: 0;}
-    100%{ left: 100%;}}
+    0% { left: 0;
+      width: 100%}
+    100%{ left: 100%;
+      width:0;}}
+
+    @keyframes moveToRight {
+      0% { right: 0;
+        width:100%;}
+      100%{ right: 100%;
+        width:0;}}
 
 .hero {
   display: flex;
@@ -54,15 +70,16 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: #0c0c0c;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
+  align-content: center;
   //padding: 0 24px;
   border: none;
-  //-webkit-animation: notShow 3s ease-in-out;
-  //animation: notShow 3s ease-in-out;
+  -webkit-animation: notShow 1s ease-in-out;
+  animation: notShow 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
   &__presentation {
@@ -73,30 +90,35 @@
     text-align: center;
   }
   .topContainer{
+    background-size: cover;
     position: absolute;
-    background-color: aliceblue;
-    height: 50vh;
-    width: 100vw;
+    background-color: #0c0c0c;
+    //background-image: url('/assets/images/hero.png');
+    height: 50%;
+    width: 100%;
     top: 0vh;
-    -webkit-animation: disappearToLeft 3s ease-in-out;
-  animation: disappearToLeft 3s ease-in-out;
+    -webkit-animation: moveToLeft 1s ease-in-out;
+  animation: moveToLeft 1s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 
 
   }
   .bottomContainer{
     position: absolute;
-    top: 50vh;
-    
-    background-color: aquamarine;
-    height: 50vh;
-    width: 100vw;
+    bottom: 0vh;
+    //background-image: url('/assets/images/hero.png');
+    background-size: cover;
+    background-color: #0c0c0c;
+    height: 50%;
+    width: 100%;
 
-    -webkit-animation: disappearToRight 3s ease-in-out;
-  animation: disappearToRight 3s ease-in-out;
+    -webkit-animation: moveToRight 1s ease-in-out;
+  animation: moveToRight 1s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 
   }
 }
+
+

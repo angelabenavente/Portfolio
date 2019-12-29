@@ -262,6 +262,7 @@ a {
 
 .main__aboutMe {
   width: 100%;
+  background-color: #252525;
 }
 
 .main__aboutMe__cover {
@@ -286,13 +287,15 @@ a {
 }
 
 .main__aboutMe__content {
-  color: #0c0c0c;
+  background-color: #252525;
+  color: white;
   padding: 25px;
 }
 
 .main__aboutMe__content--formation {
   padding: 15px 0;
   color: #0c0c0c;
+  color: white;
 }
 
 .main__aboutMe__content--formation--box {
@@ -413,6 +416,7 @@ a {
 }
 
 .main__aboutMe__content .download-cv-button {
+  color: white;
   padding: 5px;
   text-align: center;
   width: 180px;
@@ -425,6 +429,7 @@ a {
 
 .main__aboutMe__content .download-cv-button a {
   color: #0c0c0c;
+  color: white;
 }
 
 .text--transparent {
@@ -468,23 +473,7 @@ a {
 .anim-shape--shadow {
   fill: #000;
   fill-opacity: .2;
-}/* Other stuff */html,body {
-  height: 100%;
-}
-
-.hero {
-  background: #EEE;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 40px;
-}
-
-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-* {
+}/* Other stuff */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -877,7 +866,7 @@ span {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: #0c0c0c;
+  background-color: transparent;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -886,7 +875,11 @@ span {
   -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   border: none;
+  -webkit-animation: notShow 1s ease-in-out;
+  animation: notShow 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.5s;
@@ -902,31 +895,33 @@ span {
 }
 
 .hero .topContainer {
+  background-size: cover;
   position: absolute;
-  background-color: aliceblue;
-  height: 50vh;
-  width: 100vw;
+  background-color: #0c0c0c;
+  height: 50%;
+  width: 100%;
   top: 0vh;
-  -webkit-animation: disappearToLeft 3s ease-in-out;
-  animation: disappearToLeft 3s ease-in-out;
+  -webkit-animation: moveToLeft 1s ease-in-out;
+  animation: moveToLeft 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .hero .bottomContainer {
   position: absolute;
-  top: 50vh;
-  background-color: aquamarine;
-  height: 50vh;
-  width: 100vw;
-  -webkit-animation: disappearToRight 3s ease-in-out;
-  animation: disappearToRight 3s ease-in-out;
+  bottom: 0vh;
+  background-size: cover;
+  background-color: #0c0c0c;
+  height: 50%;
+  width: 100%;
+  -webkit-animation: moveToRight 1s ease-in-out;
+  animation: moveToRight 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 body {
@@ -942,7 +937,7 @@ body {
 }
 
 body .main {
-  background-color: white;
+  background-color: #252525;
   color: white;
   border: none;
   font-size: 15px;
@@ -950,9 +945,10 @@ body .main {
 }
 
 body .main__skills {
-  background-color: #fff;
+  background-color: #252525;
   padding: 15px 0;
   color: #0c0c0c;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,6 +990,7 @@ body .main__skills .seo-wrapper .skillsWraper .skills {
 
 body .main__skills .category-front {
   background-color: #fff;
+  background-color: #252525;
   position: relative;
   bottom: -16px;
   width: 40%;
@@ -1004,6 +1001,7 @@ body .main__skills .category-front {
 
 body .main__skills .category-design {
   background-color: #fff;
+  background-color: #252525;
   position: relative;
   bottom: -16px;
   width: 60%;
@@ -1014,6 +1012,7 @@ body .main__skills .category-design {
 
 body .main__skills .category-seo {
   background-color: #fff;
+  background-color: #252525;
   position: relative;
   bottom: -16px;
   width: 60%;
@@ -1053,6 +1052,7 @@ body .main__skills .skillsWraper ul .skill {
 
 body .main__skills .skillsWraper ul li {
   background-color: #fff;
+  background-color: #252525;
   padding: 1px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,6 +1163,7 @@ body .main__work {
   width: 100vw;
   color: black;
   background-color: #fff;
+  background-color: #252525;
 }
 
 body .main__work__cover {
@@ -2150,29 +2151,37 @@ body .main .about-us-image {
 
 @-webkit-keyframes notShow {
   0% {
-    opacity: 1;
     width: 100vw;
     height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
 
   100% {
-    opacity: 0;
-    width: 60px;
-    height: 60px;
+    right: 5vh;
+    top: 10vh;
+    bottom: 10vh;
+    width: 90vw;
+    height: 80vh;
   }
 }
 
 @keyframes notShow {
   0% {
-    opacity: 1;
     width: 100vw;
     height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
 
   100% {
-    opacity: 0;
-    width: 60px;
-    height: 60px;
+    right: 5vh;
+    top: 10vh;
+    bottom: 10vh;
+    width: 90vw;
+    height: 80vh;
   }
 }
 
@@ -2181,21 +2190,15 @@ body .main .about-us-image {
     width: 100vw;
     height: 50vh;
     left: 0;
-    top: 0vh;
   }
 
   50% {
-    width: 90vw;
-    height: 40vh;
-    left: 5vw;
-    top: 10vh;
   }
 
   100% {
     width: 90vw;
     height: 40vh;
-    top: 10vh;
-    left: 100%;
+    left: 100vw;
   }
 }
 
@@ -2204,21 +2207,15 @@ body .main .about-us-image {
     width: 100vw;
     height: 50vh;
     left: 0;
-    top: 0vh;
   }
 
   50% {
-    width: 90vw;
-    height: 40vh;
-    left: 5vw;
-    top: 10vh;
   }
 
   100% {
     width: 90vw;
     height: 40vh;
-    top: 10vh;
-    left: 100%;
+    left: 100vw;
   }
 }
 
@@ -2227,20 +2224,17 @@ body .main .about-us-image {
     width: 100vw;
     height: 50vh;
     right: 0;
-    top: 50vh;
   }
 
   50% {
     width: 90vw;
     height: 40vh;
-    right: 5vw;
-    top: 50vh;
+    right: 0vw;
   }
 
   100% {
     width: 90vw;
     height: 40vh;
-    top: 50vh;
     right: 100%;
   }
 }
@@ -2250,20 +2244,17 @@ body .main .about-us-image {
     width: 100vw;
     height: 50vh;
     right: 0;
-    top: 50vh;
   }
 
   50% {
     width: 90vw;
     height: 40vh;
-    right: 5vw;
-    top: 50vh;
+    right: 0vw;
   }
 
   100% {
     width: 90vw;
     height: 40vh;
-    top: 50vh;
     right: 100%;
   }
 }
@@ -2271,20 +2262,48 @@ body .main .about-us-image {
 @-webkit-keyframes moveToLeft {
   0% {
     left: 0;
+    width: 100%;
   }
 
   100% {
     left: 100%;
+    width: 0;
   }
 }
 
 @keyframes moveToLeft {
   0% {
     left: 0;
+    width: 100%;
   }
 
   100% {
     left: 100%;
+    width: 0;
+  }
+}
+
+@-webkit-keyframes moveToRight {
+  0% {
+    right: 0;
+    width: 100%;
+  }
+
+  100% {
+    right: 100%;
+    width: 0;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    right: 0;
+    width: 100%;
+  }
+
+  100% {
+    right: 100%;
+    width: 0;
   }
 }
 

@@ -93,7 +93,7 @@ body {
   margin: 0;
   border: none;
   .main {
-    background-color: white;
+    background-color: #252525;
     color: white;
     border: none;
     //padding-bottom: 40px;
@@ -101,9 +101,10 @@ body {
     width: 100%;
     
     &__skills {
-      background-color: #fff;
+      background-color: #252525;
       padding: 15px 0;
       color: #0c0c0c;
+      color: white;
       
       display: flex;
       flex-direction: column;
@@ -135,6 +136,7 @@ body {
       }
       .category-front {
         background-color: #fff;
+        background-color: #252525;
         position: relative;
         bottom: -16px;
         width: 40%;
@@ -144,6 +146,7 @@ body {
       }
       .category-design {
         background-color: #fff;
+        background-color: #252525;
         position: relative;
         bottom: -16px;
         width: 60%;
@@ -153,6 +156,7 @@ body {
       }
       .category-seo {
         background-color: #fff;
+        background-color: #252525;
         position: relative;
         bottom: -16px;
         width: 60%;
@@ -180,6 +184,7 @@ body {
         li {
 
           background-color: #fff;
+          background-color: #252525;
           padding: 1px 0;
           display: flex;
           align-items: center;
@@ -267,6 +272,7 @@ body {
       width: 100vw;
       color: black;
       background-color: #fff;
+      background-color: #252525;
       &__cover{
         display: flex;
         justify-content: center;
