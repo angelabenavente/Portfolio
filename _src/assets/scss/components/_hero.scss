@@ -1,37 +1,16 @@
 @keyframes notShow {
   0% {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   top:0;
   bottom:0;
-  left: 0;
   right: 0;}
   100% {
-    left: 8vh;
-    right: 10vh;
+    right: 5vh;
     top: 10vh;
     bottom:10vh;
     width: 90vw;
     height: 80vh; } }
-    @keyframes showNavigation {
-      0% {
-        width: 60px;
-  }
-      100% {
-        width: 200%; } }
-    @keyframes notShowTablet {
-      0% {
-        width: 100vw;
-        height: 100vh;
-      top:0;
-      bottom:0;
-      right: 0;}
-      100% {
-        right: 10vh;
-        top: 10vh;
-        bottom:10vh;
-        width: 90vw;
-        height: 80vh; } }
 
     @keyframes disappearToLeft {
       0% {
@@ -99,21 +78,10 @@
   align-content: center;
   //padding: 0 24px;
   border: none;
-  @include mobile{
   -webkit-animation: notShow 1s ease-in-out;
   animation: notShow 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
-  }
-  @include tablet{
-
-
-    -webkit-animation: notShow 1s ease-in-out;
-    animation: notShow 1s ease-in-out;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-
-  }
   &__presentation {
     z-index: 100;
     margin: auto;
@@ -153,11 +121,4 @@
   }
 }
 
-.navigationShowed {
-  -webkit-animation: showNavigation 1s ease-in-out;
-  animation: showNavigation 1s ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  
-}
 

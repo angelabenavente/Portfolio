@@ -260,12 +260,6 @@ a {
   background-image: url(../assets/images/proxy-image.png);
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
 .main__aboutMe {
   width: 100%;
   background-color: #252525;
@@ -500,8 +494,6 @@ html {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 li {
@@ -523,9 +515,9 @@ span {
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 60px;
-  padding-right: 40px;
+  padding-right: 24px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -894,6 +886,12 @@ span {
   -ms-flex-line-pack: center;
   align-content: center;
   border: none;
+  -webkit-animation: notShow 1s ease-in-out;
+  animation: notShow 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .hero__presentation {
@@ -934,15 +932,6 @@ span {
   animation-delay: 1.5s;
 }
 
-.navigationShowed {
-  -webkit-animation: showNavigation 1s ease-in-out;
-  animation: showNavigation 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -956,18 +945,11 @@ body {
 }
 
 body .main {
-  width: 100%;
   background-color: #252525;
   color: white;
   border: none;
   font-size: 15px;
   width: 100%;
-}
-
-body .main__aboutMe {
-  width: 0;
-  height: 0;
-  display: none;
 }
 
 body .main__skills {
@@ -1116,7 +1098,7 @@ body .main__skills .skillsWraper ul li i {
 }
 
 body .main__contact {
-  color: white;
+  color: #0c0c0c;
   width: 100%;
 }
 
@@ -1158,7 +1140,7 @@ body .main__contact__cover .navigation-contact a:hover {
 }
 
 body .main__contact__content {
-  color: white;
+  color: #0c0c0c;
   padding: 25px;
 }
 
@@ -1192,8 +1174,7 @@ body .main__contact__content .contact-button .social:hover > .social-icon {
 
 body .main__contact__content .contact-button .btn-text {
   padding: 0px 7px;
-  color: white;
-  color: #abbef1;
+  color: #0c0c0c;
 }
 
 body .main__contact__content .contact-button .btn-text:hover > .social-icon {
@@ -1763,17 +1744,6 @@ body .main .about-us-image {
   display: none;
 }
 
-@media all and (max-width: 767px) and (min-width: 300px) {
-  .hero {
-    -webkit-animation: notShow 1s ease-in-out;
-    animation: notShow 1s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-  }
-}
-
 @media all and (min-width: 768px) {
   .main__aboutMe {
     display: -webkit-box;
@@ -1816,15 +1786,6 @@ body .main .about-us-image {
 
   .main__aboutMe__content .skillsContainer .seo {
     margin-top: 15px;
-  }
-
-  .hero {
-    -webkit-animation: notShow 1s ease-in-out;
-    animation: notShow 1s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
   }
 
   body .main__contact {
@@ -2216,17 +2177,15 @@ body .main .about-us-image {
 
 @-webkit-keyframes notShow {
   0% {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
   }
 
   100% {
-    left: 8vh;
-    right: 10vh;
+    right: 5vh;
     top: 10vh;
     bottom: 10vh;
     width: 90vw;
@@ -2236,46 +2195,6 @@ body .main .about-us-image {
 
 @keyframes notShow {
   0% {
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  100% {
-    left: 8vh;
-    right: 10vh;
-    top: 10vh;
-    bottom: 10vh;
-    width: 90vw;
-    height: 80vh;
-  }
-}
-
-@-webkit-keyframes showNavigation {
-  0% {
-    width: 60px;
-  }
-
-  100% {
-    width: 200%;
-  }
-}
-
-@keyframes showNavigation {
-  0% {
-    width: 60px;
-  }
-
-  100% {
-    width: 200%;
-  }
-}
-
-@-webkit-keyframes notShowTablet {
-  0% {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -2284,25 +2203,7 @@ body .main .about-us-image {
   }
 
   100% {
-    right: 10vh;
-    top: 10vh;
-    bottom: 10vh;
-    width: 90vw;
-    height: 80vh;
-  }
-}
-
-@keyframes notShowTablet {
-  0% {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    right: 0;
-  }
-
-  100% {
-    right: 10vh;
+    right: 5vh;
     top: 10vh;
     bottom: 10vh;
     width: 90vw;
