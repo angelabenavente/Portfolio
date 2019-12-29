@@ -21,6 +21,7 @@ span {
   //opacity: 1;
   z-index: 999;
   margin: 0;
+  color: white;
   .navigationAuthor {
     display: flex;
     flex-direction: row;
@@ -161,19 +162,23 @@ span {
     color: white;}
   
   .navigation__background {
+    background-color: #020202;
     height: 35px;
     width: 35px;
+    opacity: 2;
    
     position: fixed;
-    background-image: radial-gradient(#2c8ba5, #80177d );
+    background-image: radial-gradient(#02020202, #0202020d );
+    //background-color: #0202020d;
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   
   .navigation__nav {
+    background-color: #0202020d;
     height: 100vh;
     position: fixed;
-    //top: 0;
-    //left: 0;
+    top: 0;
+    left: 0;
     z-index: 1500;
     opacity: 0;
     width: 0;

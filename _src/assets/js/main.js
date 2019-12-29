@@ -214,18 +214,18 @@ function removeClass () {
 
 //formationCardButton.addEventListener('click',removeClass);
 
-const navigation = document.querySelector('.navigation__button');
+//const navigation = document.querySelector('.navigation__button');
 
-function showNavigationItems (){
-  if(navigation.classList.contains('expandedWidth')){
-    navigation.classList.remove('expandedWidth')
-    //navigation.classList.remove('expandedHeight')
-  } else {
-    navigation.classList.add('expandedWidth');
-    //navigation.classList.add('expandedHeight')
-  }
-}
-navigation.addEventListener('click', showNavigationItems);
+// function showNavigationItems (){
+//   if(navigation.classList.contains('expandedWidth')){
+//     navigation.classList.remove('expandedWidth')
+//     //navigation.classList.remove('expandedHeight')
+//   } else {
+//     navigation.classList.add('expandedWidth');
+//     //navigation.classList.add('expandedHeight')
+//   }
+// }
+// navigation.addEventListener('click', showNavigationItems);
 
 
 ///////////
@@ -245,3 +245,36 @@ resizeAuthor(windowSize) // Call listener function at run time
 windowSize.addListener(resizeAuthor)
 
 //window.addEventListener(resizeAuthor);
+
+
+////////////////////
+
+const navigationBackground = document.querySelector('.navigation-background');
+const aboutSection = document.querySelector('#about');
+const firstProjectSection = document.querySelector('#first-project');
+const secondProjectSection = document.querySelector('#second-project');
+const thirdProjectSection = document.querySelector('#third-project');
+const fourthProjectSection = document.querySelector('#fourth-project');
+let firstProjectTop = firstProjectSection.scrollTop;
+
+function changeNavigationColor () {
+
+  console.log( firstProjectSection.offsetTop);
+    let top =  firstProjectSection.offsetTop;
+    let left =  firstProjectSection.offsetLeft;
+      while ( firstProjectSection= firstProjectSection.offsetParent) left +=  firstProjectSection.offsetLeft;
+      while( firstProjectSection= firstProjectSection.offsetParent) top+= firstProjectSection.offsetTop;
+      return [left,top];
+  // if (windowSize.matches) { // If media query matches
+  //   author.innerHTML="AB | "
+  // } else {
+  //   author.innerHTML="Ángela Benavente | "
+  // }
+}
+
+window.addEventListener("DOMContentLoaded" , () => {
+  document.addEventListener("scroll", changeNavigationColor) });
+
+
+// Call listener function at run time
+//window.addEventListener('scroll', changeNavigationColor)
