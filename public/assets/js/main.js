@@ -268,6 +268,8 @@ const projectInformation = document.querySelector('#projectDescription');
 const projectSkills = document.querySelector('#projectSkills');
 const seePlaceButton = document.querySelector('#seePlaceButton');
 const seeCodeButton = document.querySelector('#seeCodeButton');
+const contactLinksHeader = document.querySelector('#contactLinksHeader');
+
 
 // let firstProjectyPos = firstProjectSection.getBoundingClientRect().top;
 // let secondProjectyPos = secondProjectSection.getBoundingClientRect().top;
@@ -322,6 +324,7 @@ function renderizarImagen () {
     arrowNavigationWorksNext.style.backgroundColor = "#2a4d68e8";
     arrowNavigationWorks.style.backgroundColor = "#2a4d68e8";
     worksPosition.style.backgroundColor = "#2a4d68e8";
+    contactLinksHeader.style.backgroundColor = "#2a4d68e8";
     projectImage.style.backgroundSize = "cover";
     projectTitle.innerHTML = "Anonymous Proxy";
     projectInformation.innerHTML = "Responsive design project"
@@ -346,6 +349,7 @@ function renderizarImagen () {
     arrowNavigationWorksNext.style.backgroundColor = "#1d4e4ee8";
     arrowNavigationWorks.style.backgroundColor = "#1d4e4ee8";
     worksPosition.style.backgroundColor = "#1d4e4ee8";
+    contactLinksHeader.style.backgroundColor = "#1d4e4ee8";
     projectImage.style.backgroundSize = "contain";
     projectTitle.innerHTML = "Awesome Profile Cards";
     projectInformation.innerHTML = "App to generare & share proffesional cards";
@@ -369,6 +373,7 @@ function renderizarImagen () {
   arrowNavigationWorksNext.style.backgroundColor = "#6b1607e8";
   arrowNavigationWorks.style.backgroundColor = "#6b1607e8";
   worksPosition.style.backgroundColor = "#6b1607e8";
+  contactLinksHeader.style.backgroundColor = "#6b1607e8";
   projectImage.style.backgroundSize = "cover";
   projectTitle.innerHTML = "Dice Pig Game";
   projectInformation.innerHTML = "Dice game for two";
@@ -392,6 +397,7 @@ function renderizarImagen () {
   arrowNavigationWorksNext.style.backgroundColor = "#377e65e8";
   arrowNavigationWorks.style.backgroundColor = "#377e65e8";
   worksPosition.style.backgroundColor = "#377e65e8";
+  contactLinksHeader.style.backgroundColor = "#377e65e8";
   projectImage.style.backgroundSize = "contain";
   projectImage.style.backgroundSize = "cover";
   projectTitle.innerHTML = "Contact us!";

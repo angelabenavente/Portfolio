@@ -38,25 +38,42 @@ span {
     opacity: .90;
     letter-spacing: .2em;
     padding: 5px 8px;
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
     .pageCategory{
       text-transform: capitalize;
     }
     &-aboutMe{
-      background-color: #0202020d;
+      //background-color: #0202020d;
+      background-color: rgb(42, 77, 104);
       text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
       border: 1px solid white;
       //margin-right: 10px;
+      border: none;
       padding: 5px;
     z-index: 10;
     opacity: .85;
     letter-spacing: .2em;
     padding: 5px 10px;
-    font-size: 11px;
+        padding-top: 4.5px;
+    font-size: 13px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+    margin-top: 1px;
+    @include tablet {
+      font-size: 15px;
+      margin-top: 13px;
+      border: 1px solid white;
+      width: 130px;
+    }
     }
   }
+  .contactLink:hover{
+    transform: scale(1.3);
+    }
   .header__navigation-tablet {
     display: none;
     @media all and (max-width:768){
