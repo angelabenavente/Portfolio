@@ -1197,10 +1197,72 @@ body .main__contact__content .contact-button .btn-text:hover > .social-icon {
 }
 
 body .main__work {
+  position: relative;
   width: 100%;
   color: black;
   background-color: #fff;
   background-color: #252525;
+}
+
+body .main__work .carousel {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  color: white;
+  top: 46.5vh;
+  padding: 0 15px;
+  margin: auto;
+  text-align: center;
+}
+
+body .main__work .carousel .carousel-content {
+  background-color: #2a4d68e8;
+  padding: 25px;
+  padding-top: 7.15px;
+  z-index: 2;
+  border: 1.2px solid white;
+  border-radius: 18px;
+}
+
+body .main__work .carousel .arrowNavigationWorks {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  z-index: 1;
+ /* margin-left: 6px; */
+  background-color: #2a4d68e8;
+  border: 1.2px solid white;
+  border-radius: 2px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+body .main__work .carousel .arrowNavigationWorksNext {
+  padding-top: 3px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  z-index: 1;
+ /* margin-left: 6px; */
+  background-color: #2a4d68e8;
+  border: 1.2px solid white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+body .main__work .carousel .far {
+  margin-left: 25px;
+  font-size: 10px;
+  top: -1.5px;
+  position: relative;
 }
 
 body .main__work__cover {
