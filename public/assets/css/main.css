@@ -1111,7 +1111,7 @@ body .main__skills .skillsWraper ul li i {
 }
 
 body .main__contact {
-  color: white;
+  color: #0c0c0c;
   width: 100%;
 }
 
@@ -1153,6 +1153,7 @@ body .main__contact__cover .navigation-contact a:hover {
 }
 
 body .main__contact__content {
+  background-color: #2a4d68;
   color: white;
   padding: 25px;
 }
@@ -1280,14 +1281,21 @@ body .main__work .carousel .arrowNavigationWorksNext:hover {
   transform: scale(1.2);
 }
 
-body .main__work .carousel .fas {
+body .main__work .carousel .fas.fa-circle {
+  font-size: 13px;
+  top: -1.2px;
+  position: relative;
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 1.5px 1px 1.5px #191a1b;
 }
 
 body .main__work .carousel .far {
-  margin-left: 25px;
-  font-size: 10px;
-  top: -1.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 9px;
+  top: -1.4px;
   position: relative;
   cursor: pointer;
 }
@@ -1330,11 +1338,7 @@ body .main__work__cover .navigation-work a:hover {
 }
 
 body .main__work .first-proyect {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: #eef5f7;
 }
 
 body .main__work .first-proyect-description {
@@ -1357,15 +1361,29 @@ body .main__work .first-proyect-description {
   background-color: #2a4d68;
 }
 
+body .main__work .first-proyect-description .linksInfoProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 34px;
+}
+
 body .main__work .first-proyect-description .seeMore-button {
-  width: 160px;
+  width: 116px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: inline;
   padding: 10px;
   margin: 10px;
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: #2a4d68;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -1412,10 +1430,6 @@ body .main__work .first-proyect .first-proyect-image small {
 
 body .main__work .second-proyect {
   background-color: #eef5f7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 body .main__work .second-proyect-description {
@@ -1443,7 +1457,7 @@ body .main__work .second-proyect-description .second-seeMore-button {
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: #1d4e4e;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -1491,13 +1505,6 @@ body .main__work .second-proyect-image .cardIcons {
 
 body .main__work .second-proyect-image .cardIcons i {
   margin: 3px;
-}
-
-body .main__work .third-proyect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 body .main__work .third-proyect-description {
@@ -1620,13 +1627,6 @@ body .main__work .third-proyect-image .rollUp {
   margin-bottom: 10px;
 }
 
-body .main__work .fourth-proyect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 body .main__work .fourth-proyect-description {
   text-align: center;
   color: white;
@@ -1652,7 +1652,7 @@ body .main__work .fourth-proyect-description .fourth-seeMore-button {
   -ms-flex-item-align: center;
   align-self: center;
   border: 2px solid white;
-  background-color: #377e65;
+  background-color: transparent;
   cursor: pointer;
 }
 
