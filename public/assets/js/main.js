@@ -257,6 +257,40 @@ const thirdProjectSection = document.querySelector('#third-project');
 const fourthProjectSection = document.querySelector('#fourth-project');
 let firstProjectTop = firstProjectSection.getBoundingClientRect().top;
 
+let firstProjectyPos = firstProjectSection.getBoundingClientRect().top;
+let secondProjectyPos = secondProjectSection.getBoundingClientRect().top;
+let thirdProjectyPos = thirdProjectSection.getBoundingClientRect().top;
+let fourthProjectyPos = fourthProjectSection.getBoundingClientRect().top;
+let aboutSectionyPos = aboutSection.getBoundingClientRect().top;
+let arrowNavigationWorks = document.querySelector('.arrowNavigationWorks');
+
+function carousel () {
+
+  if(firstProjectSection.style.zIndex = "1") {
+    secondProjectSection.style.zIndex = "1";
+    // secondProjectSection.style.position = "absolute";
+    // secondProjectSection.style.top = "0";
+    // secondProjectSection.style.right = "0";
+    // secondProjectSection.style.left = "0";
+    console.log(secondProjectSection);
+    //firstProjectSection.remove();
+    
+    
+  }
+  if(secondProjectSection.style.zIndex = "1") {
+    thirdProjectSection.style.zIndex = "1";
+    //secondProjectSection.remove();
+    //secondProjectSection.style.display = "none";
+    thirdProjectSection.style.position = "absolute";
+    thirdProjectSection.style.top = "0";
+    thirdProjectSection.style.right = "0";
+    thirdProjectSection.style.left = "0";
+    console.log(thirdProjectSection);
+  }
+}
+
+arrowNavigationWorks.addEventListener('click', carousel);
+
 
 function changeNavigationColor () {
 

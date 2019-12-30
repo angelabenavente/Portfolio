@@ -1239,6 +1239,7 @@ body .main__work .carousel .carousel-content {
   z-index: 4000;
   border: 1.2px solid white;
   border-radius: 18px;
+ /* padding: 25px; */;
 }
 
 body .main__work .carousel .arrowNavigationWorks {
@@ -1266,7 +1267,7 @@ body .main__work .carousel .arrowNavigationWorksNext {
   height: 30px;
   position: relative;
   top: 5px;
-  z-index: 1;
+  z-index: 4000;
  /* margin-left: 6px; */
   background-color: #2a4d68e8;
   border: 1.2px solid white;
@@ -1329,7 +1330,11 @@ body .main__work__cover .navigation-work a:hover {
 }
 
 body .main__work .first-proyect {
-  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 body .main__work .first-proyect-description {
@@ -1407,6 +1412,10 @@ body .main__work .first-proyect .first-proyect-image small {
 
 body .main__work .second-proyect {
   background-color: #eef5f7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 body .main__work .second-proyect-description {
@@ -1482,6 +1491,13 @@ body .main__work .second-proyect-image .cardIcons {
 
 body .main__work .second-proyect-image .cardIcons i {
   margin: 3px;
+}
+
+body .main__work .third-proyect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 body .main__work .third-proyect-description {
@@ -1602,6 +1618,13 @@ body .main__work .third-proyect-image .rollUp {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 10px;
+}
+
+body .main__work .fourth-proyect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 body .main__work .fourth-proyect-description {
@@ -1905,65 +1928,6 @@ body .main .about-us-image {
 
   body .main__contact__content {
     width: 50vw;
-  }
-
-  body .main__work .carousel {
-    width: 40px;
-    height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: absolute;
-    color: white;
- /* top: 46.5vh; */
-    padding: 24px 0px;
- /* margin: auto; */
-    text-align: center;
-    left: 48.8vw;
-    top: 0;
-  }
-
-  body .main__work .carousel .carousel-content {
-    background-color: #2a4d68e8;
- /* padding: 25px; */
-    width: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 7px;
-    right: 10px;
-    position: relative;
-    z-index: 4000;
-    padding-left: 7px;
-    border: 1.2px solid white;
-  }
-
-  body .main__work .carousel .arrowNavigationWorks {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-
-  body .main__work .carousel .arrowNavigationWorksNext {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-
-  body .main__work .carousel .far {
-    margin-top: 25px;
-    margin-left: 0;
   }
 
   body .main__work .first-proyect-description {
