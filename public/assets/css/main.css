@@ -1216,16 +1216,27 @@ body .main__work .carousel {
   position: absolute;
   color: white;
   top: 46.5vh;
-  padding: 0 15px;
+  padding: 0 24px;
   margin: auto;
   text-align: center;
+}
+
+body .main__work .carousel p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body .main__work .carousel * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body .main__work .carousel .carousel-content {
   background-color: #2a4d68e8;
   padding: 25px;
   padding-top: 7.15px;
-  z-index: 2;
+  z-index: 4000;
   border: 1.2px solid white;
   border-radius: 18px;
 }
@@ -1235,13 +1246,18 @@ body .main__work .carousel .arrowNavigationWorks {
   height: 30px;
   position: relative;
   top: 5px;
-  z-index: 1;
+  z-index: 4000;
  /* margin-left: 6px; */
   background-color: #2a4d68e8;
   border: 1.2px solid white;
   border-radius: 2px;
   padding-top: 3px;
   cursor: pointer;
+}
+
+body .main__work .carousel .arrowNavigationWorks:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 body .main__work .carousel .arrowNavigationWorksNext {
@@ -1258,11 +1274,21 @@ body .main__work .carousel .arrowNavigationWorksNext {
   cursor: pointer;
 }
 
+body .main__work .carousel .arrowNavigationWorksNext:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+body .main__work .carousel .fas {
+  cursor: pointer;
+}
+
 body .main__work .carousel .far {
   margin-left: 25px;
   font-size: 10px;
   top: -1.5px;
   position: relative;
+  cursor: pointer;
 }
 
 body .main__work__cover {
@@ -1879,6 +1905,65 @@ body .main .about-us-image {
 
   body .main__contact__content {
     width: 50vw;
+  }
+
+  body .main__work .carousel {
+    width: 40px;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    color: white;
+ /* top: 46.5vh; */
+    padding: 24px 0px;
+ /* margin: auto; */
+    text-align: center;
+    left: 48.8vw;
+    top: 0;
+  }
+
+  body .main__work .carousel .carousel-content {
+    background-color: #2a4d68e8;
+ /* padding: 25px; */
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 7px;
+    right: 10px;
+    position: relative;
+    z-index: 4000;
+    padding-left: 7px;
+    border: 1.2px solid white;
+  }
+
+  body .main__work .carousel .arrowNavigationWorks {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  body .main__work .carousel .arrowNavigationWorksNext {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  body .main__work .carousel .far {
+    margin-top: 25px;
+    margin-left: 0;
   }
 
   body .main__work .first-proyect-description {
