@@ -357,7 +357,7 @@ p {
           background-color: #2a4d68e8;
           padding: 25px;
           padding-top: 7.15px;
-          z-index: 4000;
+          z-index: 2;
           border: 1.2px solid white;
           border-radius: 18px;
           // @include tablet {
@@ -382,7 +382,7 @@ p {
           position: relative;
           //right: -15.8px;
           top: 5px;
-          z-index: 4000;
+          z-index: 2;
           /* margin-left: 6px; */
           background-color: #2a4d68e8;
           border: 1.2px solid white;
@@ -412,7 +412,7 @@ p {
     position: relative;
     //right: -15.8px;
     top: 5px;
-    z-index: 4000;
+    z-index: 2;
     /* margin-left: 6px; */
     background-color: #2a4d68e8;
     border: 1.2px solid white;
@@ -458,6 +458,7 @@ p {
         }
       }
       .nextSectionButton{
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
         position: absolute;
         bottom: 0;
         margin-bottom: 10px;

@@ -423,7 +423,7 @@ a {
   color: white;
   padding: 5px;
   text-align: center;
-  width: 180px;
+  width: 210px;
   margin: auto;
   margin-bottom: 20px;
   border: 3px solid #33323242;
@@ -440,6 +440,10 @@ a {
 .main__aboutMe__content .download-cv-button a {
   color: #0c0c0c;
   color: white;
+}
+
+.main .heading-final {
+  margin-bottom: 10px;
 }
 
 .text--transparent {
@@ -896,6 +900,7 @@ span {
 }
 
 .hero {
+  z-index: 10000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,6 +912,7 @@ span {
   position: absolute;
   height: 100vh;
   width: 100vw;
+  position: absolute;
   background-color: transparent;
   display: flex;
   -webkit-box-align: center;
@@ -923,8 +929,8 @@ span {
   animation: notShow 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
 
 .hero__presentation {
@@ -946,8 +952,8 @@ span {
   animation: moveToLeft 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s;
 }
 
 .hero .bottomContainer {
@@ -961,8 +967,85 @@ span {
   animation: moveToRight 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s;
+}
+
+.intro {
+  position: absolute;
+  bottom: -50px;
+  -webkit-animation: intro 1s ease-in-out;
+  animation: intro 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.line-through {
+  position: absolute;
+  top: 100%;
+  height: 2px;
+  background-color: aliceblue;
+  z-index: 2;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  height: 10px;
+  top: 100%;
+  z-index: 2;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: 400px;
+  font-size: 20px;
+}
+
+.background-color p {
+  color: #000;
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 0;
+  max-width: 700px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 20px;
+  background: #fffda0;
+  background: -webkit-linear-gradient(left, #1a9288 0%, #1a9274 25%, #1a5c92 50%, #2a6860 100%) repeat;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-timing-function: linear;
+  left: 100%;
+  position: absolute;
+}
+
+hr {
+  position: absolute;
+  color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#00ffff), color-stop(25%, #97fba0), color-stop(50%, #97b1fb), to(#00ffff)) repeat;
+  background: linear-gradient(left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #00ffff 100%) repeat;
+  height: 3px;
+  left: -3px;
+  width: 100%;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-timing-function: linear;
 }
 
 body {
@@ -1270,7 +1353,7 @@ body .main__work .carousel .carousel-content {
   background-color: #2a4d68e8;
   padding: 25px;
   padding-top: 7.15px;
-  z-index: 4000;
+  z-index: 2;
   border: 1.2px solid white;
   border-radius: 18px;
  /* padding: 25px; */;
@@ -1281,7 +1364,7 @@ body .main__work .carousel .arrowNavigationWorks {
   height: 30px;
   position: relative;
   top: 5px;
-  z-index: 4000;
+  z-index: 2;
  /* margin-left: 6px; */
   background-color: #2a4d68e8;
   border: 1.2px solid white;
@@ -1301,7 +1384,7 @@ body .main__work .carousel .arrowNavigationWorksNext {
   height: 30px;
   position: relative;
   top: 5px;
-  z-index: 4000;
+  z-index: 2;
  /* margin-left: 6px; */
   background-color: #2a4d68e8;
   border: 1.2px solid white;
@@ -1339,6 +1422,7 @@ body .main__work .carousel .far:hover {
 }
 
 body .main__work .nextSectionButton {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
@@ -1944,6 +2028,10 @@ body .main .about-us-image {
 }
 
 @media all and (min-width: 768px) {
+  .main__aboutMe__content {
+    padding: 50px;
+  }
+
   .main__aboutMe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2417,13 +2505,13 @@ body .main .about-us-image {
     top: 0;
     bottom: 0;
     right: 0;
+    left: 0;
   }
 
   100% {
-    right: 5vh;
     top: 10vh;
     bottom: 10vh;
-    width: 90vw;
+    width: 100vw;
     height: 80vh;
   }
 }
@@ -2435,14 +2523,34 @@ body .main .about-us-image {
     top: 0;
     bottom: 0;
     right: 0;
+    left: 0;
   }
 
   100% {
-    right: 5vh;
     top: 10vh;
     bottom: 10vh;
-    width: 90vw;
+    width: 100vw;
     height: 80vh;
+  }
+}
+
+@-webkit-keyframes showIntro {
+  0% {
+    bottom: -50px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
+}
+
+@keyframes showIntro {
+  0% {
+    bottom: -50px;
+  }
+
+  100% {
+    bottom: 20px;
   }
 }
 
@@ -2565,6 +2673,29 @@ body .main .about-us-image {
   100% {
     right: 100%;
     width: 0;
+  }
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    left: 0;
+  }
+
+  50% {
+    left: 0;
+    opacity: 1;
+  }
+
+  90% {
+    left: 100%;
+  }
+
+  100% {
+    background-position: -8000px -3000px;
+    opacity: 0;
+    left: 100%;
   }
 }
 
