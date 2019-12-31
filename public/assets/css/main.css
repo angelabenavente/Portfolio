@@ -907,6 +907,7 @@ span {
 }
 
 .hero {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,7 +917,9 @@ span {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background-color: #0c0c0c;
+  background-color: #070707;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
@@ -934,8 +937,8 @@ span {
   animation: notShow 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 4.7s;
-  animation-delay: 4.7s;
+  -webkit-animation-delay: 5.4s;
+  animation-delay: 5.4s;
 }
 
 .hero__presentation {
@@ -946,34 +949,18 @@ span {
   text-align: center;
 }
 
-.hero .topContainer {
-  background-size: cover;
+.hero .heroBackground {
   position: absolute;
-  background-color: #0c0c0c;
-  height: 50%;
-  width: 100%;
-  top: 0vh;
-  -webkit-animation: moveToLeft 1s ease-in-out;
-  animation: moveToLeft 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 6.5s;
-  animation-delay: 6.5s;
-}
-
-.hero .bottomContainer {
-  position: absolute;
-  bottom: 0vh;
-  background-size: cover;
-  background-color: #0c0c0c;
-  height: 50%;
-  width: 100%;
-  -webkit-animation: moveToRight 1s ease-in-out;
-  animation: moveToRight 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 6.5s;
-  animation-delay: 6.5s;
+  width: 70vw;
+  overflow: hidden;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .intro {
@@ -1056,8 +1043,7 @@ hr {
 svg.intro {
   width: 95%;
   max-width: 800px;
-  position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1182,7 +1168,7 @@ svg.intro.go .text-stroke:nth-child(6) {
   padding: 14px;
   position: absolute;
  /* top: 100vh; */
-  bottom: 30%;
+  bottom: 41%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2202,7 +2188,7 @@ body .main .about-us-image {
 
 @media all and (min-width: 400px) {
   .job {
-    bottom: 28%;
+    bottom: 36%;
   }
 
   .jobSpan {
@@ -2212,7 +2198,7 @@ body .main .about-us-image {
 
 @media all and (min-width: 500px) {
   .job {
-    bottom: 22%;
+    bottom: 32%;
   }
 
   .jobSpan {
@@ -2222,7 +2208,7 @@ body .main .about-us-image {
 
 @media all and (min-width: 600px) {
   .job {
-    bottom: 20%;
+    bottom: 28%;
   }
 
   .jobSpan {
@@ -2285,8 +2271,12 @@ body .main .about-us-image {
     width: 130px;
   }
 
+  svg.intro {
+    top: 45%;
+  }
+
   .job {
-    bottom: 16%;
+    bottom: 20%;
   }
 
   .jobSpan {
@@ -2772,6 +2762,40 @@ body .main .about-us-image {
   }
 }
 
+@-webkit-keyframes rotateImage {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  50% {
+    -webkit-transform: rotate(50);
+    transform: rotate(50);
+  }
+
+  100% {
+    -webkit-transform: rotate(100);
+    transform: rotate(100);
+  }
+}
+
+@keyframes rotateImage {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  50% {
+    -webkit-transform: rotate(50);
+    transform: rotate(50);
+  }
+
+  100% {
+    -webkit-transform: rotate(100);
+    transform: rotate(100);
+  }
+}
+
 @-webkit-keyframes showIntro {
   0% {
     bottom: -50px;
@@ -2911,6 +2935,40 @@ body .main .about-us-image {
   100% {
     right: 100%;
     width: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
