@@ -118,9 +118,8 @@ opacity: 1;}
   }
   .heroBackground{
     position: absolute;
-    width: 70vw;
-    overflow: hidden;
-   
+    width: 60vw;
+    //overflow: hidden;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 60s;
     -webkit-animation-iteration-count: infinite;

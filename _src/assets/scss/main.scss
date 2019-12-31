@@ -98,12 +98,14 @@ body {
   .main {
     //display: flex;
 
+
     background-color: #252525;
     color: white;
     border: none;
     //padding-bottom: 40px;
     font-size: 15px;
     width: 100%;
+    z-index: 3;
     
     &__skills {
       background-color: #252525;

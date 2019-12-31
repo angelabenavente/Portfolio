@@ -261,6 +261,7 @@ a {
 }
 
 .main__aboutMe {
+  z-index: 300;
   width: 100%;
   background-color: #252525;
 }
@@ -951,8 +952,7 @@ span {
 
 .hero .heroBackground {
   position: absolute;
-  width: 70vw;
-  overflow: hidden;
+  width: 60vw;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
@@ -1225,6 +1225,7 @@ body .main {
   border: none;
   font-size: 15px;
   width: 100%;
+  z-index: 3;
 }
 
 body .main__skills {
