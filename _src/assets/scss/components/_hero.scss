@@ -4,15 +4,21 @@
     height: 100vh;
   top:0;
   bottom:0;
-  right: 0;
-left: 0;}
+  //right: 0;
+//left: -100;
+opacity: 1;}
   100% {
     // right: 5vw;
     // left: 5vw;
-    top: 10vh;
-    bottom:10vh;
+    //left: 200vh;
+    left: 0;
+    top: -60vh;
+    //bottom:10vh;
     width: 100vw;
-    height: 80vh; } }
+    height: 0vh;
+    //opacity: 0;
+  } }
+
 
     @keyframes showIntro {
       0% {
@@ -74,27 +80,27 @@ left: 0;}
         width:0;}}
 
 .hero {
-  z-index: 10000;
+  //z-index: 10000;
   display: flex;
   flex-direction: column;
-  z-index: 1000;
-  position: absolute;
+  //position: absolute;
   height: 100vh;
   width: 100vw;
-  position: absolute;
-  background-color: transparent;
-  //background-color: #0c0c0c;
+  //position: absolute;
+  //background-color: transparent;
+  background-color: #0c0c0c;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   align-items: center;
   align-content: center;
-  //padding: 0 24px;
+  padding: 0 25px;
   border: none;
   -webkit-animation: notShow 1s ease-in-out;
   animation: notShow 1s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 5.5s;
+  animation-delay: 4.7s;
   &__presentation {
     z-index: 100;
     margin: auto;
@@ -232,3 +238,194 @@ hr {
 }
 
 /////////////
+/////////////
+svg.intro {
+  //background: linear-gradient(135deg, #aa3bb1, #582a7e);
+  width: 95%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0c0c0c;
+  z-index: 2;
+  //box-shadow: 0 30px 50px -20px rgb(46, 6, 66);
+  
+  .text { 
+    display: none;
+  }
+  &.go {
+    background-color: transparent;
+    .text {
+      font-family: 'Cuprum', sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      display: block;
+    }
+    .text-stroke {
+      fill: none;
+      stroke: white;
+      stroke-width: 2.5px;
+      stroke-dashoffset: -900;
+      stroke-dasharray: 900;
+      stroke-linecap: butt;
+      stroke-linejoin: round;
+      animation: dash 1.8s ease-in-out forwards;
+    }
+    .text-stroke:nth-child(2) {
+      animation-delay: .2s;
+    }
+    .text-stroke:nth-child(3) {
+      animation-delay: .8s;
+    }
+    .text-stroke-2 {
+      stroke: #f6bdfa;
+      animation-delay: 5.1s;
+    }
+    .text-stroke-2 {
+      stroke: white;
+      animation-delay: 2.1s;
+    }
+    .text-stroke:nth-child(5) {
+      animation-delay: 2.1s;
+    }
+    .text-stroke:nth-child(6) {
+      animation-delay: 2.7s;
+    }
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.reload {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  outline: none!important;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 6px 7px #350e4c;
+  transition: all .1s cubic-bezier(.67, .13, .1, .81);
+  &:hover {
+    box-shadow: 0 4px 4px #350e4c;
+    transform: translateY(1px);
+  }
+  &:active {
+    box-shadow: 0 1px 2px #244B94;
+    transform: translateY(2px);
+  }
+  svg {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.job{
+  font-family: 'Cuprum', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      //display: block;
+      letter-spacing: 4px;
+      //position: absolute;
+      //top: 40vh;
+      -webkit-animation: showJob 2s ease-in-out;
+  animation: showJob 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.8s;
+  bottom: 16%;
+  opacity: 0;
+  height: 23px;
+  text-align: right;
+  padding: 14px;
+  position: absolute;
+  /* top: 100vh; */
+  //top: 5%;
+  bottom: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+@include mobileMedium {
+  bottom: 28%;
+}
+@include mobilePlus {
+  bottom: 22%;
+}
+
+@include tabletMin {
+  bottom: 20%;
+}
+
+@include tablet {
+  bottom: 16%;
+}
+
+
+}
+.jobSpan{
+  z-index:2;
+  background-color: #0c0c0c;
+  color:  #0c0c0c;
+  font-family: 'Cuprum', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      //display: block;
+      letter-spacing: 4px;
+      //position: absolute;
+      //top: 40vh;
+  //     -webkit-animation: showJob 2s ease-in-out;
+  // animation: showJob 2s ease-in-out;
+  // animation-fill-mode: forwards;
+  // animation-delay: 3s;
+  bottom: 16%;
+  text-align: right;
+  padding: 14px;
+  position: absolute;
+  /* top: 100vh; */
+  //top: 5%;
+  //height: 61px;
+  bottom: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+@include mobileMedium {
+  bottom: 34%;
+}
+@include mobilePlus {
+  bottom: 28%;
+}
+
+@include tabletMin {
+  bottom: 26%;
+}
+
+@include tablet {
+  bottom: 22%;
+}
+
+
+}
+
+@keyframes showJob {
+  0%{
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height:23px;
+  }
+}

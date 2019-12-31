@@ -5,13 +5,23 @@ span {
   margin: 0;
   padding: 0;
 }
+@keyframes showHeader {
+  0% {
+   height: 0;
+  top: -90px;}
+  100%{
+    height: 60px;
+    display: flex;
+  top:0;}}
 
 .header {
+  //display: none;
   width: 100%;
-  height: 60px;
   padding-right: 24px;
   position: fixed;
   display: flex;
+  height: 0;
+  top: -90px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +32,10 @@ span {
   z-index: 999;
   margin: 0;
   color: white;
+  -webkit-animation: showHeader 1s ease-in-out;
+  animation: showHeader 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5.8s;
   .navigationAuthor {
     display: flex;
     flex-direction: row;
