@@ -29,52 +29,9 @@
     <div class="page">
       <partial src="_header.html" label="Header"></partial>
       <partial src="_hero.html" label="Hero"></partial>
-      <style>
-        #norwegian {
-          background: linear-gradient(225deg, #ffc27d, #ff8e93);
-        }
-        #french {
-          background: linear-gradient(#f3defc, #63a3e6);
-        }
-        #spanish {
-          background: linear-gradient(#d2fcad, #22eaeb);
-        }
-        #hindi{
-          background: linear-gradient(#f0bed4, #a163f5);
-        }
-        #mandarin {
-          background: linear-gradient(#65cce1, #6365ec);
-        }
-    
-        section > span {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 7vw;
-          font-family: sans-serif;
-          text-transform: uppercase;
-          color: #fff;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="slides">
-        <section id="norwegian"><span>Hallo</span></section>
-        <section id="french"><span>Bonjour</span></section>
-        <section id="spanish"><span>Hola</span></section>
-        <section id="hindi"><span>Namaste</span></section>
-        <section id="mandarin"><span>你好</span></section>
-      </div>
-    
-  
-
       <partial src="_main.html" label="Main"></partial>
       <partial src="_footer.html" label="Footer"></partial>
     </div>
-    <script>
-      var mySlider = slider('.slides');
-    </script>
     <script src="../assets/js/main.js" language="javascript" type="text/javascript"></script>
   </body>
 </html>
