@@ -248,6 +248,7 @@ windowSize.addListener(resizeAuthor)
 
 
 ////////////////////
+//const aboutSection = document.querySelector('#about');
 const navigationButton = document.querySelector('#navigation__button')
 const navigationBackground = document.querySelector('#navigation-background');
 const aboutSection = document.querySelector('#about');
@@ -316,6 +317,7 @@ function retrocederFoto() {
 * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
 */
 function renderizarImagen () {
+
 
   if (posicionActual === 0 ) {
     navigationBackground.style.backgroundColor = "#2a4d68";
@@ -447,7 +449,24 @@ thirdPosition.addEventListener('click', showThirdProject )
 fourthPosition.addEventListener('click', showFourthProject )
 renderizarImagen();
 
+//////////////////////////
+function changeNavigationColor () {
+  let aboutSectionyPos = aboutSection.getBoundingClientRect().top;
+  console.log(aboutSectionyPos);
+  if
+    (Math.sign(aboutSectionyPos) === 0 || Math.sign(aboutSectionyPos) === -1 ) {
+      // const navigationBackground = document.querySelector('#navigation-background');
+      console.log(aboutSectionyPos);
+      navigationBackground.style.backgroundColor = "#252525";
+      navigationButton.style.backgroundColor = "#252525";
+      contactLinksHeader.style.backgroundColor = "#252525e8";
+    } else {
+        renderizarImagen()
+      }
+}
 
+
+window.addEventListener('scroll', changeNavigationColor);
 ///////////////
 // function carousel () {
 
@@ -567,17 +586,19 @@ renderizarImagen();
 
 ////////////
 //////////////
+const intro = document.querySelector('.intro');
+const reload = document.querySelector('.reload');
 function colors () {
   document.querySelector('.intro').classList.add('go');
 
-  document.querySelector('.reload').addEventListener('click', toogleHero);
+
   function toogleHero() {
-    document.querySelector('.intro').classList.remove('go');delay(0);
+    intro.classList.remove('go');delay(0);
 
   }
 }
 
-colors();
+window.addEventListener('load', colors);
 
 ///////////////
 
