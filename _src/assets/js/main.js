@@ -231,6 +231,7 @@ courses.addEventListener('click', toggleCourses);
 ///////////
 
 const author = document.getElementById('author');
+const pageCategory = document.querySelector('.pageCategory');
 
 function resizeAuthor () {
   if (windowSize.matches) { // If media query matches
@@ -282,7 +283,7 @@ let arrowNavigationWorksNext = document.querySelector('.arrowNavigationWorksNext
 
 const IMAGENES = [
   '/assets/images/proxyCover.jpg',
-  '/assets/images/cardsCover.svg',
+  '/assets/images/cardCover.svg',
   '/assets/images/diceCover.jpg',
   '/assets/images/aboutImage.png'
 ];
@@ -402,6 +403,7 @@ function renderizarImagen () {
   contactLinksHeader.style.backgroundColor = "#377e65e8";
   projectImage.style.backgroundSize = "contain";
   projectImage.style.backgroundSize = "cover";
+  projectImage.style.backgroundColor = "#c1d0d3";
   projectTitle.innerHTML = "Contact us!";
   projectInformation.innerHTML = "Web for contact work teams";
   projectSkills.innerHTML = "HTML | CSS | JS | GULP";
@@ -450,6 +452,7 @@ fourthPosition.addEventListener('click', showFourthProject )
 renderizarImagen();
 
 //////////////////////////
+const headerTitle = document.querySelector('.header__logo');
 function changeNavigationColor () {
   let aboutSectionyPos = aboutSection.getBoundingClientRect().top;
   console.log(aboutSectionyPos);
@@ -460,8 +463,15 @@ function changeNavigationColor () {
       navigationBackground.style.backgroundColor = "#252525";
       navigationButton.style.backgroundColor = "#252525";
       contactLinksHeader.style.backgroundColor = "#252525e8";
+      headerTitle.style.color = "#504b4b";
+      pageCategory.innerHTML= "About me"
+      pageCategory.style.textTransform = "none"
+      
     } else {
         renderizarImagen()
+        pageCategory.innerHTML= "projects"
+        //pageCategory.style.textTransform = "capitalize";
+
       }
 }
 
