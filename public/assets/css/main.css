@@ -1707,8 +1707,8 @@ body .main__work .first-proyect-description .seeMore-button {
 }
 
 body .main__work .first-proyect-description .seeMore-button:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 body .main__work .first-proyect-description .seeMore-button a {
