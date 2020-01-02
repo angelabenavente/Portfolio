@@ -88,7 +88,7 @@ a {
 body {
 	width: 100%;
 	height: 100%;
-	font-family: "Lato", sans-serif;
+	font-family: 'Cuprum', sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -103,16 +103,19 @@ body {
     color: white;
     border: none;
     //padding-bottom: 40px;
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     z-index: 3;
+    @include tablet{
+      font-size: 18px;
+    }
+
     
     &__skills {
       background-color: #252525;
       padding: 15px 0;
       color: #0c0c0c;
       color: white;
-      
       display: flex;
       flex-direction: column;
       .frontend-wrapper {
@@ -150,7 +153,7 @@ body {
           .skills{
             width: 107px;
           margin: 2px;
-          font-size: 14px;
+          font-size: 18px;
           margin-top: 5px;
           background-color: #232222;
           border: 2px solid #1d1c1c94;
@@ -220,7 +223,8 @@ body {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
           i {
             display: inline-block;
-            margin: 0 5px 0 8px;
+            margin: 0 6px 0 8px;
+            margin-right: 7px;
             text-shadow: 1px 1px 1px #635f5f78;
           }
         }
@@ -534,29 +538,44 @@ p {
           flex-direction: column;
           align-items: center;
           background-color: #2a4d68;
-          //padding: 0 34px;
+          padding: 0 34px;
+          font-family: 'Cuprum', sans-serif;
+          font-size: 16px;
           @include tablet  {
             height: 100vh;
-            font-size: 18px;
+            font-size: 20px;
+            
+          }
+          .projectTitle{
+            font-size: 20px;
+            @include tablet  {
+              font-size: 28px;
+              
+            }
           }
           .linksInfoProject {
+            font-size: 14px;
             display: flex;
             flex-direction: row;
             padding-top: 10px;
             padding-bottom: 15px;
+            @include tablet {
+              font-size: 15px;
+            }
           }
           .seeMore-button {
-            width: 116px;
+            width: 90px;
             height: fit-content;
             display: inline;
-            padding: 10px;
+            padding: 8px;
             margin: 10px;
             align-self: center;
             border: 2px solid white;
             background-color: transparent;
             cursor: pointer;
             @include tablet  {
-              font-size: 14px;
+              font-size: 16px;
+              width: 106px;
             }
             &:hover {
               transform: scale(1.1);
@@ -583,9 +602,9 @@ p {
       font-family: 'Roboto Slab', serif;
       text-shadow: 1px 1px 2px black; 
       font-size: 22px;
-      .img{
-        width: 200px;
-        height: 50px;
+      .cardCover{
+        width: 90%;
+        height: 70%;
       }
       @include tablet  {
         height: 100vh;

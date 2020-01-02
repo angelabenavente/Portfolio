@@ -63,20 +63,30 @@
           border-bottom: 1px solid #33323242;
           border-left: 1px solid #33323242;
           padding: 3px 5px;
-          font-size: 13px;
+          font-size: 14px;
+          @include tablet{
+            font-size: 15px;
+          }
           
         }
         .validateInputsSection {
           border-bottom: 1px solid #33323242;
           border-left: 1px solid #33323242;
           padding: 3px 5px;
-          font-size: 13px;
+          font-size: 14px;
+          @include tablet{
+            font-size: 15px;
+          }
+         
         }
         .view-hidden {
           border-bottom: 1px solid #33323242;
           border-left: 1px solid #33323242;
           padding: 3px 5px;
-          font-size: 13px;
+          font-size: 14px;
+          @include tablet{
+            font-size: 15px;
+          }
         }
         .formation-container {
           display: flex;

@@ -283,9 +283,9 @@ let arrowNavigationWorksNext = document.querySelector('.arrowNavigationWorksNext
 
 const IMAGENES = [
   '/assets/images/proxyCover.jpg',
-  '/assets/images/cardCover.svg',
-  '/assets/images/diceCover.jpg',
-  '/assets/images/aboutImage.png'
+  '/assets/images/CardsImageCover.jpg',
+  '/assets/images/diceGameCover.jpg',
+  '/assets/images/contactUsCover.jpg'
 ];
 let posicionActual = 0;
 
@@ -353,7 +353,7 @@ function renderizarImagen () {
     arrowNavigationWorks.style.backgroundColor = "#1d4e4ee8";
     worksPosition.style.backgroundColor = "#1d4e4ee8";
     contactLinksHeader.style.backgroundColor = "#1d4e4ee8";
-    projectImage.style.backgroundSize = "contain";
+    projectImage.style.backgroundSize = "cover";
     projectTitle.innerHTML = "Awesome Profile Cards";
     projectInformation.innerHTML = "App to generare & share proffesional cards";
     projectSkills.innerHTML = "REACT | APIs | SASS | JS | GULP";
@@ -469,6 +469,7 @@ function changeNavigationColor () {
       
     } else {
         renderizarImagen()
+        headerTitle.style.color = "#fff";
         pageCategory.innerHTML= "projects"
         //pageCategory.style.textTransform = "capitalize";
 

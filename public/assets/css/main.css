@@ -356,21 +356,21 @@ a {
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   padding: 3px 5px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .main__aboutMe__content--formation--box .validateInputsSection {
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   padding: 3px 5px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .main__aboutMe__content--formation--box .view-hidden {
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   padding: 3px 5px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .main__aboutMe__content--formation--box .formation-container {
@@ -544,7 +544,7 @@ span {
   -ms-flex-pack: baseline;
   justify-content: baseline;
   background-color: transparent;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Cuprum', sans-serif;
   z-index: 999;
   margin: 0;
   color: white;
@@ -1213,7 +1213,7 @@ svg.intro.go .text-stroke:nth-child(6) {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: 'Cuprum', sans-serif;
   font-weight: 400;
  /*font-size: 16px;*/
   line-height: 1.7;
@@ -1226,7 +1226,7 @@ body .main {
   background-color: #252525;
   color: white;
   border: none;
-  font-size: 15px;
+  font-size: 16px;
   width: 100%;
   z-index: 3;
 }
@@ -1283,7 +1283,7 @@ body .main__skills .seo-wrapper {
 body .main__skills .seo-wrapper .skillsWraper .skills {
   width: 107px;
   margin: 2px;
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 5px;
   background-color: #232222;
   border: 2px solid #1d1c1c94;
@@ -1372,7 +1372,8 @@ body .main__skills .skillsWraper ul li {
 
 body .main__skills .skillsWraper ul li i {
   display: inline-block;
-  margin: 0 5px 0 8px;
+  margin: 0 6px 0 8px;
+  margin-right: 7px;
   text-shadow: 1px 1px 1px #635f5f78;
 }
 
@@ -1680,9 +1681,17 @@ body .main__work .first-proyect-description {
   -ms-flex-align: center;
   align-items: center;
   background-color: #2a4d68;
+  padding: 0 34px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+body .main__work .first-proyect-description .projectTitle {
+  font-size: 20px;
 }
 
 body .main__work .first-proyect-description .linksInfoProject {
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1695,12 +1704,12 @@ body .main__work .first-proyect-description .linksInfoProject {
 }
 
 body .main__work .first-proyect-description .seeMore-button {
-  width: 116px;
+  width: 90px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: inline;
-  padding: 10px;
+  padding: 8px;
   margin: 10px;
   -ms-flex-item-align: center;
   align-self: center;
@@ -1746,9 +1755,9 @@ body .main__work .first-proyect .first-proyect-image {
   font-size: 22px;
 }
 
-body .main__work .first-proyect .first-proyect-image .img {
-  width: 200px;
-  height: 50px;
+body .main__work .first-proyect .first-proyect-image .cardCover {
+  width: 90%;
+  height: 70%;
 }
 
 body .main__work .first-proyect .first-proyect-image small {
@@ -2230,6 +2239,18 @@ body .main .about-us-image {
     padding: 50px;
   }
 
+  .main__aboutMe__content--formation--box .master__form {
+    font-size: 15px;
+  }
+
+  .main__aboutMe__content--formation--box .validateInputsSection {
+    font-size: 15px;
+  }
+
+  .main__aboutMe__content--formation--box .view-hidden {
+    font-size: 15px;
+  }
+
   .main__aboutMe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2292,6 +2313,10 @@ body .main .about-us-image {
     bottom: 22%;
   }
 
+  body .main {
+    font-size: 18px;
+  }
+
   body .main__contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2317,11 +2342,20 @@ body .main .about-us-image {
 
   body .main__work .first-proyect-description {
     height: 100vh;
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  body .main__work .first-proyect-description .projectTitle {
+    font-size: 28px;
+  }
+
+  body .main__work .first-proyect-description .linksInfoProject {
+    font-size: 15px;
   }
 
   body .main__work .first-proyect-description .seeMore-button {
-    font-size: 14px;
+    font-size: 16px;
+    width: 106px;
   }
 
   body .main__work .first-proyect .first-proyect-image {
