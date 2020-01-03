@@ -110,7 +110,9 @@ body {
       font-size: 18px;
     }
 
-    
+    &__aboutMe{
+      z-index: 1;
+    }
     &__skills {
       background-color: #252525;
       padding: 15px 0;
@@ -260,6 +262,7 @@ body {
       }
       &__content {
         background-color: rgb(42, 77, 104);
+        
         //color: #0c0c0c;
         color: white;
         padding: 25px;
@@ -369,6 +372,9 @@ p {
           z-index: 2;
           border: 1.2px solid white;
           border-radius: 18px;
+          @include tablet{
+            padding-top: 5.15px;
+          }
           // @include tablet {
           //   background-color: #2a4d68e8;
     /* padding: 25px; */
@@ -402,17 +408,11 @@ p {
           &:hover{
             transform: scale(1.2);
           }
-          // @include tablet{
-          //   transform: rotate(90deg);
-          //   &:hover{
-          //     transform: scale(1.2);
-          //   }
-          // }
+          @include tablet{
+            padding-top: 1px;
+          }
 
   }
-  // .arrowNavigationWorks:hover {
-  //   transform: scale(1.4);
-  // }
 
   .arrowNavigationWorksNext {
     padding-top: 3px;
@@ -433,9 +433,9 @@ p {
     &:hover{
       transform: scale(1.2);
     }
-    // @include tablet{
-    //   transform: rotate(90deg);
-    // }
+    @include tablet{
+      padding-top: 1px;
+    }
 }
         .fas.fa-circle{
           //margin-left: 25px;
@@ -533,6 +533,10 @@ p {
         // left: 0;
         // right: 0;
          &-description{
+          background-image: url('/assets/images/firstWorkImage.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
           height: 50vh;
           text-align: center;
           color: white;
@@ -590,6 +594,7 @@ p {
           }
     }
     .first-proyect-image{
+      z-index:1;
       height: 50vh;
       background-image: url('/assets/images/proxyCover.jpg'); //_src/assets/images/proxy-image.png
       background-size: cover;
@@ -1070,5 +1075,44 @@ width: 100%;
   }
 
   //////////////
+
+  .worksBackground{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+  }
+
+  .textWorks{
+    z-index: 1;
+  }
+
+  .worksBackground{
+    position: absolute;
+    z-index: 0;
+    width: 150vw;
+    height: 150vh;
+    opacity: 0.4;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+
+    animation-name: spin;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;}
+
+   
+    @keyframes spin { 
+        0% {
+            transform: rotate(0deg); 
+
+        }
+        100% { 
+            transform: rotate(360deg);
+            //display: none; 
+        }
+    }
 
   

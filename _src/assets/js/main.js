@@ -297,7 +297,7 @@ const IMAGENES = [
   '/assets/images/proxyCover.jpg',
   '/assets/images/CardsImageCover.jpg',
   '/assets/images/diceGameCover.jpg',
-  '/assets/images/contactUsCover.jpg'
+  '/assets/images/fourthProjectCover.jpg'
 ];
 let posicionActual = 0;
 
@@ -326,6 +326,7 @@ function retrocederFoto() {
   renderizarImagen();
 }
 
+const workDescription = document.querySelector('#project-description')
 /**
 * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
 */
@@ -333,13 +334,14 @@ function renderizarImagen () {
 
 
   if (posicionActual === 0 ) {
-    navigationBackground.style.backgroundColor = "#2a4d68";
-    navigationButton.style.backgroundColor = "#2a4d68";
-    projectDescription.style.backgroundColor = "#2a4d68";
-    arrowNavigationWorksNext.style.backgroundColor = "#2a4d68e8";
-    arrowNavigationWorks.style.backgroundColor = "#2a4d68e8";
-    worksPosition.style.backgroundColor = "#2a4d68e8";
-    contactLinksHeader.style.backgroundColor = "#2a4d68e8";
+    workDescription.style.backgroundImage = "url('/assets/images/firstWorkImage.png')";
+    navigationBackground.style.backgroundColor = "#1a3446";
+    navigationButton.style.backgroundColor = "#1a3446";
+    projectDescription.style.backgroundColor = "#1a3446";
+    arrowNavigationWorksNext.style.backgroundColor = "#1a3446e8";
+    arrowNavigationWorks.style.backgroundColor = "#1a3446e8";
+    worksPosition.style.backgroundColor = "#1a3446e8";
+    contactLinksHeader.style.backgroundColor = "#1a3446e8";
     projectImage.style.backgroundSize = "cover";
     projectTitle.innerHTML = "Anonymous Proxy";
     projectInformation.innerHTML = "Responsive design project"
@@ -358,13 +360,14 @@ function renderizarImagen () {
     }
   }
   else if(posicionActual === 1) {
-    navigationBackground.style.backgroundColor = "#1d4e4e";
-    navigationButton.style.backgroundColor = "#1d4e4e";
-    projectDescription.style.backgroundColor = "#1d4e4e";
-    arrowNavigationWorksNext.style.backgroundColor = "#1d4e4ee8";
-    arrowNavigationWorks.style.backgroundColor = "#1d4e4ee8";
-    worksPosition.style.backgroundColor = "#1d4e4ee8";
-    contactLinksHeader.style.backgroundColor = "#1d4e4ee8";
+    workDescription.style.backgroundImage = "url('/assets/images/secondWorkImage.png')";
+    navigationBackground.style.backgroundColor = "#173d31";
+    navigationButton.style.backgroundColor = "#173d31";
+    projectDescription.style.backgroundColor = "#173d31";
+    arrowNavigationWorksNext.style.backgroundColor = "#173d31e8";
+    arrowNavigationWorks.style.backgroundColor = "#173d31e8";
+    worksPosition.style.backgroundColor = "#173d31e8";
+    contactLinksHeader.style.backgroundColor = "#173d31e8";
     projectImage.style.backgroundSize = "cover";
     projectTitle.innerHTML = "Awesome Profile Cards";
     projectInformation.innerHTML = "App to generare & share proffesional cards";
@@ -382,13 +385,14 @@ function renderizarImagen () {
       firstPosition.classList.add('far'); 
     }
 } else if (posicionActual === 2) {
-  navigationBackground.style.backgroundColor = "#6b1607";
-  navigationButton.style.backgroundColor = "#6b1607";
-  projectDescription.style.backgroundColor = "#6b1607";
-  arrowNavigationWorksNext.style.backgroundColor = "#6b1607e8";
-  arrowNavigationWorks.style.backgroundColor = "#6b1607e8";
-  worksPosition.style.backgroundColor = "#6b1607e8";
-  contactLinksHeader.style.backgroundColor = "#6b1607e8";
+  workDescription.style.backgroundImage = "url('/assets/images/thirdWorkImage.png')"
+  navigationBackground.style.backgroundColor = "#3e0c15";
+  navigationButton.style.backgroundColor = "#3e0c15";
+  projectDescription.style.backgroundColor = "#3e0c15";
+  arrowNavigationWorksNext.style.backgroundColor = "#3e0c15e8";
+  arrowNavigationWorks.style.backgroundColor = "#3e0c15e8";
+  worksPosition.style.backgroundColor = "#3e0c15e8";
+  contactLinksHeader.style.backgroundColor = "#3e0c15e8";
   projectImage.style.backgroundSize = "cover";
   projectTitle.innerHTML = "Dice Pig Game";
   projectInformation.innerHTML = "Dice game for two";
@@ -406,13 +410,14 @@ function renderizarImagen () {
     fourthPosition.classList.add('far'); 
   }
 } else if (posicionActual === 3) {
-  navigationBackground.style.backgroundColor = "#377e65";
-  navigationButton.style.backgroundColor = "#377e65";
-  projectDescription.style.backgroundColor = "#377e65";
-  arrowNavigationWorksNext.style.backgroundColor = "#377e65e8";
-  arrowNavigationWorks.style.backgroundColor = "#377e65e8";
-  worksPosition.style.backgroundColor = "#377e65e8";
-  contactLinksHeader.style.backgroundColor = "#377e65e8";
+  workDescription.style.backgroundImage = "url('/assets/images/fourthWorkImage.png')"
+  navigationBackground.style.backgroundColor = "#1a4127";
+  navigationButton.style.backgroundColor = "#1a4127";
+  projectDescription.style.backgroundColor = "#1a4127";
+  arrowNavigationWorksNext.style.backgroundColor = "#1a4127e8";
+  arrowNavigationWorks.style.backgroundColor = "#1a4127e8";
+  worksPosition.style.backgroundColor = "#1a4127e8";
+  contactLinksHeader.style.backgroundColor = "#1a4127e8";
   projectImage.style.backgroundSize = "contain";
   projectImage.style.backgroundSize = "cover";
   projectImage.style.backgroundColor = "#c1d0d3";
@@ -476,7 +481,7 @@ function changeNavigationColor () {
       navigationButton.style.backgroundColor = "#252525";
       contactLinksHeader.style.backgroundColor = "#252525e8";
       headerTitle.style.color = "#504b4b";
-      pageCategory.innerHTML= "About me"
+      pageCategory.innerHTML= "about"
       pageCategory.style.textTransform = "none"
       
     } else {
@@ -537,31 +542,31 @@ window.addEventListener('scroll', changeNavigationColor);
 //   if (Math.sign(firstProjectyPos) === -1 ) {
 //     // const navigationBackground = document.querySelector('#navigation-background');
 //     console.log( firstProjectyPos);
-//     navigationBackground.style.backgroundColor = "#2a4d68";
-//     navigationButton.style.backgroundColor = "#2a4d68";
+//     navigationBackground.style.backgroundColor = "#1a3446";
+//     navigationButton.style.backgroundColor = "#1a3446";
 //   }
 //   if
 //     (Math.sign(secondProjectyPos) === -1 ) {
 //       // const navigationBackground = document.querySelector('#navigation-background');
 //       console.log( secondProjectyPos);
-//       navigationBackground.style.backgroundColor = "#1d4e4e";
-//       navigationButton.style.backgroundColor = "#1d4e4e";
+//       navigationBackground.style.backgroundColor = "#173d31";
+//       navigationButton.style.backgroundColor = "#173d31";
 //   }
 
 //   if
 //     (Math.sign(thirdProjectyPos) === -1 ) {
 //       // const navigationBackground = document.querySelector('#navigation-background');
 //       console.log(thirdProjectyPos);
-//       navigationBackground.style.backgroundColor = "#6b1607";
-//       navigationButton.style.backgroundColor = "#6b1607";
+//       navigationBackground.style.backgroundColor = "#3e0c15";
+//       navigationButton.style.backgroundColor = "#3e0c15";
 //   }
 
 //   if
 //     (Math.sign(fourthProjectyPos) === -1 ) {
 //       // const navigationBackground = document.querySelector('#navigation-background');
 //       console.log(fourthProjectyPos);
-//       navigationBackground.style.backgroundColor = "#377e65";
-//       navigationButton.style.backgroundColor = "#377e65";
+//       navigationBackground.style.backgroundColor = "#1a4127";
+//       navigationButton.style.backgroundColor = "#1a4127";
 //   }
 
 //   // else {

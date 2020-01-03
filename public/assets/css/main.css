@@ -261,12 +261,13 @@ a {
 }
 
 .main__aboutMe {
-  z-index: 300;
   width: 100%;
+  z-index: 1;
   background-color: #252525;
 }
 
 .main__aboutMe__cover {
+  z-index: 1;
   top: 0;
   display: table;
   display: -webkit-box;
@@ -290,6 +291,7 @@ a {
 }
 
 .main__aboutMe__content {
+  z-index: 1;
   background-color: #00000075;
   background-color: #252525;
   color: white;
@@ -1244,6 +1246,10 @@ body .main {
   z-index: 3;
 }
 
+body .main__aboutMe {
+  z-index: 1;
+}
+
 body .main__skills {
   background-color: #252525;
   padding: 15px 0;
@@ -1683,6 +1689,10 @@ body .main__work .first-proyect {
 }
 
 body .main__work .first-proyect-description {
+  background-image: url("/assets/images/firstWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 50vh;
   text-align: center;
   color: white;
@@ -1748,6 +1758,7 @@ body .main__work .first-proyect-description .seeMore-button a {
 }
 
 body .main__work .first-proyect .first-proyect-image {
+  z-index: 1;
   height: 50vh;
   background-image: url("/assets/images/proxyCover.jpg");
   background-size: cover;
@@ -2223,6 +2234,32 @@ body .main .about-us-image {
   display: none;
 }
 
+.worksBackground {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.textWorks {
+  z-index: 1;
+}
+
+.worksBackground {
+  position: absolute;
+  z-index: 0;
+  width: 150vw;
+  height: 150vh;
+  opacity: 0.4;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 @media all and (min-width: 400px) {
   .job {
     bottom: 36%;
@@ -2352,6 +2389,18 @@ body .main .about-us-image {
 
   body .main__contact__content {
     width: 50vw;
+  }
+
+  body .main__work .carousel .carousel-content {
+    padding-top: 5.15px;
+  }
+
+  body .main__work .carousel .arrowNavigationWorks {
+    padding-top: 1px;
+  }
+
+  body .main__work .carousel .arrowNavigationWorksNext {
+    padding-top: 1px;
   }
 
   body .main__work .nextSectionButton {
@@ -3090,6 +3139,18 @@ body .main .about-us-image {
   100% {
     opacity: 1;
     height: 23px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
