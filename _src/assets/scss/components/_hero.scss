@@ -2,98 +2,56 @@
   0% {
     width: 100vw;
     height: 100vh;
-  top:0;
-  bottom:0;
-opacity: 1;}
+    top:0;
+    bottom:0;
+    opacity: 1;
+  }
   100% {
     left: 0;
     top: -60vh;
     width: 100vw;
     height: 0vh;
-  } }
+  }
+}
 
-  @keyframes rotateImage {
-    0% {
-      transform: rotate(0)
-      }
-      50%{
-        transform: rotate(50)
-      }
-    100% {
-      transform: rotate(100)
-    } }
+@keyframes spin { 
+  0% {
+      opacity: 0;
+      transform: rotate(0deg); 
 
-    @keyframes showIntro {
-      0% {
-        bottom: -50px}
-      100% {
-        // right: 5vw;
-        // left: 5vw;
-        bottom: 20px; } }
+  } 3% {
+    opacity: 1;
+  }
+  100% { 
+      transform: rotate(360deg);
+  }
+}
 
-    @keyframes disappearToLeft {
-      0% {
-        width: 100vw;
-        height: 50vh;
-      left: 0;
-      //top: 0vh;
-    }
-      50% {
-        //width: 90vw;
-        //height: 40vh;
-        //left: 25vh;
-        //top: 10vh;
-      }
-      100% {
-        width: 90vw;
-            height: 40vh;
-        //top: 10vh;
-        left: 100vw;
-      } }
-        @keyframes disappearToRight {
-          0% {
-            width: 100vw;
-            height: 50vh;
-          right: 0;
-          //top: 50vh;
-        }
-          50% {
-            width: 90vw;
-            height: 40vh;
-            right: 0vw;
-            //top: 50vh;
-          }
-          100% {
-            width: 90vw;
-            height: 40vh;
-            //top: 50vh;
-            right: 100%;
-          } }
 
-  @keyframes moveToLeft {
-    0% { left: 0;
-      width: 100%}
-    100%{ left: 100%;
-      width:0;}}
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
-    @keyframes moveToRight {
-      0% { right: 0;
-        width:100%;}
-      100%{ right: 100%;
-        width:0;}}
+@keyframes showJob {
+  0%{
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height:23px;
+  }
+}
 
 .hero {
-  //z-index: 10000;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  //position: absolute;
   height: 100vh;
   width: 100vw;
-  //position: absolute;
-  //background-color: transparent;
   background-color: #070707;
-  //background-image: url('/assets/images/heroBackground.png');
   background-size:cover;
   background-repeat: no-repeat;
   display: flex;
@@ -116,79 +74,25 @@ opacity: 1;}
     font-size: 20px;
     text-align: center;
   }
-  .heroBackground{
-    position: absolute;
-    width: 60vw;
-    //overflow: hidden;
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 60s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
 
-
-    animation-name: spin;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;}
-
-   
-    @keyframes spin { 
-        0% {
-            opacity: 0;
-            transform: rotate(0deg); 
-  
-        } 3% {
-          opacity: 1;
-        }
-        100% { 
-            transform: rotate(360deg);
-            //display: none; 
-        }
-    }
-
-  
-
-
-
-  // .topContainer{
-  //   background-size: cover;
-  //   position: absolute;
-  //   background-color: #0c0c0c;
-  //   //background-image: url('/assets/images/hero.png');
-  //   height: 50%;
-  //   width: 100%;
-  //   top: 0vh;
-  //   -webkit-animation: moveToLeft 1s ease-in-out;
-  // animation: moveToLeft 1s ease-in-out;
-  // animation-fill-mode: forwards;
-  // animation-delay: 6.5s;
-
-
-  // }
-  // .bottomContainer{
-  //   position: absolute;
-  //   bottom: 0vh;
-  //   //background-image: url('/assets/images/hero.png');
-  //   background-size: cover;
-  //   background-color: #0c0c0c;
-  //   height: 50%;
-  //   width: 100%;
-
-  //   -webkit-animation: moveToRight 1s ease-in-out;
-  // animation: moveToRight 1s ease-in-out;
-  // animation-fill-mode: forwards;
-  // animation-delay: 6.5s;
-
-  // }
+.heroBackground{
+  position: absolute;
+  width: 60vw;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;}  
 }
+
 .intro{
   position: absolute;
   bottom: -50px;
-  -webkit-animation: intro 1s ease-in-out;
-  animation: intro 1s ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
 }
+
 .line-through{
   position: absolute;
   top: 100%;
@@ -201,7 +105,6 @@ opacity: 1;}
 ////////////
 .container {
   width: 100%;
-  //padding: 1vw;
   position: absolute;
   height: 10px;
   top: 100%;
@@ -213,85 +116,15 @@ opacity: 1;}
   font-size: 20px;
 }
 
-.background-color p {
-  color: #000;
-  font-size: 3vw;
-  font-weight: bold;
-  letter-spacing: 0;
-  max-width: 700px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400px;
-  font-size: 20px;
-  background: rgba(255, 253, 160, 1);
-  background: -webkit-linear-gradient( left, #1a9288 0%, #1a9274 25%, #1a5c92 50%, rgb(42, 104, 96)100%) repeat;
-  -webkit-background-clip: text;
-  -ms-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
-  -webkit-animation-name: masked-animation;
-  -webkit-animation-duration: 50s;
-  //-webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  left: 100%;
-  //top: -50vh;
-  position: absolute;
-}
-hr {
-  position: absolute;
-  //background: rgba(255, 253, 160, 1);
-  color: black;
-    background: linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #00ffff 100%) repeat;
-    height: 3px;
-    left: -3px;
-    width: 100%;
-    //top: -50vh;
-  -webkit-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
-  -webkit-animation-name: masked-animation;
-  -webkit-animation-duration: 18s;
-  //-webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-@-webkit-keyframes masked-animation {
-  0% {
-    background-position: 0 0;
-    opacity: 0;
-    left: 0;
-  }
- 50% {
-   left: 0;
-   opacity: 1;
- }
- 90%{
-  left: 100%;
- }
-  100% {
-    background-position: -8000px -3000px;
-    opacity: 0;
-    left: 100%;
-  }
-}
-
-/////////////
 /////////////
 svg.intro {
-  //background: linear-gradient(135deg, #aa3bb1, #582a7e);
   width: 95%;
   max-width: 800px;
-  //position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #0c0c0c;
-  z-index: 2;
-  //box-shadow: 0 30px 50px -20px rgb(46, 6, 66);
+  z-index: 2;;
   @include tablet {
     top: 45%;
   }
@@ -299,6 +132,7 @@ svg.intro {
   .text { 
     display: none;
   }
+
   &.go {
     background-color: transparent;
     .text {
@@ -307,6 +141,7 @@ svg.intro {
       text-transform: uppercase;
       display: block;
     }
+    
     .text-stroke {
       fill: none;
       stroke: white;
@@ -337,12 +172,6 @@ svg.intro {
     .text-stroke:nth-child(6) {
       animation-delay: 2.7s;
     }
-  }
-}
-
-@keyframes dash {
-  100% {
-    stroke-dashoffset: 0;
   }
 }
 
@@ -379,13 +208,10 @@ svg.intro {
 
 .job{
   font-family: 'Cuprum', sans-serif;
-      font-size: 14px;
-      text-transform: uppercase;
-      //display: block;
-      letter-spacing: 4px;
-      //position: absolute;
-      //top: 40vh;
-      -webkit-animation: showJob 2s ease-in-out;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-animation: showJob 2s ease-in-out;
   animation: showJob 2s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 2.8s;
@@ -395,454 +221,23 @@ svg.intro {
   text-align: right;
   padding: 14px;
   position: absolute;
-  /* top: 100vh; */
-  //top: 5%;
   bottom: 41%;
   display: flex;
   justify-content: center;
   align-items: center;
   left: 0;
-@include mobileMedium {
-  bottom: 36%;
-}
-@include mobilePlus {
-  bottom: 32%;
-}
-
-@include tabletMin {
-  bottom: 28%;
-}
-
-@include tablet {
-  bottom: 20%;
-}
-
-
-}
-.jobSpan{
-  z-index:2;
-  background-color: #0c0c0c;
-  color:  #0c0c0c;
-  font-family: 'Cuprum', sans-serif;
-      font-size: 14px;
-      text-transform: uppercase;
-      //display: block;
-      letter-spacing: 4px;
-      //position: absolute;
-      //top: 40vh;
-  //     -webkit-animation: showJob 2s ease-in-out;
-  // animation: showJob 2s ease-in-out;
-  // animation-fill-mode: forwards;
-  // animation-delay: 3s;
-  bottom: 16%;
-  text-align: right;
-  padding: 14px;
-  position: absolute;
-  /* top: 100vh; */
-  //top: 5%;
-  //height: 61px;
-  bottom: 36%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-@include mobileMedium {
-  bottom: 34%;
-}
-@include mobilePlus {
-  bottom: 28%;
-}
-
-@include tabletMin {
-  bottom: 26%;
-}
-
-@include tablet {
-  bottom: 22%;
-}
-
-
-}
-
-@keyframes showJob {
-  0%{
-    opacity: 0;
-    height: 0;
+  @include mobileMedium {
+    bottom: 36%;
   }
-  100% {
-    opacity: 1;
-    height:23px;
+  @include mobilePlus {
+    bottom: 32%;
+  }
+
+  @include tabletMin {
+    bottom: 28%;
+  }
+
+  @include tablet {
+    bottom: 20%;
   }
 }
-
-///////////////
-
-
-
-
-//https://codepen.io/Trinca/pen/WGvQPN?editors=1100
-// body {
-//   background: #161B29;
-//   margin: 0 auto;
-//   height: 100%;
-//   width: 100%;
-//   overflow: hidden;
-// }
-
-// .container {
-//   width: 40vw;
-//   height: 40vw;
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   margin: auto;
-//   overflow: hidden;
-// }
-
-// .common {
-//   height: 5vw;
-//   max-height: 100%;
-//   overflow: auto;
-//   width: 2vw;
-//   margin: auto;
-//   max-width: 100%;
-//   position: absolute;
-//   background-color: ;
-//   border-radius: 0vw 10vw 0vw 10vw;
-//   box-shadow: inset 0vw 0vw 0vw .1vw #E645D0, 0vw 0vw 1.5vw 0vw #E645D0;
-// }
-
-// .one {
-//   transform: rotate(45deg);
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 7.5vw;
-// }
-
-// .two {
-//   transform: rotate(90deg);
-//   left: 5.5vw;
-//   right: 0;
-//   top: 0;
-//   bottom: 5.5vw;
-// }
-
-// .three {
-//   transform: rotate(135deg);
-//   left: 7.5vw;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-// }
-
-// .four {
-//   transform: rotate(180deg);
-//   left: 5.5vw;
-//   right: 0;
-//   top: 5.5vw;
-//   bottom: 0;
-// }
-
-// .five {
-//   transform: rotate(225deg);
-//   left: 0;
-//   right: 0;
-//   top: 7.5vw;
-//   bottom: 0;
-// }
-
-// .six {
-//   transform: rotate(270deg);
-//   left: 0;
-//   right: 5.5vw;
-//   top: 5.5vw;
-//   bottom: 0;
-// }
-
-// .seven {
-//   transform: rotate(315deg);
-//   left: 0;
-//   right: 7.5vw;
-//   top: 0;
-//   bottom: 0;
-// }
-
-// .eight {
-//   transform: rotate(360deg);
-//   left: 0;
-//   right: 5.5vw;
-//   top: 0;
-//   bottom: 5.5vw;
-// }
-
-// .bar {
-//   width: 12vw;
-//   height: .25vw;
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   top: 16vw;
-//   bottom: 0;
-//   margin: auto;
-//   overflow: hidden;
-//   background: #E645D0;
-// }
-
-// .progress {
-//   width: 12vw;
-//   height: .5vw;
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   margin: auto;
-//   overflow: hidden;
-//   background: #17E1E6;
-// }
-
-// .one {
-//   animation: one 1s ease infinite;
-//   -moz-animation: one 1s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: one 1s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: one 1s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes one {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .two {
-//   animation: two 1s .125s ease infinite;
-//   -moz-animation: two 1s .125s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: two 1s .125s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: two 1s .125s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes two {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .three {
-//   animation: three 1s .25s ease infinite;
-//   -moz-animation: three 1s .25s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: three 1s .25s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: three 1s .25s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes three {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .four {
-//   animation: four 1s .375s ease infinite;
-//   -moz-animation: four 1s .375s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: four 1s .375s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: four 1s .375s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes four {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .five {
-//   animation: five 1s .5s ease infinite;
-//   -moz-animation: five 1s .5s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: five 1s .5s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: five 1s .5s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes five {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .six {
-//   animation: six 1s .625s ease infinite;
-//   -moz-animation: six 1s .625s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: six 1s .625s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: six 1s .625s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes six {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .seven {
-//   animation: seven 1s .750s ease infinite;
-//   -moz-animation: seven 1s .750s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: seven 1s .750s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: seven 1s .750s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes seven {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .eight {
-//   animation: eight 1s .875s ease infinite;
-//   -moz-animation: eight 1s .875s ease infinite;
-//   /* Firefox */
-//   -webkit-animation: eight 1s .875s ease infinite;
-//   /* Safari and Chrome */
-//   -o-animation: eight 1s .875s ease infinite;
-//   /* Opera */
-// }
-
-// @keyframes eight {
-//   0%,
-//   100% {}
-//   50% {
-//     background: ;
-//     box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
-//   }
-// }
-
-// .container {
-//   animation: container 2s linear infinite;
-//   -moz-animation: container 2s linear infinite;
-//   /* Firefox */
-//   -webkit-animation: container 2s linear infinite;
-//   /* Safari and Chrome */
-//   -o-animation: container 2s linear infinite;
-//   /* Opera */
-// }
-
-// @keyframes container {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(-360deg);
-//   }
-// }
-
-// .progress {
-//   animation: progress 3s ease;
-//   -moz-animation: progress 3s ease;
-//   /* Firefox */
-//   -webkit-animation: progress 3s ease;
-//   /* Safari and Chrome */
-//   -o-animation: progress 3s ease;
-//   /* Opera */
-// }
-
-// @keyframes progress {
-//   0% {
-//     left: -24vw;
-//   }
-//   10% {
-//     left: -20vw;
-//   }
-//   30% {
-//     left: -16vw;
-//   }
-//   50% {
-//     left: -12vw;
-//   }
-//   65% {
-//     left: -10vw;
-//   }
-//   80% {
-//     left: -4vw;
-//   }
-//   100% {
-//     left: 0;
-//   }
-// }
-
-// .fade-in {
-//   animation: fade-in 2s ease;
-//   -moz-animation: fade-in 2s ease;
-//   /* Firefox */
-//   -webkit-animation: fade-in 2s ease;
-//   /* Safari and Chrome */
-//   -o-animation: fade-in 2s ease;
-//   /* Opera */
-// }
-
-// @keyframes fade-in {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// }
-
-// .out {
-//   animation: out 2s 3s ease;
-//   -moz-animation: out 2s 3s ease;
-//   /* Firefox */
-//   -webkit-animation: out 2s 3s ease;
-//   /* Safari and Chrome */
-//   -o-animation: out 2s 3s ease;
-//   /* Opera */
-// }
-
-// @keyframes out {
-//   from {
-//     opacity: 1;
-//   }
-//   to {
-//     opacity: 0;
-//   }
-// }
