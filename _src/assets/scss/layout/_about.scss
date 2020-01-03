@@ -120,22 +120,26 @@
     }
     .download-cv-button {
       color: white;
-      padding: 5px;
+     padding: 2px;
       text-align: center;
       width: 210px;
       margin: auto;
       margin-bottom:20px;
       border: 3px solid #33323242;
-      padding: 8px;
       box-shadow: 5px 5px 5px #2f434470;
       box-shadow: #000000b5 5px 5px 5px;
         border: 3px solid #00000042;
         background: linear-gradient(0deg, rgba(39,39,39,1) 0%, rgba(37,37,37,1) 100%);
-
-      a {
-        color:  #0c0c0c;
-        color: white;
+      &:hover > a{
+        color: orange;
       }
+
+       
+    }
+    .download-cv-link {
+      color:  #0c0c0c;
+      color: white;
+      padding: 8px, 12px;
     }
   }
   @include tablet {

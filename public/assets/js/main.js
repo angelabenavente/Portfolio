@@ -247,7 +247,6 @@ windowSize.addListener(resizeAuthor)
 
 //window.addEventListener(resizeAuthor);
 
-
 ////////////////////
 //const aboutSection = document.querySelector('#about');
 const navigationButton = document.querySelector('#navigation__button')
@@ -272,7 +271,20 @@ const seePlaceButton = document.querySelector('#seePlaceButton');
 const seeCodeButton = document.querySelector('#seeCodeButton');
 const contactLinksHeader = document.querySelector('#contactLinksHeader');
 
+function showList(){
+  const listNavigation = document.querySelector('.navigation__list');
+  if(listNavigation.classList.contains('showItems')){
+  listNavigation.classList.remove('showItems');
+  listNavigation.style.width = '0';
+ 
+} else {
+    listNavigation.classList.add('showItems')
+    listNavigation.style.width = '100vw'
+  }
 
+  
+}
+navigationButton.addEventListener('click', showList)
 // let firstProjectyPos = firstProjectSection.getBoundingClientRect().top;
 // let secondProjectyPos = secondProjectSection.getBoundingClientRect().top;
 // let thirdProjectyPos = thirdProjectSection.getBoundingClientRect().top;
