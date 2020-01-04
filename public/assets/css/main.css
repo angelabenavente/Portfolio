@@ -516,10 +516,10 @@ span {
   padding-right: 24px;
   margin: 0;
   position: fixed;
+  top: -90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: -90px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -894,15 +894,6 @@ span {
   height: 100vh;
 }
 
-.expandedWidth {
-  -webkit-animation: expande 1s ease-in-out;
-  animation: expande 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
 .showItems {
   width: 100%;
 }
@@ -939,14 +930,6 @@ span {
   animation-delay: 5.4s;
 }
 
-.hero__presentation {
-  margin: auto;
-  z-index: 100;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-}
-
 .hero .heroBackground {
   width: 60vw;
   position: absolute;
@@ -963,29 +946,6 @@ span {
 .intro {
   bottom: -50px;
   position: absolute;
-}
-
-.line-through {
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  top: 100%;
-  z-index: 2;
-  background-color: aliceblue;
-}
-
-.container {
-  width: 100%;
-  height: 10px;
-  margin-right: -50%;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  font-weight: 400px;
-  font-size: 20px;
 }
 
 svg.intro {
