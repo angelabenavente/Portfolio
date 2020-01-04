@@ -75,9 +75,8 @@
    */
   
   a {
-    background-color: transparent;
+    
     text-decoration: none;
-    color: #54585a;
   }
   
   /**
@@ -373,11 +372,7 @@
     padding: 0;
   }
 
-  a {
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
+  
   *{
     box-sizing: border-box;
   }
@@ -393,4 +388,8 @@
   
   a {
     text-decoration: none;
+    color: white;
+    &:hover {
+      color: orange
+    }
   }

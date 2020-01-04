@@ -191,7 +191,7 @@ body {
         background: linear-gradient(0deg, rgba(39,39,39,1) 0%, rgba(37,37,37,1) 100%);
       }
       .seo-wrapper {
-        padding: 10px;
+        padding: 6px;
         box-shadow: 5px 5px 5px #2f434470;
         box-shadow: #000000b5 5px 5px 5px;
         border: 3px solid #00000042;
@@ -296,12 +296,14 @@ body {
             margin-top: 200px;
 
             a {
+              color: white;
               font-weight: 700;
               cursor: pointer;
               padding: 10px 10px 6px 10px;
               &:hover {
                 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
                 border-bottom: 5px solid white;
+                color: red;
               }
             }
           }
@@ -314,9 +316,14 @@ body {
           .contact-button {
             display: flex;
             flex-direction: row;
+            cursor: pointer;
+            color: white;
+            .btn-text {
+              text-decoration: none;
+              color: white;
+            }
 
-            &:hover > .social-icon{
-              transform: scale(1.3);
+            &:hover > .btn-text {
               color: #f7484e;
             }
 
@@ -331,10 +338,11 @@ body {
             }
 
             .btn-text {
+              text-decoration: none;
               padding: 0px 7px;
               color: white;
               cursor: pointer;
-              &:hover > .social-icon {
+              &:hover {
                 transform: scale(1.3);
                 color: #f7484e;
               }
