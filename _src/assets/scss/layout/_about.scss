@@ -120,35 +120,7 @@
         }
       }
     }
-    .paragraph-linkedin {
-      padding: 24px 0 10px;
-      cursor: pointer;
-    }
-    .download-cv-button {
-      color: white;
-     padding: 2px;
-      text-align: center;
-      width: 210px;
-      margin: auto;
-      margin-bottom:20px;
-      border: 3px solid #33323242;
-      box-shadow: 5px 5px 5px #2f434470;
-      box-shadow: #000000b5 5px 5px 5px;
-      border: 3px solid #00000042;
-      background: linear-gradient(0deg, rgba(39,39,39,1) 0%, rgba(37,37,37,1) 100%);
-      cursor: pointer;
-      &:hover > a{
-        color: orange;
-      }
-      a {
-        color:  #0c0c0c;
-        color: white;
-        padding: 8px, 12px;
-      }
-       
-    }
-   
-  }
+    
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -175,73 +147,9 @@
       }
     }
   }
-}
-  .heading-final{
-    margin-bottom: 10px;
   }
 }
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-
-.text--transparent {
-  fill: transparent;
 }
 
-.anim-shape {
-  -webkit-transform-origin: 0x 150px;
-  -ms-transform-origin: 0x 150px;
-  transform-origin: 0x 150px;
-  -webkit-transform: scale(0, 1) translate(0, 0);
-  -ms-transform: scale(0, 1) translate(0, 0);
-  transform: scale(0, 1) translate(0, 0);
-  -webkit-animation: moving-panel 5s ease-in-out alternate;
-  animation: moving-panel 5s ease-in-out alternate;
-}
 
-.colortext .anim-shape:nth-child(1) {
-  fill: #0E1826;
-}
-
-.colortext .anim-shape:nth-child(2) {
-  fill: #166973;
-  //fill: #F26444;
-}
-
-.colortext .anim-shape:nth-child(3) {
-  fill: #65BFA6;
-  //fill: #F26444;
-}
-
-.colortext .anim-shape:nth-child(4) {
-  fill: #F2CD5C;
-}
-
-.colortext .anim-shape:nth-child(5) {
-  fill: #F26444;
-}
-
-.shadow {
-  -webkit-transform: translate(10px, 10px);
-  -ms-transform: translate(10px, 10px);
-  transform: translate(10px, 10px);
-}
-
-.anim-shape--shadow {
-  fill: #000;
-  fill-opacity: .2;
-}
-
-@-webkit-keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
-
-@keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
 
