@@ -519,6 +519,7 @@ body {
           }
           .first-proyect{
             &-description{
+              
               height: 50vh;
               padding: 0 34px;
               display: flex;
@@ -527,7 +528,7 @@ body {
               align-items: center;
               text-align: center;
               background-image: url('/assets/images/firstWorkImage.png');
-              background-size: contain;
+              background-size: cover;
               background-repeat: no-repeat;
               background-position: center;
               color: white;
@@ -536,6 +537,7 @@ body {
               font-family: 'Cuprum', sans-serif;
               font-size: 16px;
               @include tablet  {
+                width: 50vw;
                 height: 100vh;
                 font-size: 20px;
               }
@@ -577,7 +579,7 @@ body {
               }
         }
         .first-proyect-image{
-          width: 50vw;
+
           height: 50vh;
           z-index:1;
           background-image: url('/assets/images/proxyCover.jpg');
@@ -590,6 +592,7 @@ body {
           }
           @include tablet  {
             height: 100vh;
+            width: 50vw;
             font-size: 28px;
           }
           small {
@@ -1080,6 +1083,13 @@ body {
                 }
               }
         
+
+  .works-scroll{
+    position: fixed;
+    top: 40vh;
+    left: 20px;
+    //far fa-circle
+  }
 // .second-proyect{
 //   background-color: #eef5f7;
 // }

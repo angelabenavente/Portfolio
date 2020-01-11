@@ -144,20 +144,32 @@
             </div>
             <main class=main>
                 <section id="work" class="main__work">
-                     <h1>Smooth Scroll without jQuery!</h1> 
-                    <div id="anchor-toc">
-                         <h2>Table of content (toc)</h2>
-
+                    <!-- <p id="carousel" class="carousel">
+          <span id="arrowNavigationWorks" class="arrowNavigationWorks">
+            <i class="fas fa-angle-left"></i>
+          </span>
+          <span id="worksNavigationPosition" class="carousel-content">
+            <i id="firstProjectPosition" class="fas fa-circle"></i>
+            <i id="secondProjectPosition" class="far fa-circle"></i>
+            <i id="thirdProjectPosition" class="far fa-circle"></i>
+            <i id="fourthProjectPosition" class="far fa-circle"></i>
+          </span>
+          <span id="arrowNavigationWorksNext" class="arrowNavigationWorksNext">
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </p> -->
+                    <div id="anchor-toc" class="works-scroll">
                         <ul>
-                            <li><a href="#anchor-3" onclick="smoothScroll('anchor-2');">smooth scroll to Anchor 2<a/></li>
-            <li><a href="#anchor-3" onclick="smoothScroll('anchor-3');">smooth scroll to Chapter 3<a/></li>
-        <li><a href="#anchor-4" onclick="smoothScroll('anchor-4');">smooth scroll to Chapter 4<a/></li>
+                            <li><a href="#anchor-1" onclick="smoothScroll('anchor-1');"><i id="firstProjectPosition" class="fas fa-circle"></i><a/></li>
+          <li><a href="#anchor-2" onclick="smoothScroll('anchor-2');"><i id="secondProjectPosition" class="far fa-circle"></i><a/></li>
+            <li><a href="#anchor-3" onclick="smoothScroll('anchor-3');"><i id="thirdProjectPosition" class="far fa-circle"></i><a/></li>
+        <li><a href="#anchor-4" onclick="smoothScroll('anchor-4');"><i id="fourthProjectPosition" class="far fa-circle"></i><a/></li>
 
         </ul>
       </div>
       
 
-        <div id="target-1" class="largeBlock">
+        <div id="anchor-1" class="largeBlock">
           <div id="first-project" class="first-proyect proyect">
             <div id="project-image" class="first-proyect-image image"></div>
       
@@ -266,20 +278,6 @@
                 </div>
             </div>
         </div>
-        <p id="carousel" class="carousel"> <span id="arrowNavigationWorks" class="arrowNavigationWorks">
-        <i class="fas fa-angle-left"></i>
-      </span>
- <span id="worksNavigationPosition" class="carousel-content">
-        <i id="firstProjectPosition" class="fas fa-circle"></i>
-        <i id="secondProjectPosition" class="far fa-circle"></i>
-        <i id="thirdProjectPosition" class="far fa-circle"></i>
-        <i id="fourthProjectPosition" class="far fa-circle"></i>
-      </span>
- <span id="arrowNavigationWorksNext" class="arrowNavigationWorksNext">
-        <i class="fas fa-angle-right"></i>
-      </span>
-
-        </p>
         <!-- <div id="first-project" class="first-proyect proyect">
       <div id="project-image" class="first-proyect-image image"></div>
 
