@@ -1,10 +1,4 @@
-'use strict';
 
-console.log('>> Ready :)');
-//$('.menu-burger, .menu-items').on('click', function() {
-  //$('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
-  //$('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
-//});
 
 'use strict';
 
@@ -629,3 +623,75 @@ function colors () {
 window.addEventListener('load', colors);
 
 ///////////////
+
+
+
+
+/*
+To prevent the flashing of unstyled content (FOUC) I created a class ".no-fouc"
+which hides the slider.  When everything is ready to roll, I simply remove the
+.no-fouc class from the slider section using the script below.  I placed the CSS snippet in the head of the HTML
+page so that it's loaded before other things for obvious reasons.  What about folks with JS turned off?  
+Well, I don't worry about them too much anymore.  Oh my.  I feel the heat from the flames already.  :) 
+*/
+
+function ready () {
+  const noF = document.querySelector('.no-fouc');
+  noF.classList.remove('no-fouc');
+}
+
+window.addEventListener('load', ready); {
+$('.no-fouc').removeClass('no-fouc');
+}
+
+
+//////////
+function currentYPosition() {
+  // Firefox, Chrome, Opera, Safari
+  if (self.pageYOffset) return self.pageYOffset;
+  // Internet Explorer 6 - standards mode
+  if (document.documentElement && document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+  // Internet Explorer 6, 7 and 8
+  if (document.body.scrollTop) return document.body.scrollTop;
+  return 0;
+}
+
+
+function elmYPosition(eID) {
+  var elm = document.getElementById(eID);
+  var y = elm.offsetTop;
+  var node = elm;
+  while (node.offsetParent && node.offsetParent != document.body) {
+      node = node.offsetParent;
+      y += node.offsetTop;
+  } return y;
+}
+
+
+function smoothScroll(eID) {
+  var startY = currentYPosition();
+  var stopY = elmYPosition(eID);
+  var distance = stopY > startY ? stopY - startY : startY - stopY;
+  if (distance < 100) {
+      scrollTo(0, stopY); return;
+  }
+  var speed = Math.round(distance / 100);
+  if (speed >= 20) speed = 20;
+  var step = Math.round(distance / 25);
+  var leapY = stopY > startY ? startY + step : startY - step;
+  var timer = 0;
+  if (stopY > startY) {
+      for ( var i=startY; i<stopY; i+=step ) {
+          setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+          leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+      } return;
+  }
+  for ( var i=startY; i>stopY; i-=step ) {
+      setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+      leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+  }
+return false;
+}
+
+

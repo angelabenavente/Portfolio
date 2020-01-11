@@ -14,6 +14,15 @@
   }
 }
 
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes spin { 
   0% {
       opacity: 0;
@@ -63,7 +72,7 @@
   animation-fill-mode: forwards;
   animation-delay: 5.4s;
   
-.heroBackground{
+&__background {
   width: 60vw;
   position: absolute;
   -webkit-animation-name: spin;
@@ -76,9 +85,13 @@
   animation-timing-function: linear;}  
 }
 
-.intro{
-  bottom: -50px;
+.intro {
+  bottom: -50px; 
   position: absolute;
+  -webkit-animation: intro 3s ease-in-out;
+  animation: intro 3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
 
@@ -91,6 +104,10 @@ svg.intro {
   transform: translate(-50%, -50%);
   z-index: 2;
   background-color: #0c0c0c;
+  -webkit-animation: intro 3s ease-in-out;
+  animation: intro 3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
   @include tablet {
     top: 45%;
   }

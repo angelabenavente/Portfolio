@@ -937,7 +937,7 @@ span {
   animation-delay: 5.4s;
 }
 
-.hero .heroBackground {
+.hero__background {
   width: 60vw;
   position: absolute;
   -webkit-animation-name: spin;
@@ -953,6 +953,12 @@ span {
 .intro {
   bottom: -50px;
   position: absolute;
+  -webkit-animation: intro 3s ease-in-out;
+  animation: intro 3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 svg.intro {
@@ -964,6 +970,12 @@ svg.intro {
   transform: translate(-50%, -50%);
   z-index: 2;
   background-color: #0c0c0c;
+  -webkit-animation: intro 3s ease-in-out;
+  animation: intro 3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 svg.intro .text {
@@ -1117,6 +1129,7 @@ body .main {
 body .main__aboutMe {
   width: 100%;
   background-color: #252525;
+  font-size: 16px;
 }
 
 body .main__aboutMe__cover {
@@ -1745,6 +1758,7 @@ body .main__work .first-proyect-description .seeMore-button a {
 }
 
 body .main__work .first-proyect .first-proyect-image {
+  width: 50vw;
   height: 50vh;
   z-index: 1;
   background-image: url("/assets/images/proxyCover.jpg");
@@ -1853,6 +1867,406 @@ body .main .about-us-image {
   animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.second-proyect {
+  background-color: #eef5f7;
+}
+
+.second-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url("/assets/images/secondWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #173d31;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+.second-proyect-description .second-seeMore-button {
+  width: 160px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.second-proyect-description .second-seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.second-proyect-description .second-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.second-proyect-image {
+  background-color: #eef5f7;
+  color: #e17334;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
+  height: 50vh;
+  background-image: url("/assets/images/CardsImageCover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.second-proyect-image .cardIcons {
+  position: relative;
+  top: 40px;
+  font-size: 18px;
+}
+
+.second-proyect-image .cardIcons i {
+  margin: 3px;
+}
+
+.third-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url("/assets/images/thirdWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #3e0c15;
+}
+
+.third-proyect-description .third-seeMore-button {
+  width: 160px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.third-proyect-description .third-seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.third-proyect-description .third-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.third-proyect-image {
+  height: 50vh;
+  background-image: url("/assets/images/diceGameCover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Audiowide', cursive;
+  font-size: 22px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.third-proyect-image .diceGame {
+  background-color: black;
+  border: 5px solid white;
+  text-align: center;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 250px;
+  height: 220px;
+}
+
+.third-proyect-image .diceGame .gameHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: left;
+}
+
+.third-proyect-image .diceGame .gameHero .gameTitle {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+.third-proyect-image .diceGame .gameHero img {
+  width: 71px;
+  margin: auto;
+  margin-right: 0;
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+
+.third-proyect-image .rollUp {
+  text-align: center;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 80px;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.fourth-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url("/assets/images/fourthWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1a4127;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+.fourth-proyect-description .fourth-seeMore-button {
+  width: 160px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fourth-proyect-description .fourth-seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+
+.fourth-proyect-description .fourth-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.fourth-proyect-image {
+  height: 50vh;
+  background-color: #e4e4e4;
+  background-image: url("/assets/images/fourthProjectCover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Audiowide', cursive;
+  font-size: 16px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fourth-proyect-image .contactMenu {
+  background-color: #099d8d;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.fourth-proyect-image .contactMenu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.fourth-proyect-image .contactMenu-items span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 2px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.fourth-proyect-image .contactMenu .contactIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 9px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-weight: 600;
+  padding: 1px 2px 0;
+}
+
+.fourth-proyect-image .frontSide {
+  color: #099d8d;
+  font-size: 20px;
+  margin-top: 7px;
+  text-shadow: 0px 3px 3px #f0f3c0;
+}
+
+.fourth-proyect-image .frontSide .fa-shoe-prints {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  padding-bottom: 3px;
+}
+
+.fourth-proyect-image .about-us-image-inside {
+  height: 70%;
+}
+
+.linksInfoProject {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.seeMore-button {
+  padding: 8px;
+  margin: 10px;
+  display: inline;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media all and (min-width: 400px) {
@@ -1964,6 +2378,7 @@ body .main .about-us-image {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    font-size: 18px;
   }
 
   body .main__aboutMe__cover {
@@ -1975,6 +2390,7 @@ body .main .about-us-image {
 
   body .main__aboutMe__cover__content {
     padding: 50px;
+    font-size: 18px;
   }
 
   body .main__aboutMe__cover__content--formation--box .master__form {
@@ -2109,6 +2525,94 @@ body .main .about-us-image {
     width: 50vw;
     height: 100vh;
   }
+
+  .second-proyect-description {
+    height: 100vh;
+    font-size: 20px;
+  }
+
+  .second-proyect-description .second-seeMore-button {
+    font-size: 14px;
+  }
+
+  .second-proyect-image {
+    height: 100vh;
+  }
+
+  .third-proyect-description {
+    height: 100vh;
+    font-size: 18px;
+  }
+
+  .third-proyect-description .third-seeMore-button {
+    font-size: 14px;
+  }
+
+  .third-proyect-image {
+    height: 100vh;
+  }
+
+  .third-proyect-image .diceGame {
+    width: 300px;
+    height: 270px;
+    font-size: 28px;
+  }
+
+  .third-proyect-image .diceGame .gameHero img {
+    width: 91px;
+  }
+
+  .third-proyect-image .rollUp {
+    width: 120px;
+    font-size: 18px;
+  }
+
+  .fourth-proyect-description {
+    height: 100vh;
+    font-size: 20px;
+  }
+
+  .fourth-proyect-description .fourth-seeMore-button {
+    font-size: 14px;
+  }
+
+  .fourth-proyect-image {
+    height: 100vh;
+  }
+
+  .fourth-proyect-image img {
+    height: 65%;
+    width: 99%;
+    position: relative;
+    top: 30px;
+  }
+
+  .fourth-proyect-image .contactMenu {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .fourth-proyect-image .contactMenu-items span {
+    padding-left: 8px;
+  }
+
+  .fourth-proyect-image .contactMenu .contactIcon {
+    font-size: 12px;
+  }
+
+  .fourth-proyect-image .frontSide {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .linksInfoProject {
+    font-size: 15px;
+  }
+
+  .seeMore-button {
+    width: 106px;
+    font-size: 16px;
+  }
 }
 
 @-webkit-keyframes moving-panel {
@@ -2209,6 +2713,26 @@ body .main .about-us-image {
     top: -60vh;
     width: 100vw;
     height: 0vh;
+  }
+}
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

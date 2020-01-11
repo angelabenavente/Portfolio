@@ -1,6 +1,126 @@
 <main class=main>
-  
+
   <section id="work" class="main__work">
+    	
+      <h1>Smooth Scroll without jQuery!</h1>   
+      <div id="anchor-toc">
+      <h2>Table of content (toc)</h2>
+      <ul>
+          <li><a href="#anchor-3" onclick="smoothScroll('anchor-2');">smooth scroll to Anchor 2<a/></li>
+            <li><a href="#anchor-3" onclick="smoothScroll('anchor-3');">smooth scroll to Chapter 3<a/></li>
+        <li><a href="#anchor-4" onclick="smoothScroll('anchor-4');">smooth scroll to Chapter 4<a/></li>
+
+        </ul>
+      </div>
+      
+
+        <div id="target-1" class="largeBlock">
+          <div id="first-project" class="first-proyect proyect">
+            <div id="project-image" class="first-proyect-image image"></div>
+      
+            <div id="project-description" class="first-proyect-description description">
+                <!-- <img class="worksBackground" src="/assets/images/worksBackImage.jpg"> -->
+              <div class="textWorks">
+                <h3 class="projectTitle" id="projectTitle">Anonymous Proxy</h3>
+                <p id="projectDescription">Responsive design project</p>
+                <p id="projectSkills">HTML | SASS | JS | GULP</p>
+                <div class="linksInfoProject">
+                  <button class="seeMore-button">
+                    <a id="seePlaceLink" href="http://beta.adalab.es/evaluacion-final-modulo-1-angelabenavente/" target="_blank">Visit place</a>
+                  <!--<a href="./proxyWork.html">Visit place</a>-->
+                </button>
+                <button class="seeMore-button">
+                  <a id="seeCodeLink" href="https://github.com/angelabenavente/evaluacion-final-modulo-1-angelabenavente" target="_blank">See code</a>
+                </button>
+              </div>
+              <!-- <p class="nextSectionButton">
+                <a href="#about">&#8595</a>
+              </p> -->
+            </div>
+          </div></div>
+        
+<!--         
+        <h2 id="anchor-2">Anchor 2</h2>
+      <a href="#anchor-toc" onclick="smoothScroll('anchor-toc');">scroll smooth to toc<a/> -->
+        <div id="anchor-2" class="largeBlock">
+            <div id="second-project" class="second-proyect proyect">
+                <div id="cardsWork" class="second-proyect-image image">
+                </div>
+                <div class="second-proyect-description description">
+                  <h3>Awesome Profile Cards</h3>
+                  <p>App to generare & share proffesional cards</p>
+                  <p>REACT | APIs | SASS | JS | GULP</p>
+                  <div class="linksInfoProject">
+                      <button class="seeMore-button">
+                        <a id="seePlaceLink" href="http://beta.adalab.es/project-promo-h-module-3-team-2-afternoon/" target="_blank">Visit place</a>
+                      <!--<a href="./proxyWork.html">Visit place</a>-->
+                    </button>
+                    <button class="seeMore-button">
+                      <a id="seeCodeLink" href="https://github.com/Adalab/project-promo-h-module-3-team-2-afternoon" target="_blank">See code</a>
+                    </button>
+                  </div>
+                  <!-- <p class="nextSectionButton">
+                    <a href="#about">&#8595</a>
+                  </p> -->
+                </div>
+                </div>
+              </div>
+        </div>
+        
+        
+        <!-- <h2 id="anchor-3">Anchor 3</h2>
+      <a href="#anchor-toc" onclick="smoothScroll('anchor-toc');">scroll smooth to toc<a/> -->
+        <div id="anchor-3" class="largeBlock">
+            <div id="third-project" class="third-proyect proyect">
+                <div id="gameWork" class="third-proyect-image image">
+                  
+                </div>
+                <div class="third-proyect-description description">
+                  <h3>Dice Pig Game</h3>
+                  <p>Game for two</p>
+                  <p>HTML | CSS | JS</p>
+                  <div class="linksInfoProject">
+                      <button class="seeMore-button">
+                        <a id="seePlaceLink" href="https://angelabenavente.github.io/DicePigGame/" target="_blank">Visit place</a>
+                      <!--<a href="./proxyWork.html">Visit place</a>-->
+                    </button>
+                    <button class="seeMore-button">
+                      <a id="seeCodeLink" href="https://github.com/angelabenavente/DicePigGame" target="_blank">See code</a>
+                    </button>
+                  </div>
+                  <!-- <p class="nextSectionButton">
+                    <a href="#about">&#8595</a>
+                  </p> -->
+                </div>
+                </div>
+                </div>
+              </div>
+        </div>
+        
+        <!-- <h2 id="anchor-4">Anchor 4</h2>
+      <a href="#anchor-toc" onclick="smoothScroll('anchor-toc');">scroll smooth to toc<a/> -->
+        <div id="anchor-4" class="largeBlock">
+            <div id="fourth-project" class="fourth-proyect proyect">
+                <div id="contactWork" class="fourth-proyect-image image">
+                  </div>
+                  <div class="fourth-proyect-description description">
+                    <h3>Contact with us!</h3>
+                    <p>Web for contact with work teams</p>
+                    <p>HTML | CSS | JS | GULP </p>
+                    <div class="linksInfoProject">
+                        <button class="seeMore-button">
+                          <a id="seePlaceLink" href="http://beta.adalab.es/project-promo-h-module-1-team-2-afternoon-sprint-2-/" target="_blank">Visit place</a>
+                        <!--<a href="./proxyWork.html">Visit place</a>-->
+                      </button>
+                      <button class="seeMore-button">
+                        <a id="seeCodeLink" href="https://github.com/Adalab/project-promo-h-module-1-team-2-afternoon-sprint-2-" target="_blank">See code</a>
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+        </div>
+        
+
     <p id="carousel" class="carousel">
       <span id="arrowNavigationWorks" class="arrowNavigationWorks">
         <i class="fas fa-angle-left"></i>
@@ -16,11 +136,10 @@
       </span>
     </p>
 
-    <div id="first-project" class="first-proyect proyect">
+    <!-- <div id="first-project" class="first-proyect proyect">
       <div id="project-image" class="first-proyect-image image"></div>
 
       <div id="project-description" class="first-proyect-description description">
-          <!-- <img class="worksBackground" src="/assets/images/worksBackImage.jpg"> -->
         <div class="textWorks">
           <h3 class="projectTitle" id="projectTitle">Anonymous Proxy</h3>
           <p id="projectDescription">Responsive design project</p>
@@ -28,7 +147,6 @@
           <div class="linksInfoProject">
             <button class="seeMore-button">
               <a id="seePlaceLink" href="#" target="_blank">Visit place</a>
-            <!--<a href="./proxyWork.html">Visit place</a>-->
           </button>
           <button class="seeMore-button">
             <a id="seeCodeLink" href="#" target="_blank">See code</a>
@@ -37,7 +155,7 @@
         <p class="nextSectionButton">
           <a href="#about">&#8595</a>
         </p>
-      </div>
+      </div> -->
     </div>
   </section>
 
