@@ -5,6 +5,20 @@
 @import 'components/hero';
 
 //////////animations/////////
+
+@keyframes spin { 
+  0% {
+      opacity: 0;
+      transform: rotate(0deg); 
+  }
+  3% {
+    opacity: 1;
+  }
+  100% { 
+      transform: rotate(360deg);
+  }
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -504,6 +518,7 @@ body {
             }
           }
           .first-proyect{
+            position: relative;
             &-description{
               
               height: 50vh;
@@ -714,6 +729,7 @@ body {
 
 
         .second-proyect{
+          position: relative;
           background-color: #eef5f7;
           // position: absolute;
           // top: 0;
@@ -1073,7 +1089,15 @@ body {
     position: fixed;
     top: 40vh;
     left: 20px;
-    // z-index: 5;
+    z-index: 5;
+  }
+
+  .workTitle{
+    padding-left:5px;
+    font-family: 'Cuprum', sans-serif;
+    letter-spacing: .18em;
+    font-weight: 300;
+    text-shadow: 1.5px 1px 1.5px #191a1b;
   }
 
   .selected {
@@ -1083,8 +1107,15 @@ body {
     margin: 7;
     margin-left: 8px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 15px;
     text-shadow: 1.5px 1px 1.5px #191a1b;
+    &:hover >  .workTitle{
+      display: inline-block;
+      color: #e0dfdf;
+    }
+    &:hover {
+      color: #e0dfdf;
+    }
   }
   .unselected {
     margin: 7;
@@ -1092,13 +1123,50 @@ body {
     // margin-right: 10px;
     position: relative;
     top: -1.4px;
-    font-size: 5px;
+    font-size: 7px;
     color: #e0dfdf;
     text-shadow: 1.5px 1px 1.5px #191a1b;
     cursor: pointer;
-    &:hover {
-      transform: scale(2.1);
+    .workTitle{
+      display: none;
     }
+    &:hover {
+      transform: scale(1.1);
+      margin-left:19px;
+    }
+    &:hover >  .workTitle{
+      display: inline-block;
+      font-size: 13px;
+    }
+  }
+
+  .project-image {
+    width: 50vw;
+  position: absolute;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 80s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+
+
+  .works-scroll {
+    a:hover{
+      color: white;
+    }
+  }
+
+  .nextSection {
+    top: 90vh;
+    position: absolute;
+    left: 49vw;
+    right: 52vw;
+
+
   }
 // .second-proyect{
 //   background-color: #eef5f7;

@@ -1672,6 +1672,10 @@ body .main__work__cover .navigation-work a:hover {
   border-bottom: 5px solid white;
 }
 
+body .main__work .first-proyect {
+  position: relative;
+}
+
 body .main__work .first-proyect-description {
   height: 50vh;
   padding: 0 34px;
@@ -1849,6 +1853,7 @@ body .main .about-us-image {
 }
 
 .second-proyect {
+  position: relative;
   background-color: #eef5f7;
 }
 
@@ -2247,6 +2252,15 @@ body .main .about-us-image {
   position: fixed;
   top: 40vh;
   left: 20px;
+  z-index: 5;
+}
+
+.workTitle {
+  padding-left: 5px;
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: .18em;
+  font-weight: 300;
+  text-shadow: 1.5px 1px 1.5px #191a1b;
 }
 
 .selected {
@@ -2254,8 +2268,17 @@ body .main .about-us-image {
   margin: 7;
   margin-left: 8px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 15px;
   text-shadow: 1.5px 1px 1.5px #191a1b;
+}
+
+.selected:hover > .workTitle {
+  display: inline-block;
+  color: #e0dfdf;
+}
+
+.selected:hover {
+  color: #e0dfdf;
 }
 
 .unselected {
@@ -2263,15 +2286,49 @@ body .main .about-us-image {
   margin-left: 12px;
   position: relative;
   top: -1.4px;
-  font-size: 5px;
+  font-size: 7px;
   color: #e0dfdf;
   text-shadow: 1.5px 1px 1.5px #191a1b;
   cursor: pointer;
 }
 
+.unselected .workTitle {
+  display: none;
+}
+
 .unselected:hover {
-  -webkit-transform: scale(2.1);
-  transform: scale(2.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  margin-left: 19px;
+}
+
+.unselected:hover > .workTitle {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.project-image {
+  width: 50vw;
+  position: absolute;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 80s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.works-scroll a:hover {
+  color: white;
+}
+
+.nextSection {
+  top: 90vh;
+  position: absolute;
+  left: 49vw;
+  right: 52vw;
 }
 
 @media all and (min-width: 400px) {
@@ -2810,6 +2867,23 @@ body .main .about-us-image {
   100% {
     opacity: 1;
     height: 23px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
