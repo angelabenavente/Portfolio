@@ -60,6 +60,7 @@ body {
     }
 
     &__aboutMe{
+      z-index: 10;
       width: 100%;
       background-color: #252525;
       font-size: 16px;
@@ -560,12 +561,30 @@ body {
                 }
               }
               .seeMore-button {
+                
+                position: relative;
                 padding: 8px;
                 margin: 10px;
                 display: inline;
                 border: 2px solid white;
                 background-color: transparent;
                 cursor: pointer;
+                // &:before {
+                //   content:"";
+                //   color: #2a4d68;
+                //   background-color: white;
+                //   position: absolute;
+                //   top: 0px;
+                //   left: 0px;
+                //   width: 0px;
+                //   height: 100%;
+                //   background: rgba(94, 96, 124, 0.199);
+                //   transition: all 1s ease;
+                // }
+                // &:hover:before {
+                //   width: 100%;
+                //   }
+         
                 @include tablet  {
                   width: 106px;
                   font-size: 16px;
@@ -805,7 +824,7 @@ body {
         }
 
         .third-proyect{
-          // position: absolute;
+          position: relative;
           // top: 0;
           // left: 0;
           // right: 0;
@@ -1089,7 +1108,7 @@ body {
     position: fixed;
     top: 40vh;
     left: 20px;
-    z-index: 5;
+    z-index: 2;
   }
 
   .workTitle{
@@ -1161,12 +1180,46 @@ body {
   }
 
   .nextSection {
-    top: 90vh;
+    top: 89vh;
+    left: 0;
     position: absolute;
-    left: 49vw;
-    right: 52vw;
+    width: 100%;
+    background-color: transparent;
+    &:hover{
+      color: white;
+    }
+  }
 
+  .arrowContainer {
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-right: auto;
+    background-color: transparent;
+    &:hover{
+      transform: scale(1.5);
 
+    }
+    &:hover > .fa-angle-down {
+      width: 30px;
+      height: 30px
+    }
+  }
+
+  .fa-angle-down {
+    background-color: #00000045;
+    width: 50px;
+    padding: 5px;
+    padding-bottom: 11px;
+    height: 50px;
+    font-size: 40px;
+    margin: auto;
+    &:hover{
+      color: white;
+      transform: scale(1.2);
+      border: 1px solid rgba(255, 255, 255, 0.562);
+    }
   }
 // .second-proyect{
 //   background-color: #eef5f7;
