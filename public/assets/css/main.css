@@ -1106,6 +1106,11 @@ svg.intro.go .text-stroke:nth-child(6) {
   animation-delay: 2.8s;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -1759,7 +1764,6 @@ body .main__work .first-proyect-description .seeMore-button a {
 
 body .main__work .first-proyect .first-proyect-image {
   height: 50vh;
-  z-index: 1;
   background-image: url("/assets/images/proxyCover.jpg");
   background-size: cover;
   background-position: center;
@@ -2267,11 +2271,6 @@ body .main .about-us-image {
   position: fixed;
   top: 40vh;
   left: 20px;
-}
-
-html {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 @media all and (min-width: 400px) {

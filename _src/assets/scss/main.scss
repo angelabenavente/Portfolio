@@ -19,6 +19,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
 	width: 100%;
   height: 100%;
@@ -581,7 +586,6 @@ body {
         .first-proyect-image{
 
           height: 50vh;
-          z-index:1;
           background-image: url('/assets/images/proxyCover.jpg');
           background-size: cover;
           background-position: center;
@@ -1088,7 +1092,7 @@ body {
     position: fixed;
     top: 40vh;
     left: 20px;
-    //far fa-circle
+    // z-index: 5;
   }
 // .second-proyect{
 //   background-color: #eef5f7;
@@ -1373,7 +1377,3 @@ body {
 //     height: 70%;
 //   }
 // }
-html {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
