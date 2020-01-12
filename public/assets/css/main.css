@@ -1601,30 +1601,6 @@ body .main__work .carousel .arrowNavigationWorksNext:hover {
   transform: scale(1.2);
 }
 
-body .main__work .carousel .fas.fa-circle {
-  margin-left: 10px;
-  margin-right: 10px;
-  position: relative;
-  top: -1.2px;
-  cursor: pointer;
-  font-size: 13px;
-  text-shadow: 1.5px 1px 1.5px #191a1b;
-}
-
-body .main__work .carousel .far {
-  margin-left: 10px;
-  margin-right: 10px;
-  position: relative;
-  top: -1.4px;
-  font-size: 9px;
-  cursor: pointer;
-}
-
-body .main__work .carousel .far:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
 body .main__work .nextSectionButton {
   margin-bottom: 10px;
   position: absolute;
@@ -2271,6 +2247,31 @@ body .main .about-us-image {
   position: fixed;
   top: 40vh;
   left: 20px;
+}
+
+.selected {
+  position: relative;
+  margin: 7;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  text-shadow: 1.5px 1px 1.5px #191a1b;
+}
+
+.unselected {
+  margin: 7;
+  margin-left: 12px;
+  position: relative;
+  top: -1.4px;
+  font-size: 5px;
+  color: #e0dfdf;
+  text-shadow: 1.5px 1px 1.5px #191a1b;
+  cursor: pointer;
+}
+
+.unselected:hover {
+  -webkit-transform: scale(2.1);
+  transform: scale(2.1);
 }
 
 @media all and (min-width: 400px) {

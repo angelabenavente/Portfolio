@@ -285,8 +285,8 @@ const navigationConfig = {
   currentSection: 'anchor-1'
 };
 
-const SELECTED_NAV_CLASS = 'fas';
-const UNSELECTED_NAV_CLASS = 'far';
+const SELECTED_NAV_CLASS = 'selected';
+const UNSELECTED_NAV_CLASS = 'unselected';
 
 const selectNavLink = (navLinkId) => {
   // first, we unselect current selected nav link
