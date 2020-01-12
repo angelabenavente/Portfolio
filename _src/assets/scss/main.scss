@@ -1128,13 +1128,18 @@ body {
     cursor: pointer;
     font-size: 15px;
     text-shadow: 1.5px 1px 1.5px #191a1b;
-    &:hover >  .workTitle{
-      display: inline-block;
-      color: #e0dfdf;
-    }
     &:hover {
       color: #e0dfdf;
     }
+    &:hover >  .workTitle{
+      display: none;
+    }
+    @include tablet {
+      &:hover >  .workTitle{
+        display: inline-block;
+        color: #e0dfdf;
+      }
+      }
   }
   .unselected {
     margin: 7;
@@ -1154,8 +1159,13 @@ body {
       margin-left:19px;
     }
     &:hover >  .workTitle{
+      display: none;
+    }
+    @include tablet{
+    &:hover >  .workTitle{
       display: inline-block;
       font-size: 13px;
+    }
     }
   }
 

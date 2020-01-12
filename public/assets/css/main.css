@@ -268,11 +268,12 @@ a:hover {
 
 .main__aboutMe {
   width: 100%;
-  z-index: 1;
+  z-index: 800;
   background-color: #252525;
 }
 
 .main__aboutMe__cover {
+  z-index: 800;
   z-index: 1;
   top: 0;
   display: table;
@@ -906,6 +907,7 @@ span {
 }
 
 .hero {
+  z-index: 800;
   height: 100vh;
   width: 100vw;
   padding: 0 25px;
@@ -2278,13 +2280,12 @@ body .main .about-us-image {
   text-shadow: 1.5px 1px 1.5px #191a1b;
 }
 
-.selected:hover > .workTitle {
-  display: inline-block;
+.selected:hover {
   color: #e0dfdf;
 }
 
-.selected:hover {
-  color: #e0dfdf;
+.selected:hover > .workTitle {
+  display: none;
 }
 
 .unselected {
@@ -2309,8 +2310,7 @@ body .main .about-us-image {
 }
 
 .unselected:hover > .workTitle {
-  display: inline-block;
-  font-size: 13px;
+  display: none;
 }
 
 .project-image {
@@ -2723,6 +2723,16 @@ body .main .about-us-image {
   .seeMore-button {
     width: 106px;
     font-size: 16px;
+  }
+
+  .selected:hover > .workTitle {
+    display: inline-block;
+    color: #e0dfdf;
+  }
+
+  .unselected:hover > .workTitle {
+    display: inline-block;
+    font-size: 13px;
   }
 }
 
