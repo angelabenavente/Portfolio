@@ -1,5 +1,3 @@
-
-
 'use strict';
 
 // TOOGLE PALETA COLORES 
@@ -176,26 +174,7 @@ function toggleCourses () {
   }
 }
 
-
 ////////////////HEADER///////////////
-
-document.getElementById('author');
-
-// function header(){
-// if (window.matchMedia("(min-width: 400px)").matches) {
-//   autor.innerHTML('AB');
-// } else {
-//   autor.innerHTML('Ángela Benavente');
-// }
-// }
-
-// window.addEventListener(header)
-
-
-//////////////////
-
-
-
 
 courses.addEventListener('click', toggleCourses);
 
@@ -214,8 +193,6 @@ let windowSize = window.matchMedia("(max-width: 550px)")
 resizeAuthor(windowSize) // Call listener function at run time
 windowSize.addListener(resizeAuthor)
 
-//window.addEventListener(resizeAuthor);
-
 ////////////////////
 //const aboutSection = document.querySelector('#about');
 const navigationButton = document.querySelector('#navigation__button')
@@ -225,7 +202,6 @@ const firstProjectSection = document.querySelector('#anchor-1');
 const secondProjectSection = document.querySelector('#second-project');
 const thirdProjectSection = document.querySelector('#third-project');
 const fourthProjectSection = document.querySelector('#fourth-project');
-//let firstProjectTop = firstProjectSection.getBoundingClientRect().top;
 const projectImage = document.querySelector('#project-image');
 const projectDescription = document.querySelector('#project-description');
 const worksPosition = document.querySelector('#worksNavigationPosition');
@@ -250,8 +226,6 @@ function showList(){
     listNavigation.classList.add('showItems')
     listNavigation.style.width = '100vw'
   }
-
-  
 }
 navigationButton.addEventListener('click', showList)
 let arrowNavigationWorks = document.querySelector('.arrowNavigationWorks');
@@ -403,18 +377,15 @@ window.addEventListener('DOMContentLoaded', () => {
   }, 7000);
 });
 
-const scrollTo = (selector) => {
-  const element = selector && document.querySelector(selector);
+function loadFunction() {
+  document.querySelector('.intro').classList.add('go'); // hero
 
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+  if (!("scrollBehavior" in document.documentElement.style)) {
+    // scroll-behavior: smooth - is not supported
+    const scroll = new SmoothScroll('a[data-scroll]', {
+      speed: 600
+    });
   }
 }
 
-
-function colors () {
-  document.querySelector('.intro').classList.add('go');
-}
-
-window.addEventListener('load', colors);
-
+window.addEventListener('load', loadFunction);

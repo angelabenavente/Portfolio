@@ -21,6 +21,7 @@
 		"gulp-zip": "*",
 		"onsenui": "^2.10.10",
 		"run-sequence": "*",
+		"scroll-behavior-polyfill": "^2.0.13",
 		"smoothscroll-polyfill": "^0.4.4",
 		"swiper": "^5.2.1",
 		"tiny-slider": "^2.9.2",

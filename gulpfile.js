@@ -65,6 +65,8 @@ gulp.task('scripts', function(done){
   gulp.src(config.js.src)
     .pipe(sourcemaps.init())
     .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(concat('smooth-scroll.polyfills.min.js'))
+    .pipe(concat('intersection-observer.polyfill.js'))
     .pipe(concat('main.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.js.dest))
@@ -140,6 +142,8 @@ gulp.task('styles-dist', function(done) {
 gulp.task('scripts-dist', function(done){
   gulp.src(config.js.src)
     .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(concat('smooth-scroll.polyfills.min.js'))
+    .pipe(concat('intersection-observer.polyfill.js'))
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(config.js.dist));
