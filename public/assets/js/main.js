@@ -631,9 +631,6 @@ function changeNavigationColor () {
       
     }
 
-  window.addEventListener("DOMContentLoaded" , () => {
-  document.addEventListener("scroll", changeNavigationColor) });
-
 function changeNavigationItem() {
   if (fourthPosition.classList.contains('far')){
     fourthPosition.classList.remove('far');
@@ -647,9 +644,9 @@ function changeNavigationItem() {
   }
 }
   fourthPosition.addEventListener("click", changeNavigationItem);
-  firstPosition.addEventListener("click", changeNavigationColor);
-  secondPosition.addEventListener("click", changeNavigationColor);
-  thirdPosition.addEventListener("click", changeNavigationColor);
+  // firstPosition.addEventListener("click", changeNavigationColor);
+  // secondPosition.addEventListener("click", changeNavigationColor);
+  // thirdPosition.addEventListener("click", changeNavigationColor);
 
 // window.onscroll = () => {
 //   /* Obtenemos la posición absoluta del elemento en cuestión */
@@ -674,13 +671,116 @@ function changeNavigationItem() {
   // }
 }
 
-window.addEventListener("DOMContentLoaded" , () => {
-  document.addEventListener("scroll", changeNavigationColor) });
+/* Código limpio START */
+const navigationProperties = {
+  'anchor-1': {
+    navigationBackgroundColor: '#1a3446',
+    navigationButtonColor: '#1a3446',
+    contactLinkColor: '#1a3446e8',
+    pageCategoryText: 'projects',
+    headerTitleColor: '#fff'
+  },
+  'anchor-2': {
+    navigationBackgroundColor: '#173d31',
+    navigationButtonColor: '#173d31',
+    contactLinkColor: '#173d31e8',
+    pageCategoryText: 'projects',
+    headerTitleColor: '#fff'
+  },
+  'anchor-3': {
+    navigationBackgroundColor: '#3e0c15',
+    navigationButtonColor: '#3e0c15',
+    contactLinkColor: '#3e0c15e8',
+    pageCategoryText: 'projects',
+    headerTitleColor: '#fff'
+  },
+  'anchor-4': {
+    navigationBackgroundColor: '#1a4127',
+    navigationButtonColor: '#1a4127',
+    contactLinkColor: '#1a4127e8',
+    pageCategoryText: 'projects',
+    headerTitleColor: '#fff'
+  },
+  'about': {
+    navigationBackgroundColor: '#252525',
+    navigationButtonColor: '#252525',
+    contactLinkColor: '#252525e8',
+    pageCategoryText: 'about',
+    headerTitleColor: '#504b4b'
+  }
+};
 
+const navigationConfig = {
+  currentSection: 'anchor-1'
+};
 
-// Call listener function at run time
-//window.addEventListener('scroll', changeNavigationColor)
+const changeHeaderProperties = (intersectionEntry) => {
+  const targetId = intersectionEntry.target.id;
+  const config = navigationProperties[targetId];
 
+  if (navigationConfig.currentSection === targetId || !config) {
+    console.log('ES EL MISMO, LOCO');
+    return;
+  }
+
+  navigationConfig.currentSection = targetId;
+
+  // change colors
+  navigationBackground.style.backgroundColor = config.navigationBackgroundColor;
+  navigationButton.style.backgroundColor = config.navigationButtonColor;
+  contactLinksHeader.style.backgroundColor = config.contactLinkColor;
+  headerTitle.style.color = config.headerTitleColor;
+  pageCategory.innerHTML = config.pageCategoryText;
+};
+
+const changeNavigation = (entries, observer) => {
+  const [first, second] = entries; // get first and second
+
+  if (first.intersectionRatio >= 0.10) { // if first is visible at least 10%
+    changeHeaderProperties(first);
+  } else if (second.intersectionRatio >= 0.80) {
+    changeHeaderProperties(second);
+  }
+
+  console.log(entries);
+};
+
+const calcThreshold = (interval) => {
+  const threshold = [];
+
+  for (let current = 0; current < 1; current += interval) {
+    threshold.push(current);
+  }
+  threshold.push(1);
+
+  return threshold;
+};
+
+const startIntersectionObserver = () => {
+  const targets = document.querySelectorAll('.listen-scroll');
+  const observerOptions = {
+    // root: document.querySelector('.main'),
+    rootMargin: '0px',
+    threshold: calcThreshold(0.05)
+  };
+
+  const observer = new IntersectionObserver(changeNavigation, observerOptions);
+
+  targets.forEach((target) => {
+    observer.observe(target);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  // document.addEventListener('scroll', changeNavigationColor);
+  setTimeout(() => {
+    document.querySelector('#home').classList.add('hidden'); // hide hero
+  
+    startIntersectionObserver();
+  }, 7000);
+});
+
+/* Código limpio END */
 
 ////////////
 //////////////
