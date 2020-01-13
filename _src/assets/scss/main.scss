@@ -64,6 +64,8 @@ body {
       width: 100%;
       background-color: #252525;
       font-size: 16px;
+      position: relative;
+      top: 0;
       @include tablet {
         display: flex;
         flex-direction: row;
@@ -75,7 +77,8 @@ body {
         height: 100vh;
         top: 0;
         display: flex;
-        justify-content: center;
+        padding-bottom: 60px;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column;
         text-transform: uppercase;
@@ -93,6 +96,7 @@ body {
         @include tablet {
           padding: 50px;
           font-size: 18px;
+          width: 50vw;
         }
 
         &--formation {
@@ -395,7 +399,7 @@ body {
 
         &__work {
           width: 100%;
-          position: relative;
+          //position: relative;
           color: black;
           background-color: #252525;
 
@@ -936,7 +940,7 @@ body {
           }
         }
         .fourth-proyect {
-          // position: absolute;
+          position: relative;
           // top: 0;
           // left: 0;
           // right: 0;
@@ -1109,6 +1113,7 @@ body {
     top: 40vh;
     left: 20px;
     z-index: 2;
+    display:none;
   }
 
   .workTitle{
@@ -1230,6 +1235,30 @@ body {
       transform: scale(1.2);
       border: 1px solid rgba(255, 255, 255, 0.562);
     }
+  }
+
+  .fa-angle-up {
+    background-color: #00000045;
+    width: 50px;
+    padding: 5px;
+    padding-bottom: 11px;
+    height: 50px;
+    font-size: 40px;
+    margin: auto;
+    &:hover{
+      color: white;
+      transform: scale(1.2);
+      border: 1px solid rgba(255, 255, 255, 0.562);
+    }
+  }
+
+  .backToHome {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .linkToHome {
+    top: 84vh;
   }
 // .second-proyect{
 //   background-color: #eef5f7;

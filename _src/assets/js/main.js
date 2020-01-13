@@ -372,6 +372,7 @@ const startIntersectionObserver = () => {
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelector('#home').classList.add('hidden'); // hide hero
+    document.querySelector('.works-scroll').style.display = "block"
   
     startIntersectionObserver();
   }, 7000);

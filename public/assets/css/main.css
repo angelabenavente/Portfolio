@@ -269,20 +269,21 @@ a:hover {
 .main__aboutMe {
   width: 100%;
   z-index: 800;
+  position: relative;
   background-color: #252525;
 }
 
 .main__aboutMe__cover {
   z-index: 800;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   display: table;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -298,7 +299,7 @@ a:hover {
 }
 
 .main__aboutMe__content {
-  z-index: 1;
+  z-index: 0;
   background-color: #00000075;
   background-color: #252525;
   color: white;
@@ -508,6 +509,21 @@ a:hover {
   fill-opacity: .2;
 }
 
+.showWorks {
+  width: 100vw;
+  text-align: center;
+  bottom: 9vh;
+  position: -webkit-sticky;
+  position: sticky;
+  color: white;
+  z-index: 1;
+  left: -0.6%;
+}
+
+.showWorks:hover {
+  color: white;
+}
+
 span {
   margin: 0;
   padding: 0;
@@ -562,6 +578,7 @@ span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #504b4b;
 }
 
 .header .header__logo {
@@ -588,7 +605,7 @@ span {
 }
 
 .header .header__logo-aboutMe {
-  background-color: #2a4d68;
+  background-color: #252525;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
   border: 1px solid white;
   border: none;
@@ -743,7 +760,7 @@ span {
 }
 
 .header .navigation__button {
-  background-color: #1a3446;
+  background-color: #252525;
   height: 60px;
   width: 60px;
   margin-right: 15px;
@@ -755,7 +772,7 @@ span {
 }
 
 .header .navigation__background {
-  background-color: #1a3446;
+  background-color: #252525;
   height: 35px;
   width: 35px;
   opacity: 2;
@@ -769,7 +786,7 @@ span {
 }
 
 .header .navigation__nav {
-  background-color: #1a3446;
+  background-color: #252525;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1138,6 +1155,8 @@ body .main__aboutMe {
   width: 100%;
   background-color: #252525;
   font-size: 16px;
+  position: relative;
+  top: 0;
 }
 
 body .main__aboutMe__cover {
@@ -1147,9 +1166,10 @@ body .main__aboutMe__cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  padding-bottom: 60px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1531,7 +1551,6 @@ body .main__contact__content .social-icon:hover {
 
 body .main__work {
   width: 100%;
-  position: relative;
   color: black;
   background-color: #252525;
 }
@@ -2070,6 +2089,10 @@ body .main .about-us-image {
   margin-bottom: 10px;
 }
 
+.fourth-proyect {
+  position: relative;
+}
+
 .fourth-proyect-description {
   text-align: center;
   color: white;
@@ -2261,6 +2284,7 @@ body .main .about-us-image {
   top: 40vh;
   left: 20px;
   z-index: 2;
+  display: none;
 }
 
 .workTitle {
@@ -2378,6 +2402,32 @@ body .main .about-us-image {
   border: 1px solid rgba(255, 255, 255, 0.562);
 }
 
+.fa-angle-up {
+  background-color: #00000045;
+  width: 50px;
+  padding: 5px;
+  padding-bottom: 11px;
+  height: 50px;
+  font-size: 40px;
+  margin: auto;
+}
+
+.fa-angle-up:hover {
+  color: white;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.562);
+}
+
+.backToHome {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.linkToHome {
+  top: 84vh;
+}
+
 @media all and (min-width: 400px) {
   .job {
     bottom: 36%;
@@ -2397,8 +2447,13 @@ body .main .about-us-image {
 }
 
 @media all and (min-width: 768px) {
+  .main__aboutMe__cover {
+    width: 50vw;
+  }
+
   .main__aboutMe__content {
     padding: 50px;
+    width: 50vw;
   }
 
   .main__aboutMe__content--formation--box .master__form {
@@ -2500,6 +2555,7 @@ body .main .about-us-image {
   body .main__aboutMe__cover__content {
     padding: 50px;
     font-size: 18px;
+    width: 50vw;
   }
 
   body .main__aboutMe__cover__content--formation--box .master__form {
