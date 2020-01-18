@@ -380,7 +380,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function loadFunction() {
   document.querySelector('.intro').classList.add('go'); // hero
-
+  console.log(screen.height);
   if (!("scrollBehavior" in document.documentElement.style)) {
     // scroll-behavior: smooth - is not supported
     const scroll = new SmoothScroll('a[data-scroll]', {
@@ -390,3 +390,20 @@ function loadFunction() {
 }
 
 window.addEventListener('load', loadFunction);
+
+// document.onkeydown = function(event) {
+//   switch (event.keyCode) {
+//      case 37:
+//           alert('Left key pressed');
+//         break;
+//      case 38:
+//           alert('Up key pressed');
+//         break;
+//      case 39:
+//           alert('Right key pressed');
+//         break;
+//      case 40:
+
+//         break;
+//   }
+// };
