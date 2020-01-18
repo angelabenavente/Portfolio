@@ -1,3 +1,5 @@
+@mixin mobile { @media all and (min-width: 240px) { @content}};
+
 @mixin mobileMedium { @media all and (min-width: 400px) { @content}};
 
 @mixin mobilePlus { @media all and (min-width: 500px) { @content}};

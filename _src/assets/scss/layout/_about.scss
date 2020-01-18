@@ -24,13 +24,14 @@
     }
   }
   &__content {
-    z-index: 0;
+    z-index: -1;
     background-color: #00000075;
     background-color: #252525;
     color: white;
     //color: #0c0c0c;
     padding: 50px 25px;
     @include tablet {
+      z-index: -1;
       padding: 50px;
         width: 50vw;
     }

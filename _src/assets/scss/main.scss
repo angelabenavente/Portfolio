@@ -1271,6 +1271,38 @@ body {
     }
   }
 
+  .linkToProjects {
+    top: 84vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 10;
+    display: none;
+
+    @include tablet {
+display: block;
+    }
+  }
+
+  .linkToProjectsContent {
+    @include mobile {
+    top: 84vh;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    }
+
+    @include tablet {
+      display: none;
+      z-index: -10;
+      width: 0;
+    }
+  }
+
   .backToHome {
     font-size: 18px;
     margin: 5px;

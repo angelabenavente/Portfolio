@@ -299,7 +299,7 @@ a:hover {
 }
 
 .main__aboutMe__content {
-  z-index: 0;
+  z-index: -1;
   background-color: #00000075;
   background-color: #252525;
   color: white;
@@ -948,6 +948,12 @@ span {
   -ms-flex-line-pack: center;
   align-content: center;
   overflow: hidden;
+  -webkit-animation: notShow 1s ease-in-out;
+  animation: notShow 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 5.4s;
+  animation-delay: 5.4s;
 }
 
 .hero__background {
@@ -2423,6 +2429,14 @@ body .main .about-us-image {
   border: 1px solid rgba(255, 255, 255, 0.562);
 }
 
+.linkToProjects {
+  top: 84vh;
+  width: 100vw;
+  text-align: center;
+  z-index: 10;
+  display: none;
+}
+
 .backToHome {
   font-size: 18px;
   margin: 5px;
@@ -2430,6 +2444,25 @@ body .main .about-us-image {
 
 .linkToHome {
   top: 84vh;
+}
+
+@media all and (min-width: 240px) {
+  .linkToProjectsContent {
+    top: 84vh;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    position: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 40px;
+  }
 }
 
 @media all and (min-width: 400px) {
@@ -2456,6 +2489,7 @@ body .main .about-us-image {
   }
 
   .main__aboutMe__content {
+    z-index: -1;
     padding: 50px;
     width: 50vw;
   }
@@ -2805,6 +2839,16 @@ body .main .about-us-image {
     padding-bottom: 11px;
     height: 50px;
     font-size: 40px;
+  }
+
+  .linkToProjects {
+    display: block;
+  }
+
+  .linkToProjectsContent {
+    display: none;
+    z-index: -10;
+    width: 0;
   }
 }
 

@@ -194,7 +194,6 @@ resizeAuthor(windowSize) // Call listener function at run time
 windowSize.addListener(resizeAuthor)
 
 ////////////////////
-//const aboutSection = document.querySelector('#about');
 const navigationButton = document.querySelector('#navigation__button')
 const navigationBackground = document.querySelector('#navigation-background');
 const aboutSection = document.querySelector('#about');
@@ -232,10 +231,6 @@ let arrowNavigationWorks = document.querySelector('.arrowNavigationWorks');
 let arrowNavigationWorksNext = document.querySelector('.arrowNavigationWorksNext');
 
 //////////////////////////
-let firstProjectyPos = firstProjectSection.getBoundingClientRect().top;
-let secondProjectyPos = secondProjectSection.getBoundingClientRect().top;
-let thirdProjectyPos = thirdProjectSection.getBoundingClientRect().top;
-let fourthProjectyPos = fourthProjectSection.getBoundingClientRect().top;
 const headerTitle = document.querySelector('.header__logo');
 
 /* Código limpio START */
@@ -282,7 +277,7 @@ const navigationProperties = {
 };
 
 const navigationConfig = {
-  currentSection: 'anchor-1'
+  currentSection: 'about'
 };
 
 const SELECTED_NAV_CLASS = 'selected';
@@ -323,25 +318,47 @@ const changeHeaderProperties = (intersectionEntry) => {
   headerTitle.style.color = config.headerTitleColor;
   pageCategory.innerHTML = config.pageCategoryText;
 
-  selectNavLink(config.navLinkId);
+  config.navLinkId && selectNavLink(config.navLinkId);
 };
 
 const HEADER_SIZE = 60;
 
 const isVisibleAndTop = (entry) => {
-  const top = entry.boundingClientRect.top;
-  const minTop = (window.innerHeight - HEADER_SIZE) * -1;
+  const { top, height } = entry.boundingClientRect;
+  const viewportHeight = window.innerHeight;
 
-  return entry.isIntersecting && top <= HEADER_SIZE && top >= minTop;
+  if (height === viewportHeight || Math.abs(height - viewportHeight) < 10) {
+    const minTop = (viewportHeight - HEADER_SIZE) * -1;
+
+    return entry.isIntersecting && top <= HEADER_SIZE && top >= minTop;
+  }
 }
 
+const isVisibleAndBig = (entry) => {
+  const { top, height } = entry.boundingClientRect;
+  const viewportHeight = window.innerHeight;
+
+  if (Math.abs(height - viewportHeight) > 10) {
+    const visibleHeight = entry.intersectionRatio * height;
+    let minVisibleHeight;
+
+    if (top < 0) { // el elemento está por arriba
+      minVisibleHeight = HEADER_SIZE;
+    } else { // el elemento está por abajo
+      minVisibleHeigh = viewportHeight - HEADER_SIZE;
+    }
+
+    return entry.isIntersecting && visibleHeight > minVisibleHeight;
+  }
+};
+
 const changeNavigation = (entries) => {
-  const visibleTopEntry = entries.reverse().find(isVisibleAndTop);
+  let visibleTopEntry = entries.reverse().find(isVisibleAndTop);
+  visibleTopEntry = visibleTopEntry || entries.find(isVisibleAndBig);
 
   if (visibleTopEntry) {
     changeHeaderProperties(visibleTopEntry);
   }
-
 };
 
 const calcThreshold = (interval) => {
@@ -380,7 +397,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function loadFunction() {
   document.querySelector('.intro').classList.add('go'); // hero
-  console.log(screen.height);
+
   if (!("scrollBehavior" in document.documentElement.style)) {
     // scroll-behavior: smooth - is not supported
     const scroll = new SmoothScroll('a[data-scroll]', {
