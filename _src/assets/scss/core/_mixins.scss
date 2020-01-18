@@ -1,4 +1,6 @@
-@mixin mobile { @media all and (min-width: 240px) { @content}};
+@mixin mobileXXS { @media all and (min-width: 240px) { @content}};
+
+@mixin mobileMin { @media all and (min-width: 370px) { @content}};
 
 @mixin mobileMedium { @media all and (min-width: 400px) { @content}};
 

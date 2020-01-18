@@ -923,13 +923,14 @@ function toggleCourses () {
 courses.addEventListener('click', toggleCourses);
 
 const author = document.getElementById('author');
-const pageCategory = document.querySelector('.pageCategory');
+const pageCategoryAbout = document.querySelector('.pageCategoryAbout');
+const pageCategoryWork = document.querySelector('.pageCategoryWork');
 
 function resizeAuthor () {
   if (windowSize.matches) { // If media query matches
-    author.innerHTML="AB | "
+    author.innerHTML="AB"
   } else {
-    author.innerHTML="Ángela Benavente | "
+    author.innerHTML="Ángela Benavente"
   }
 }
 
@@ -971,8 +972,11 @@ function showList(){
   }
 }
 navigationButton.addEventListener('click', showList)
+//navigationLink.addEventListener('click', showList)
 let arrowNavigationWorks = document.querySelector('.arrowNavigationWorks');
+//let navigationLink = document.querySelectorAll('.navigation__list');
 let arrowNavigationWorksNext = document.querySelector('.arrowNavigationWorksNext');
+
 
 //////////////////////////
 const headerTitle = document.querySelector('.header__logo');
@@ -983,40 +987,78 @@ const navigationProperties = {
     navigationBackgroundColor: '#1a3446',
     navigationButtonColor: '#1a3446',
     contactLinkColor: '#1a3446e8',
-    pageCategoryText: 'projects',
     headerTitleColor: '#fff',
-    navLinkId: 'firstProjectPosition'
+    navLinkId: 'firstProjectPosition',
+    pageCategoryAboutStyle: '700',
+    pageCategoryWorkStyle: '400',
+    pageCategoryWorkWeight: '2px solid white',
+    pageCategoryAboutWeight: 'none',
+    pageCategoryAboutColor: 'white',
+    pageCategoryWorkColor: 'white'
   },
   'anchor-2': {
     navigationBackgroundColor: '#173d31',
     navigationButtonColor: '#173d31',
     contactLinkColor: '#173d31e8',
-    pageCategoryText: 'projects',
     headerTitleColor: '#fff',
-    navLinkId: 'secondProjectPosition'
+    navLinkId: 'secondProjectPosition',
+    pageCategoryAboutStyle: '700',
+    pageCategoryWorkStyle: '400',
+    pageCategoryWorkWeight: '2px solid white',
+    pageCategoryAboutWeight: 'none',
+    pageCategoryAboutColor: 'white',
+    pageCategoryWorkColor: 'white'
   },
   'anchor-3': {
     navigationBackgroundColor: '#3e0c15',
     navigationButtonColor: '#3e0c15',
     contactLinkColor: '#3e0c15e8',
-    pageCategoryText: 'projects',
     headerTitleColor: '#fff',
-    navLinkId: 'thirdProjectPosition'
+    navLinkId: 'thirdProjectPosition',
+    pageCategoryAboutStyle: '700',
+    pageCategoryWorkStyle: '400',
+    pageCategoryWorkWeight: '2px solid white',
+    pageCategoryAboutWeight: 'none',
+    pageCategoryAboutColor: 'white',
+    pageCategoryWorkColor: 'white'
   },
   'anchor-4': {
     navigationBackgroundColor: '#1a4127',
     navigationButtonColor: '#1a4127',
     contactLinkColor: '#1a4127e8',
-    pageCategoryText: 'projects',
     headerTitleColor: '#fff',
-    navLinkId: 'fourthProjectPosition'
+    navLinkId: 'fourthProjectPosition',
+    pageCategoryAboutStyle: '700',
+    pageCategoryWorkStyle: '400',
+    pageCategoryWorkWeight: '2px solid white',
+    pageCategoryAboutWeight: 'none',
+    pageCategoryAboutColor: 'white',
+    pageCategoryWorkColor: 'white'
+  },
+  'anchor-5': {
+    navigationBackgroundColor: '#1a4127',
+    navigationButtonColor: '#1a4127',
+    contactLinkColor: '#1a4127e8',
+    headerTitleColor: '#fff',
+    navLinkId: 'fifthProjectPosition',
+    pageCategoryAboutStyle: '700',
+    pageCategoryWorkStyle: '400',
+    pageCategoryWorkWeight: '2px solid white',
+    pageCategoryAboutWeight: 'none',
+    pageCategoryAboutColor: 'white',
+    pageCategoryWorkColor: 'white'
   },
   'about': {
     navigationBackgroundColor: '#252525',
     navigationButtonColor: '#252525',
     contactLinkColor: '#252525e8',
-    pageCategoryText: 'about',
-    headerTitleColor: '#504b4b'
+    headerTitleColor: '#504b4b',
+    pageCategoryAboutStyle: '700',
+    pageCategoryWorkStyle: '400',
+    pageCategoryAboutWeight: '2px solid #504b4bbe',
+    pageCategoryWorkWeight: 'none',
+    pageCategoryAboutColor: '#504b4b',
+    pageCategoryWorkColor: '#504b4b',
   }
 };
 
@@ -1060,7 +1102,12 @@ const changeHeaderProperties = (intersectionEntry) => {
   navigationButton.style.backgroundColor = config.navigationButtonColor;
   contactLinksHeader.style.backgroundColor = config.contactLinkColor;
   headerTitle.style.color = config.headerTitleColor;
-  pageCategory.innerHTML = config.pageCategoryText;
+  pageCategoryWork.style.textDecoration = config.pageCategoryWorkStyle;
+  pageCategoryAbout.style.textDecoration = config.pageCategoryAboutStyle;
+  pageCategoryWork.style.borderBottom = config.pageCategoryWorkWeight;
+  pageCategoryAbout.style.borderBottom = config.pageCategoryAboutWeight;
+  pageCategoryWork.style.color = config.pageCategoryWorkColor;
+  pageCategoryAbout.style.color = config.pageCategoryAboutColor;
 
   config.navLinkId && selectNavLink(config.navLinkId);
 };

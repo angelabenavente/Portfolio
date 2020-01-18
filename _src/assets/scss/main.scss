@@ -1275,11 +1275,13 @@ body {
   }
 
   .linkToProjects {
-    top: 84vh;
-    width: 100vw;
+    top: 82%;
+    width: 100%;
     text-align: center;
     z-index: 10;
     display: none;
+    position: fixed;
+    text-transform: uppercase;
 
     @include tablet {
 display: block;
@@ -1287,7 +1289,7 @@ display: block;
   }
 
   .linkToProjectsContent {
-    @include mobile {
+    @include mobileXXS {
     top: 84vh;
     width: 100%;
     text-align: center;

@@ -70,8 +70,37 @@ span {
       text-transform: uppercase;
     }
     
-    .pageCategory{
+    .pageCategoryAbout{
       text-transform: capitalize;
+      font-weight: 700;
+      border-bottom: 2px solid #504b4bbe;
+      color: #504b4b;
+      display: none;
+      &:hover {
+        text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
+      }
+      @include mobileMin {
+        display: inline-block;
+      }
+    }
+
+    .pageCategoryIntersection {
+      display: none;
+      @include mobileMin {
+        display: inline-block;
+      }
+    }
+
+    .pageCategoryWork {
+      text-transform: capitalize;
+      color: #504b4b;
+      display: none;
+      &:hover {
+        text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
+      }
+      @include mobileMin {
+        display: inline-block;
+      }
     }
 
     &-aboutMe {

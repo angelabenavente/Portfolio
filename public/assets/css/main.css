@@ -600,8 +600,30 @@ span {
   text-transform: uppercase;
 }
 
-.header .header__logo .pageCategory {
+.header .header__logo .pageCategoryAbout {
   text-transform: capitalize;
+  font-weight: 700;
+  border-bottom: 2px solid #504b4bbe;
+  color: #504b4b;
+  display: none;
+}
+
+.header .header__logo .pageCategoryAbout:hover {
+  text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
+}
+
+.header .header__logo .pageCategoryIntersection {
+  display: none;
+}
+
+.header .header__logo .pageCategoryWork {
+  text-transform: capitalize;
+  color: #504b4b;
+  display: none;
+}
+
+.header .header__logo .pageCategoryWork:hover {
+  text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
 }
 
 .header .header__logo-aboutMe {
@@ -2430,11 +2452,13 @@ body .main .about-us-image {
 }
 
 .linkToProjects {
-  top: 84vh;
-  width: 100vw;
+  top: 82%;
+  width: 100%;
   text-align: center;
   z-index: 10;
   display: none;
+  position: fixed;
+  text-transform: uppercase;
 }
 
 .backToHome {
@@ -2462,6 +2486,20 @@ body .main .about-us-image {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 40px;
+  }
+}
+
+@media all and (min-width: 370px) {
+  .header .header__logo .pageCategoryAbout {
+    display: inline-block;
+  }
+
+  .header .header__logo .pageCategoryIntersection {
+    display: inline-block;
+  }
+
+  .header .header__logo .pageCategoryWork {
+    display: inline-block;
   }
 }
 
