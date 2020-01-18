@@ -581,7 +581,6 @@ body {
               .seeMore-button {
                 
                 position: relative;
-                padding: 8px;
                 margin: 10px;
                 display: inline;
                 border: 2px solid white;
@@ -611,8 +610,10 @@ body {
                   transform: scale(1.1);
                 }
                 a{
+                  padding: 8px;
                   color: white;
                   text-transform: uppercase;
+                  padding: 8px;
                 }
               }
         }
@@ -807,6 +808,7 @@ body {
               transform: scale(1.1);
             }
             a{
+              padding: 8px;
               color: white;
               text-transform: uppercase;
             }
@@ -879,6 +881,7 @@ body {
               transform: scale(1.1);
             }
             a{
+              padding: 8px;
               color: white;
               text-transform: uppercase;
             }
@@ -995,6 +998,7 @@ body {
             }
             
             a{
+              padding: 8px;
               color: white;
               text-transform: uppercase;
             }
@@ -1117,6 +1121,7 @@ body {
                   transform: scale(1.1);
                 }
                 a{
+                  padding: 8px;
                   color: white;
                   text-transform: uppercase;
                 }
@@ -1164,6 +1169,7 @@ body {
                     transform: scale(1.1);
                   }
                   a{
+                    padding: 8px;
                     color: white;
                     text-transform: uppercase;
                   }
@@ -1239,6 +1245,7 @@ body {
                     transform: scale(1.1);
                   }
                   a{
+                    padding: 8px;
                     color: white;
                     text-transform: uppercase;
                   }
@@ -1314,6 +1321,7 @@ body {
                     transform: scale(1.1);
                   }
                   a{
+                    padding: 8px;
                     color: white;
                     text-transform: uppercase;
                   }
@@ -1435,16 +1443,7 @@ body {
     }
   }
 
-  .nextSection {
-    top: 89vh;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    &:hover{
-      color: white;
-    }
-  }
+
 
   .arrowContainer {
     border: 1px solid white;
@@ -1486,12 +1485,18 @@ body {
 
   .fa-angle-up {
     background-color: #00000045;
-    width: 50px;
-    padding: 5px;
-    padding-bottom: 11px;
-    height: 50px;
-    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+    font-size: 35px;
     margin: auto;
+    @include tablet {
+      width: 50px;
+      padding: 5px;
+      padding-bottom: 11px;
+      height: 50px;
+      font-size: 40px;
+    }
     &:hover{
       color: white;
       transform: scale(1.2);
@@ -1540,6 +1545,17 @@ display: block;
 
   .linkToHome {
     top: 84vh;
+  }
+
+  .nextSection {
+    top: 89vh;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    &:hover{
+      color: white;
+    }
   }
 // .second-proyect{
 //   background-color: #eef5f7;

@@ -1783,7 +1783,6 @@ body .main__work .first-proyect-description .linksInfoProject {
 
 body .main__work .first-proyect-description .seeMore-button {
   position: relative;
-  padding: 8px;
   margin: 10px;
   display: inline;
   border: 2px solid white;
@@ -1797,8 +1796,10 @@ body .main__work .first-proyect-description .seeMore-button:hover {
 }
 
 body .main__work .first-proyect-description .seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
+  padding: 8px;
 }
 
 body .main__work .first-proyect .first-proyect-image {
@@ -1957,6 +1958,7 @@ body .main .about-us-image {
 }
 
 .second-proyect-description .second-seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2040,6 +2042,7 @@ body .main .about-us-image {
 }
 
 .third-proyect-description .third-seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2171,6 +2174,7 @@ body .main .about-us-image {
 }
 
 .fourth-proyect-description .fourth-seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2311,6 +2315,7 @@ body .main .about-us-image {
 }
 
 .seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2361,6 +2366,7 @@ body .main .about-us-image {
 }
 
 .fifth-proyect-description .fifth-seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2447,6 +2453,7 @@ body .main .about-us-image {
 }
 
 .sixth-proyect-description .fifth-seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2533,6 +2540,7 @@ body .main .about-us-image {
 }
 
 .seventh-proyect-description .seventh-seeMore-button a {
+  padding: 8px;
   color: white;
   text-transform: uppercase;
 }
@@ -2645,18 +2653,6 @@ body .main .about-us-image {
   color: white;
 }
 
-.nextSection {
-  top: 89vh;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  background-color: transparent;
-}
-
-.nextSection:hover {
-  color: white;
-}
-
 .arrowContainer {
   border: 1px solid white;
   width: 50px;
@@ -2694,11 +2690,10 @@ body .main .about-us-image {
 
 .fa-angle-up {
   background-color: #00000045;
-  width: 50px;
-  padding: 5px;
-  padding-bottom: 11px;
-  height: 50px;
-  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
+  font-size: 35px;
   margin: auto;
 }
 
@@ -2726,6 +2721,18 @@ body .main .about-us-image {
 
 .linkToHome {
   top: 84vh;
+}
+
+.nextSection {
+  top: 89vh;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.nextSection:hover {
+  color: white;
 }
 
 @media all and (min-width: 240px) {
@@ -3169,6 +3176,14 @@ body .main .about-us-image {
   }
 
   .fa-angle-down {
+    width: 50px;
+    padding: 5px;
+    padding-bottom: 11px;
+    height: 50px;
+    font-size: 40px;
+  }
+
+  .fa-angle-up {
     width: 50px;
     padding: 5px;
     padding-bottom: 11px;
