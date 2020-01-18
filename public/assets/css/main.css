@@ -2315,6 +2315,264 @@ body .main .about-us-image {
   text-transform: uppercase;
 }
 
+.fifth-proyect {
+  position: relative;
+  background-color: #eef5f7;
+}
+
+.fifth-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url("/assets/images/secondWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #173d31;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+.fifth-proyect-description .fifth-seeMore-button {
+  width: 160px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fifth-proyect-description .fifth-seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.fifth-proyect-description .fifth-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.fifth-proyect-image {
+  background-color: #eef5f7;
+  color: #e17334;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
+  height: 50vh;
+  background-image: url("/assets/images/fifthProjectImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fifth-proyect-image .cardIcons {
+  position: relative;
+  top: 40px;
+  font-size: 18px;
+}
+
+.fifth-proyect-image .cardIcons i {
+  margin: 3px;
+}
+
+.sixth-proyect {
+  position: relative;
+  background-color: #eef5f7;
+}
+
+.sixth-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url("/assets/images/secondWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #173d31;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+.sixth-proyect-description .fifth-seeMore-button {
+  width: 160px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sixth-proyect-description .fifth-seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sixth-proyect-description .fifth-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.sixth-proyect-image {
+  background-color: #eef5f7;
+  color: #e17334;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
+  height: 50vh;
+  background-image: url("/assets/images/sixthProjectImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sixth-proyect-image .cardIcons {
+  position: relative;
+  top: 40px;
+  font-size: 18px;
+}
+
+.sixth-proyect-image .cardIcons i {
+  margin: 3px;
+}
+
+.seventh-proyect {
+  position: relative;
+  background-color: #eef5f7;
+}
+
+.seventh-proyect-description {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url("/assets/images/secondWorkImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #398c8d;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+.seventh-proyect-description .seventh-seeMore-button {
+  width: 160px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.seventh-proyect-description .seventh-seeMore-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.seventh-proyect-description .seventh-seeMore-button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.seventh-proyect-image {
+  background-color: #eef5f7;
+  color: #e17334;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
+  height: 50vh;
+  background-image: url("/assets/images/seventhProjectImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seventh-proyect-image .cardIcons {
+  position: relative;
+  top: 40px;
+  font-size: 18px;
+}
+
+.seventh-proyect-image .cardIcons i {
+  margin: 3px;
+}
+
 .works-scroll {
   position: fixed;
   top: 40vh;
@@ -2855,6 +3113,45 @@ body .main .about-us-image {
   .seeMore-button {
     width: 106px;
     font-size: 16px;
+  }
+
+  .fifth-proyect-description {
+    height: 100vh;
+    font-size: 20px;
+  }
+
+  .fifth-proyect-description .fifth-seeMore-button {
+    font-size: 14px;
+  }
+
+  .fifth-proyect-image {
+    height: 100vh;
+  }
+
+  .sixth-proyect-description {
+    height: 100vh;
+    font-size: 20px;
+  }
+
+  .sixth-proyect-description .fifth-seeMore-button {
+    font-size: 14px;
+  }
+
+  .sixth-proyect-image {
+    height: 100vh;
+  }
+
+  .seventh-proyect-description {
+    height: 100vh;
+    font-size: 20px;
+  }
+
+  .seventh-proyect-description .seventh-seeMore-button {
+    font-size: 14px;
+  }
+
+  .seventh-proyect-image {
+    height: 100vh;
   }
 
   .workTitle {

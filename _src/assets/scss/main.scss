@@ -1024,6 +1024,7 @@ body {
               top: 30px;
             }
           }
+          
           .contactMenu {
             background-color: #099d8d;
             width: 100%;
@@ -1121,7 +1122,231 @@ body {
                 }
               }
         
-
+              .fifth-proyect{
+                position: relative;
+                background-color: #eef5f7;
+                // position: absolute;
+                // top: 0;
+                // left: 100%;
+                // right: 0;
+              }
+              .fifth-proyect-description{
+                text-align: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 50vh;
+                background-image: url('/assets/images/secondWorkImage.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: #173d31;
+                font-family: 'Cuprum', sans-serif;
+                font-size: 16px;
+                @include tablet  {
+                  height: 100vh;
+                  font-size: 20px;
+                }
+                .fifth-seeMore-button {
+                  width: 160px;
+                  display: inline;
+                  padding: 10px;
+                  margin: 10px;
+                  align-self: center;
+                  border: 2px solid white;
+                  background-color: transparent;
+                  cursor: pointer;
+                  @include tablet  {
+                    font-size: 14px;
+                  }
+                  &:hover {
+                    transform: scale(1.1);
+                  }
+                  a{
+                    color: white;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+              .fifth-proyect-image{
+                background-color: #eef5f7;
+                //margin: 0 20px;
+                color: #e17334;
+                font-family: 'Merriweather', serif;
+                font-weight: 900;
+                display: flex;
+                justify-content: center;
+                align-items: right;
+                flex-direction: column;
+                text-align: right;
+                height: 50vh;
+                background-image: url('/assets/images/fifthProjectImage.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              @include tablet  {
+                height: 100vh;
+              }
+              .cardIcons{
+                position: relative;
+                top: 40px;
+                font-size: 18px;
+                i{
+                  margin: 3px;
+                }
+              }
+              }
+              .sixth-proyect{
+                position: relative;
+                background-color: #eef5f7;
+                // position: absolute;
+                // top: 0;
+                // left: 100%;
+                // right: 0;
+              }
+              .sixth-proyect-description{
+                text-align: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 50vh;
+                background-image: url('/assets/images/secondWorkImage.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: #173d31;
+                font-family: 'Cuprum', sans-serif;
+                font-size: 16px;
+                @include tablet  {
+                  height: 100vh;
+                  font-size: 20px;
+                }
+                .fifth-seeMore-button {
+                  width: 160px;
+                  display: inline;
+                  padding: 10px;
+                  margin: 10px;
+                  align-self: center;
+                  border: 2px solid white;
+                  background-color: transparent;
+                  cursor: pointer;
+                  @include tablet  {
+                    font-size: 14px;
+                  }
+                  &:hover {
+                    transform: scale(1.1);
+                  }
+                  a{
+                    color: white;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+              .sixth-proyect-image{
+                background-color: #eef5f7;
+                //margin: 0 20px;
+                color: #e17334;
+                font-family: 'Merriweather', serif;
+                font-weight: 900;
+                display: flex;
+                justify-content: center;
+                align-items: right;
+                flex-direction: column;
+                text-align: right;
+                height: 50vh;
+                background-image: url('/assets/images/sixthProjectImage.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              @include tablet  {
+                height: 100vh;
+              }
+              .cardIcons{
+                position: relative;
+                top: 40px;
+                font-size: 18px;
+                i{
+                  margin: 3px;
+                }
+              }
+              }
+              .seventh-proyect{
+                position: relative;
+                background-color: #eef5f7;
+                // position: absolute;
+                // top: 0;
+                // left: 100%;
+                // right: 0;
+              }
+              .seventh-proyect-description{
+                text-align: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 50vh;
+                background-image: url('/assets/images/secondWorkImage.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: #398c8d;
+                font-family: 'Cuprum', sans-serif;
+                font-size: 16px;
+                @include tablet  {
+                  height: 100vh;
+                  font-size: 20px;
+                }
+                .seventh-seeMore-button {
+                  width: 160px;
+                  display: inline;
+                  padding: 10px;
+                  margin: 10px;
+                  align-self: center;
+                  border: 2px solid white;
+                  background-color: transparent;
+                  cursor: pointer;
+                  @include tablet  {
+                    font-size: 14px;
+                  }
+                  &:hover {
+                    transform: scale(1.1);
+                  }
+                  a{
+                    color: white;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+              .seventh-proyect-image{
+                background-color: #eef5f7;
+                //margin: 0 20px;
+                color: #e17334;
+                font-family: 'Merriweather', serif;
+                font-weight: 900;
+                display: flex;
+                justify-content: center;
+                align-items: right;
+                flex-direction: column;
+                text-align: right;
+                height: 50vh;
+                background-image: url('/assets/images/seventhProjectImage.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              @include tablet  {
+                height: 100vh;
+              }
+              .cardIcons{
+                position: relative;
+                top: 40px;
+                font-size: 18px;
+                i{
+                  margin: 3px;
+                }
+              }
+              }
   .works-scroll{
     position: fixed;
     top: 40vh;
