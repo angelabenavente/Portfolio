@@ -1049,9 +1049,9 @@ const navigationProperties = {
     pageCategoryWorkColor: 'white'
   },
   'anchor-6': {
-    navigationBackgroundColor: '#473213',
-    navigationButtonColor: '#473213',
-    contactLinkColor: '#473213e8',
+    navigationBackgroundColor: '#194a52',
+    navigationButtonColor: '#194a52',
+    contactLinkColor: '#194a52e8',
     headerTitleColor: '#fff',
     navLinkId: 'sixthProjectPosition',
     pageCategoryAboutStyle: '400',
@@ -1062,9 +1062,9 @@ const navigationProperties = {
     pageCategoryWorkColor: 'white'
   },
   'anchor-7': {
-    navigationBackgroundColor: '#194a52',
-    navigationButtonColor: '#194a52',
-    contactLinkColor: '#194a52e8',
+    navigationBackgroundColor: '#473213',
+    navigationButtonColor: '#473213',
+    contactLinkColor: '#473213e8',
     headerTitleColor: '#fff',
     navLinkId: 'seventhProjectPosition',
     pageCategoryAboutStyle: '400',
