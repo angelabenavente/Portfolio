@@ -20,7 +20,10 @@
     height: 100vh;
     background-color:#f7484e;
     @include tablet {
-      width: 50vw;
+      width: 49.95vw;
+    }
+    @include desktopMin {
+      width: 50.1vw;
     }
   }
   &__content {

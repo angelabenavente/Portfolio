@@ -2485,7 +2485,7 @@ body .main .about-us-image {
 
 @media all and (min-width: 768px) {
   .main__aboutMe__cover {
-    width: 50vw;
+    width: 49.95vw;
   }
 
   .main__aboutMe__content {
@@ -2584,7 +2584,7 @@ body .main .about-us-image {
   }
 
   body .main__aboutMe__cover {
-    width: 50vw;
+    width: 49.95vw;
     height: 100vh;
     position: -webkit-sticky;
     position: sticky;
@@ -2849,6 +2849,16 @@ body .main .about-us-image {
     display: none;
     z-index: -10;
     width: 0;
+  }
+}
+
+@media all and (min-width: 990px) {
+  .main__aboutMe__cover {
+    width: 50.1vw;
+  }
+
+  body .main__aboutMe__cover {
+    width: 50.05vw;
   }
 }
 

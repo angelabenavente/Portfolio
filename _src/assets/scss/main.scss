@@ -85,9 +85,12 @@ body {
         color: white;
         background-color:#f7484e;
         @include tablet {
-          width: 50vw;
+          width: 49.95vw;
           height: 100vh;
           position: sticky;
+        }
+        @include desktopMin {
+          width: 50.05vw;
         }
 
       &__content {
