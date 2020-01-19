@@ -86,6 +86,7 @@
   animation-timing-function: linear;}  
 }
 
+/* SVG ANIMATION */
 .intro {
   bottom: -50px; 
   position: absolute;
@@ -95,8 +96,6 @@
   animation-delay: 0s;
 }
 
-
-/////////////
 svg.intro {
   width: 95%;
   max-width: 800px;
@@ -135,26 +134,26 @@ svg.intro {
       stroke-linecap: butt;
       stroke-linejoin: round;
       animation: dash 1.8s ease-in-out forwards;
-    }
-    .text-stroke:nth-child(2) {
-      animation-delay: .2s;
-    }
-    .text-stroke:nth-child(3) {
-      animation-delay: .8s;
-    }
-    .text-stroke-2 {
-      stroke: #f6bdfa;
-      animation-delay: 5.1s;
-    }
-    .text-stroke-2 {
-      stroke: white;
-      animation-delay: 2.1s;
-    }
-    .text-stroke:nth-child(5) {
-      animation-delay: 2.1s;
-    }
-    .text-stroke:nth-child(6) {
-      animation-delay: 2.7s;
+      &:nth-child(2) {
+        animation-delay: .2s;
+      }
+      &:nth-child(3) {
+        animation-delay: .8s;
+      }
+      &-2 {
+        stroke: #f6bdfa;
+        animation-delay: 5.1s;
+      }
+      &-2 {
+        stroke: white;
+        animation-delay: 2.1s;
+      }
+      &:nth-child(5) {
+        animation-delay: 2.1s;
+      }
+      &:nth-child(6) {
+        animation-delay: 2.7s;
+      }
     }
   }
 }
@@ -190,6 +189,7 @@ svg.intro {
   }
 }
 
+/* JOB ANIMATION */
 .job {
   height: 23px;
   padding: 14px;
@@ -215,11 +215,9 @@ svg.intro {
   @include mobilePlus {
     bottom: 32%;
   }
-
   @include tabletMin {
     bottom: 28%;
   }
-
   @include tablet {
     bottom: 20%;
   }
