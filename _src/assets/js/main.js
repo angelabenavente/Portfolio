@@ -334,13 +334,13 @@ const navigationProperties = {
     navigationBackgroundColor: '#252525',
     navigationButtonColor: '#252525',
     contactLinkColor: '#252525e8',
-    headerTitleColor: '#504b4b',
+    headerTitleColor: 'black',
     pageCategoryAboutStyle: '600',
     pageCategoryWorkStyle: '400',
-    pageCategoryAboutWeight: '2px solid #504b4bbe',
+    pageCategoryAboutWeight: '2px solid black',
     pageCategoryWorkWeight: 'none',
-    pageCategoryAboutColor: '#504b4b',
-    pageCategoryWorkColor: '#504b4b',
+    pageCategoryAboutColor: 'black',
+    pageCategoryWorkColor: 'black',
   }
 };
 

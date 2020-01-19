@@ -77,13 +77,16 @@ body {
         height: 100vh;
         top: 0;
         display: flex;
+        background-image: url('/assets/images/perfilCover.png');
+        background-size: cover;
+        background-position-x: center;
+        background-color: white;
         padding-bottom: 60px;
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
         text-transform: uppercase;
         color: white;
-        background-color:#f7484e;
         @include tablet {
           width: 49.95vw;
           height: 100vh;
@@ -539,7 +542,6 @@ body {
           .first-proyect{
             position: relative;
             &-description{
-              
               height: 50vh;
               padding: 0 34px;
               display: flex;
@@ -618,7 +620,6 @@ body {
               }
         }
         .first-proyect-image{
-
           height: 50vh;
           background-image: url('/assets/images/proxyCover.jpg');
           background-size: cover;

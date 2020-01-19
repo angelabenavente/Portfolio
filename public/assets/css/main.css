@@ -578,7 +578,7 @@ span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #504b4b;
+  color: black;
 }
 
 .header .header__logo {
@@ -603,13 +603,13 @@ span {
 .header .header__logo .pageCategoryAbout {
   text-transform: capitalize;
   font-weight: 600;
-  border-bottom: 2px solid #504b4bbe;
-  color: #504b4b;
+  border-bottom: 2px solid black;
+  color: black;
   display: none;
 }
 
 .header .header__logo .pageCategoryAbout:hover {
-  text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
+  text-shadow: 1px 2px 2px rgba(136, 206, 191, 0.69);
 }
 
 .header .header__logo .pageCategoryIntersection {
@@ -618,12 +618,12 @@ span {
 
 .header .header__logo .pageCategoryWork {
   text-transform: capitalize;
-  color: #504b4b;
+  color: black;
   display: none;
 }
 
 .header .header__logo .pageCategoryWork:hover {
-  text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
+  text-shadow: 1px 2px 2px rgba(136, 206, 191, 0.69);
 }
 
 .header .header__logo-aboutMe {
@@ -650,6 +650,7 @@ span {
   width: 100px;
   margin-top: 1px;
   color: white;
+  color: black;
 }
 
 .header .header__logo-aboutMe .btn-text {
@@ -1240,6 +1241,10 @@ body .main__aboutMe__cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("/assets/images/perfilCover.png");
+  background-size: cover;
+  background-position-x: center;
+  background-color: white;
   padding-bottom: 60px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -1253,7 +1258,6 @@ body .main__aboutMe__cover {
   flex-direction: column;
   text-transform: uppercase;
   color: white;
-  background-color: #f7484e;
 }
 
 body .main__aboutMe__cover__content {
