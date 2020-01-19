@@ -29,6 +29,11 @@
     "dest": "public/assets/images/",
     "dist": "docs/assets/images/"
   },
+  "docs": {
+    "src": "_src/assets/docs/**/*.{pdf,PDF}",
+    "dest": "public/assets/docs/",
+    "dist": "docs/assets/docs/"
+  },
   "watch": {
    "html": "_src/**/*.html"
   }

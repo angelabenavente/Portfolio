@@ -586,11 +586,10 @@ span {
   height: -moz-fit-content;
   height: fit-content;
   margin-left: 8px;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.69);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.55);
   background-color: #0202020d;
   border-radius: 15px;
   z-index: 10;
-  opacity: .90;
   letter-spacing: .2em;
   padding: 5px 8px;
   font-size: 12px;
@@ -2790,6 +2789,14 @@ body .main .about-us-image {
   color: white;
 }
 
+.margin-top {
+  margin-top: 15px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
 @media all and (min-width: 240px) {
   .linkToProjectsContent {
     top: 84vh;
@@ -2901,10 +2908,6 @@ body .main .about-us-image {
 
   .main__aboutMe__content .skillsContainer .skillsWraper {
     width: 248px;
-  }
-
-  .main__aboutMe__content .skillsContainer .seo {
-    margin-top: 15px;
   }
 
   .header .header__logo-aboutMe {

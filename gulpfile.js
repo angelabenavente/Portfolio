@@ -76,11 +76,16 @@ gulp.task('scripts', function(done){
 
 
 
-// >> Copy image files
+// >> Copy image & docs files
 gulp.task('images', function(done) {
   gulp.src(config.images.src)
     .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
     .pipe(gulp.dest(config.images.dest));
+
+  gulp.src(config.docs.src)
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(gulp.dest(config.docs.dest));
+
   done();
 });
 
@@ -157,6 +162,11 @@ gulp.task('images-dist', function(done) {
   gulp.src(config.images.src)
     .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
     .pipe(gulp.dest(config.images.dist));
+
+  gulp.src(config.docs.src)
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(gulp.dest(config.docs.dist));
+
   done();
 });
 
