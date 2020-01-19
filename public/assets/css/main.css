@@ -763,6 +763,37 @@ span {
   margin-top: 75px;
 }
 
+.header .header__logo-aboutMe__navigation {
+  background-color: #252525;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
+  border: none;
+  margin: auto;
+  z-index: 10;
+  opacity: .85;
+  letter-spacing: .2em;
+  padding: 5px 10px;
+  padding-top: 4.5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100px;
+  margin: auto;
+  color: white;
+}
+
+.header .header__logo-aboutMe__navigation .btn-text {
+  color: white;
+  margin: 0 7px;
+}
+
 .header .navigation__checkbox {
   display: none;
 }
@@ -839,10 +870,31 @@ span {
   width: 0;
 }
 
+.header .navigation__list__section {
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: .2em;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid white;
+}
+
 .header .navigation__item {
   display: inline-block;
-  margin: 1rem;
+  margin: auto;
+  margin-top: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.2rem;
   text-align: left;
+  text-transform: capitalize;
 }
 
 .header .navigation__item:hover {
@@ -854,12 +906,16 @@ span {
 
 .header .navigation__link:link,.header .navigation__link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-weight: 350;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
+  padding-top: 0;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+.header .singleWork {
+  font-size: 2rem;
 }
 
 .header .navigation__link:link span,.header .navigation__link:visited span {
@@ -2861,6 +2917,12 @@ body .main .about-us-image {
 
   .header .header__navigation-tablet {
     display: block !important;
+  }
+
+  .header .header__logo-aboutMe__navigation {
+    font-size: 19px;
+    margin-top: 8px;
+    width: 130px;
   }
 
   svg.intro {
