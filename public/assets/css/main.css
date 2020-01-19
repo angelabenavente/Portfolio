@@ -524,11 +524,6 @@ a:hover {
   color: white;
 }
 
-span {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   width: 100%;
   height: 0;
@@ -564,7 +559,7 @@ span {
   animation-delay: 5.8s;
 }
 
-.header .navigationAuthor {
+.header__navigationAuthor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +576,7 @@ span {
   color: #504b4b;
 }
 
-.header .header__logo {
+.header__logo {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -596,11 +591,11 @@ span {
   font-size: 12px;
 }
 
-.header .header__logo #author {
+.header__logo__author {
   text-transform: uppercase;
 }
 
-.header .header__logo .pageCategoryAbout {
+.header__logo__aboutCategory {
   text-transform: capitalize;
   font-weight: 600;
   border-bottom: 2px solid #504b4bbe;
@@ -608,25 +603,25 @@ span {
   display: none;
 }
 
-.header .header__logo .pageCategoryAbout:hover {
+.header__logo__aboutCategory:hover {
   text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
 }
 
-.header .header__logo .pageCategoryIntersection {
+.header__logo__categoryIntersection {
   display: none;
 }
 
-.header .header__logo .pageCategoryWork {
+.header__logo__workCategory {
   text-transform: capitalize;
   color: #504b4b;
   display: none;
 }
 
-.header .header__logo .pageCategoryWork:hover {
+.header__logo__workCategory:hover {
   text-shadow: 1px 2px 2px rgba(201, 179, 81, 0.69);
 }
 
-.header .header__logo-aboutMe {
+.header__logo__aboutMe {
   background-color: #252525;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
   border: 1px solid white;
@@ -652,20 +647,21 @@ span {
   color: white;
 }
 
-.header .header__logo-aboutMe .btn-text {
+.header__logo__aboutMe-socialLink {
   color: white;
 }
 
-.header .contactLink:hover {
+.header__logo__aboutMe-socialLink:hover {
+  color: white;
+}
+
+.header__logo__aboutMe-contactLink:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+  color: white;
 }
 
-.header .header__navigation-tablet {
-  display: none;
-}
-
-.header .header__navigation {
+.header__navigation {
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -679,14 +675,18 @@ span {
   align-items: center;
 }
 
-.header .header__navigation .menu,.header .header__navigation .menu-bg,.header .header__navigation .menu-burger {
+.header__navigation-tablet {
+  display: none;
+}
+
+.header__navigation .menu,.header__navigation .menu-bg,.header__navigation .menu-burger {
   width: 60px;
   height: 60px;
   font-size: 30px;
   text-align: center;
 }
 
-.header .header__navigation .menu-bg {
+.header__navigation .menu-bg {
   background: #663399;
   pointer-events: none;
   -webkit-transition: .3s;
@@ -699,14 +699,14 @@ span {
   transform-origin: center center;
 }
 
-.header .header__navigation .menu-bg.fs {
+.header__navigation .menu-bg.fs {
   -webkit-transform: translate3d(50%, -50%, 0);
   transform: translate3d(50%, -50%, 0);
   width: 300vw;
   height: 300vw;
 }
 
-.header .header__navigation .menu-burger {
+.header__navigation .menu-burger {
   color: white;
   -webkit-user-select: none;
   cursor: pointer;
@@ -722,12 +722,12 @@ span {
   border-bottom: 2px solid white;
 }
 
-.header .header__navigation .menu-burger.fs {
+.header__navigation .menu-burger.fs {
   -webkit-transform: rotate(-180deg) translateY(10px);
   transform: rotate(-180deg) translateY(10px);
 }
 
-.header .header__navigation .menu-items {
+.header__navigation .menu-items {
   position: absolute;
   font-weight: bold;
   font-size: 40px;
@@ -744,26 +744,26 @@ span {
   pointer-events: none;
 }
 
-.header .header__navigation .menu-items div {
+.header__navigation .menu-items div {
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
   margin-top: 0px;
 }
 
-.header .header__navigation .menu-items.fs {
+.header__navigation .menu-items.fs {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   pointer-events: auto;
   opacity: 1;
 }
 
-.header .header__navigation .menu-items.fs div {
+.header__navigation .menu-items.fs div {
   opacity: 1;
   margin-top: 75px;
 }
 
-.header .header__logo-aboutMe__navigation {
+.header .header__logo__aboutMe-navigation {
   background-color: #252525;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
   border: none;
@@ -771,7 +771,7 @@ span {
   z-index: 10;
   opacity: .85;
   letter-spacing: .2em;
-  padding: 5px 10px;
+  padding: 2px 10px;
   padding-top: 4.5px;
   font-size: 13px;
   text-transform: uppercase;
@@ -789,9 +789,18 @@ span {
   color: white;
 }
 
-.header .header__logo-aboutMe__navigation .btn-text {
-  color: white;
+.header .header__logo__aboutMe-navigation-contactLink:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.header .header__logo__aboutMe-navigation-socialLink {
   margin: 0 7px;
+  color: white;
+}
+
+.header .header__logo__aboutMe-navigation-socialLink:hover {
+  color: white;
 }
 
 .header .navigation__checkbox {
@@ -2811,15 +2820,15 @@ body .main .about-us-image {
 }
 
 @media all and (min-width: 370px) {
-  .header .header__logo .pageCategoryAbout {
+  .header__logo__aboutCategory {
     display: inline-block;
   }
 
-  .header .header__logo .pageCategoryIntersection {
+  .header__logo__categoryIntersection {
     display: inline-block;
   }
 
-  .header .header__logo .pageCategoryWork {
+  .header__logo__workCategory {
     display: inline-block;
   }
 }
@@ -2908,18 +2917,22 @@ body .main .about-us-image {
     margin-top: 15px;
   }
 
-  .header .header__logo-aboutMe {
+  .header__logo__aboutMe {
     font-size: 15px;
     margin-top: 13px;
     border: 1px solid white;
     width: 130px;
   }
 
-  .header .header__navigation-tablet {
+  .header__navigation {
     display: block !important;
   }
 
-  .header .header__logo-aboutMe__navigation {
+  .header__navigation-tablet {
+    display: block !important;
+  }
+
+  .header .header__logo__aboutMe-navigation {
     font-size: 19px;
     margin-top: 8px;
     width: 130px;

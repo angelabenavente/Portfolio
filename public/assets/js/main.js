@@ -744,7 +744,7 @@ window.IntersectionObserverEntry = IntersectionObserverEntry;
 
 'use strict';
 
-// TOOGLE PALETA COLORES 
+// Collapsibles
 const designArrowButton = document.querySelector('.bootcamp-arrow-button');
 const div = document.querySelector('#js-toggle');
 const elementHidden = document.querySelector('#toggle');
@@ -759,11 +759,9 @@ function hideNotDesignElements () {
   coursesHidden.classList.add('hidden'); 
   coursesArrowButton.classList.remove('fa-chevron-up');
   coursesArrowButton.classList.add('fa-chevron-down');
-  //shareCardButton.classList.add('hidden')
 }
 
 function toggle () {
-  
   if (elementHidden.classList.contains('hidden')) {
   hideNotDesignElements ()
     div.style.borderBottom = "none";
@@ -774,8 +772,8 @@ function toggle () {
     courses.style.borderBottom = "1px solid #33323242";
     headerForm.style.borderBottom = "1px solid #33323242";
     coursesHidden.classList.add('hidden'); 
-  coursesArrowButton.classList.remove('fa-chevron-up');
-  coursesArrowButton.classList.add('fa-chevron-down');
+    coursesArrowButton.classList.remove('fa-chevron-up');
+    coursesArrowButton.classList.add('fa-chevron-down');
   } else {
     elementHidden.classList.add('hidden'); 
     div.style.borderBottom = "1px solid #33323242";
@@ -787,7 +785,6 @@ function toggle () {
 
 div.addEventListener('click', toggle);
 
-//Desplegar formulario
 const arrowActiveForm = document.querySelector('.arrow-button-form');
 const form = document.querySelector('.master__form')
 const headerForm = document.querySelector('.master__header-container')
@@ -806,7 +803,6 @@ function hideNotFormElements () {
   coursesHidden.classList.add('hidden'); 
   coursesArrowButton.classList.remove('fa-chevron-up');
   coursesArrowButton.classList.add('fa-chevron-down');
-  //shareCardButton.classList.add('hidden')
 }
 
 function showOrHideForm () {
@@ -829,7 +825,6 @@ function showOrHideForm () {
 
 headerForm.addEventListener('click', showOrHideForm);
 
-//Desplegar share card
 const formationButton = document.querySelector('.formation-button');
 const shareSection = document.querySelector('.formation__share');
 const formationIntroElement = document.querySelector('.formation-container');
@@ -865,19 +860,15 @@ function showOrHideShare() {
     formationIntroElement.style.borderBottom = "1px solid #33323242";
     arrowActiveShare.classList.remove('fa-chevron-up');
     arrowActiveShare.classList.add('fa-chevron-down');
-    //shareCardButton.classList.add('hidden');
     coursesArrowButton.classList.remove('fa-chevron-up');
     coursesArrowButton.classList.add('fa-chevron-down');
     coursesHidden.classList.add('hidden'); 
     coursesArrowButton.classList.remove('fa-chevron-up');
     coursesArrowButton.classList.add('fa-chevron-down');
   }
-  //validateInputs(); 
 }
 
 formationIntroElement.addEventListener('click', showOrHideShare);
-
-//Desplegar courses card
 
 const coursesArrowButton = document.querySelector('.courses-arrow-button');
 const courses = document.querySelector('#js-toggle-courses');
@@ -894,37 +885,35 @@ function hideNotDesignElements () {
   headerForm.style.borderBottom = "1px solid #33323242";
   elementHidden.style.borderBottom = "1px solid #33323242";
   div.style.borderBottom = "1px solid #33323242";
-  //shareCardButton.classList.add('hidden')
 }
 
 function toggleCourses () {
   hideNotDesignElements ()
   if (coursesHidden.classList.contains('hidden')) {
-      coursesHidden.classList.remove('hidden');
-      courses.style.borderBottom = "none";
-      coursesArrowButton.classList.remove('fa-chevron-down');
-      coursesArrowButton.classList.add('fa-chevron-up');
-      elementHidden.classList.add('hidden'); 
-      //shareCardButton.classList.add('hidden');
-      formationCardSection.classList.add('hidden');
-      formationIntroElement.style.borderBottom = "1px solid #33323242";
-      elementHidden.style.borderBottom = "1px solid #33323242";
-      headerForm.style.borderBottom = "1px solid #33323242";
+    coursesHidden.classList.remove('hidden');
+    courses.style.borderBottom = "none";
+    coursesArrowButton.classList.remove('fa-chevron-down');
+    coursesArrowButton.classList.add('fa-chevron-up');
+    elementHidden.classList.add('hidden'); 
+    formationCardSection.classList.add('hidden');
+    formationIntroElement.style.borderBottom = "1px solid #33323242";
+    elementHidden.style.borderBottom = "1px solid #33323242";
+    headerForm.style.borderBottom = "1px solid #33323242";
   } else {
-      coursesHidden.classList.add('hidden'); 
-      courses.style.borderBottom = "1px solid #33323242";
-      coursesArrowButton.classList.remove('fa-chevron-up');
-      coursesArrowButton.classList.add('fa-chevron-down');
+    coursesHidden.classList.add('hidden'); 
+    courses.style.borderBottom = "1px solid #33323242";
+    coursesArrowButton.classList.remove('fa-chevron-up');
+    coursesArrowButton.classList.add('fa-chevron-down');
   }
 }
 
-////////////////HEADER///////////////
-
 courses.addEventListener('click', toggleCourses);
 
+/////////Header
+
 const author = document.getElementById('author');
-const pageCategoryAbout = document.querySelector('.pageCategoryAbout');
-const pageCategoryWork = document.querySelector('.pageCategoryWork');
+const pageCategoryAbout = document.querySelector('#aboutCategory');
+const pageCategoryWork = document.querySelector('#workCategory');
 
 function resizeAuthor () {
   if (windowSize.matches) { // If media query matches
@@ -938,7 +927,6 @@ let windowSize = window.matchMedia("(max-width: 550px)")
 resizeAuthor(windowSize) // Call listener function at run time
 windowSize.addListener(resizeAuthor)
 
-////////////////////
 const navigationButton = document.querySelector('#navigation__button')
 const navigationBackground = document.querySelector('#navigation-background');
 const aboutSection = document.querySelector('#about');
@@ -972,16 +960,12 @@ function showList(){
   }
 }
 navigationButton.addEventListener('click', showList)
-//navigationLink.addEventListener('click', showList)
 let arrowNavigationWorks = document.querySelector('.arrowNavigationWorks');
-//let navigationLink = document.querySelectorAll('.navigation__list');
 let arrowNavigationWorksNext = document.querySelector('.arrowNavigationWorksNext');
 
-
-//////////////////////////
 const headerTitle = document.querySelector('.header__logo');
 
-/* Código limpio START */
+///// navigationColorChange
 const navigationProperties = {
   'anchor-1': {
     navigationBackgroundColor: '#1a3446',
@@ -1123,7 +1107,7 @@ const changeHeaderProperties = (intersectionEntry) => {
 
   navigationConfig.currentSection = targetId;
 
-  // change colors
+  // change colors with scroll
   navigationBackground.style.backgroundColor = config.navigationBackgroundColor;
   navigationButton.style.backgroundColor = config.navigationButtonColor;
   contactLinksHeader.style.backgroundColor = config.contactLinkColor;
@@ -1224,22 +1208,5 @@ function loadFunction() {
 }
 
 window.addEventListener('load', loadFunction);
-
-// document.onkeydown = function(event) {
-//   switch (event.keyCode) {
-//      case 37:
-//           alert('Left key pressed');
-//         break;
-//      case 38:
-//           alert('Up key pressed');
-//         break;
-//      case 39:
-//           alert('Right key pressed');
-//         break;
-//      case 40:
-
-//         break;
-//   }
-// };
 
 //# sourceMappingURL=main.js.map

@@ -21,11 +21,6 @@
   }
 }
 
-span {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   width: 100%;
   height: 0;
@@ -47,7 +42,7 @@ span {
   animation-fill-mode: forwards;
   animation-delay: 5.8s;
 
-  .navigationAuthor {
+  &__navigationAuthor {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,7 +50,7 @@ span {
     color: #504b4b;
   }
 
-  .header__logo{
+  &__logo{
     height: fit-content;
     margin-left: 8px;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.69);
@@ -66,11 +61,11 @@ span {
     letter-spacing: .2em;
     padding: 5px 8px;
     font-size: 12px;
-    #author{
+    &__author{
       text-transform: uppercase;
     }
     
-    .pageCategoryAbout{
+    &__aboutCategory{
       text-transform: capitalize;
       font-weight: 600;
       border-bottom: 2px solid #504b4bbe;
@@ -84,14 +79,14 @@ span {
       }
     }
 
-    .pageCategoryIntersection {
+    &__categoryIntersection {
       display: none;
       @include mobileMin {
         display: inline-block;
       }
     }
 
-    .pageCategoryWork {
+    &__workCategory {
       text-transform: capitalize;
       color: #504b4b;
       display: none;
@@ -103,61 +98,67 @@ span {
       }
     }
 
-    &-aboutMe {
-    background-color: rgb(37, 37, 37);
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
-    border: 1px solid white;
-    border: none;
-    z-index: 10;
-    opacity: .85;
-    letter-spacing: .2em;
-    padding: 5px 10px;
-    padding-top: 4.5px;
-    font-size: 13px;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100px;
-    margin-top: 1px;
-    color: white;
-    @include tablet {
-      font-size: 15px;
-      margin-top: 13px;
+    &__aboutMe {
+      background-color: rgb(37, 37, 37);
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
       border: 1px solid white;
-      width: 130px;
-    }
-    .btn-text {
+      border: none;
+      z-index: 10;
+      opacity: .85;
+      letter-spacing: .2em;
+      padding: 5px 10px;
+      padding-top: 4.5px;
+      font-size: 13px;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100px;
+      margin-top: 1px;
       color: white;
-    }
-    }
-
-    
+      @include tablet {
+        font-size: 15px;
+        margin-top: 13px;
+        border: 1px solid white;
+        width: 130px;
+      }
+      &-socialLink {
+        color: white;
+        &:hover {
+          color: white;
+        }
+      }
+      &-contactLink:hover{
+        transform: scale(1.3);
+        color: white;
+      }
+    } 
   }
   
-  .contactLink:hover{
-    transform: scale(1.3);
-  }
-  .header__navigation-tablet {
-    display: none;
-    @include tablet {
-      display: block !important;
-    }
-  }
-  .header__navigation {
+  &__navigation {
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include tablet {
+      display: block !important;
+    }
+    &-tablet {
+      display: none;
+      @include tablet {
+        display: block !important;
+      }
+    }
   
     .menu {
       width: 60px;
       height: 60px;
       font-size: 30px;
       text-align:center;
-    } 
-    .menu-bg {
+
+
+    &-bg {
       @extend .menu;
       background: #663399;
       pointer-events: none;
@@ -172,7 +173,8 @@ span {
         height:300vw;
       }
     }
-    .menu-burger {
+
+    &-burger {
       @extend .menu;
       color: white;
       -webkit-user-select: none;
@@ -189,7 +191,8 @@ span {
         transform: rotate(-180deg) translateY(10px);
       }
     }
-    .menu-items{
+
+    &-items{
       position:absolute;
       font-weight: bold;
       font-size: 40px;
@@ -218,7 +221,8 @@ span {
       }
     }
   }
-  .header__logo-aboutMe__navigation {
+}
+  .header__logo__aboutMe-navigation {
     background-color: rgb(37, 37, 37);
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
     border: none;
@@ -226,7 +230,7 @@ span {
     z-index: 10;
     opacity: .85;
     letter-spacing: .2em;
-    padding: 5px 10px;
+    padding: 2px 10px;
     padding-top: 4.5px;
     font-size: 13px;
     text-transform: uppercase;
@@ -241,11 +245,21 @@ span {
       margin-top: 8px;
       width: 130px;
     }
-    .btn-text {
-      color: white;
+    // &__navigation-tablet {
+    //   color: white;
+    //   margin: 0 7px;
+    // }
+    &-contactLink:hover {
+      transform: scale(1.2);
+    }
+    &-socialLink {
       margin: 0 7px;
+      color: white;
+      &:hover {
+        color: white;
+      }
     }
-    }
+  }
   .navigation__checkbox {
     display: none;
   }
