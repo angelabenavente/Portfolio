@@ -2560,6 +2560,12 @@ body .main .about-us-image {
   top: 40vh;
   left: 20px;
   z-index: 2;
+  -webkit-animation: opacity-appear 1s ease-in-out;
+  animation: opacity-appear 1s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s;
 }
 
 .workTitle {
@@ -3435,6 +3441,26 @@ body .main .about-us-image {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes opacity-appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

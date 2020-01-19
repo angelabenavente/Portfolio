@@ -1205,6 +1205,18 @@ window.addEventListener('DOMContentLoaded', () => {
   
     startIntersectionObserver();
   }, 7000);
+
+  // navigation buttons
+  const header = document.getElementById('header');
+  const menuCheckbox = document.getElementById('navi-toggle');
+  const hideMenu = () => {
+    menuCheckbox.checked = false;
+    return true;
+  };
+
+  header.querySelectorAll('.navigation__link').forEach(link => {
+    link.addEventListener('click', hideMenu);
+  });
 });
 
 function loadFunction() {

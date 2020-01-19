@@ -19,6 +19,15 @@
   }
 }
 
+@keyframes opacity-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -1363,10 +1372,13 @@ body {
     top: 40vh;
     left: 20px;
     z-index: 2;
+    animation: opacity-appear 1s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 6.8s;
   }
 
   .workTitle {
-    padding-left:5px;
+    padding-left: 5px;
     font-family: 'Cuprum', sans-serif;
     letter-spacing: .18em;
     font-weight: 300;

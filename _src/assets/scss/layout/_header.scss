@@ -1,12 +1,12 @@
 @keyframes showHeader {
   0% {
-   height: 0;
-  top: -90px;
+    height: 0;
+    top: -90px;
   }
   100% {
-  height: 60px;
-  display: flex;
-  top:0;
+    height: 60px;
+    display: flex;
+    top: 0;
   }
 }
 
@@ -37,7 +37,7 @@
   font-family: 'Cuprum', sans-serif;
   z-index: 999;
   color: white;
-  -webkit-animation: showHeader 1s ease-in-out;
+
   animation: showHeader 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 5.8s;
