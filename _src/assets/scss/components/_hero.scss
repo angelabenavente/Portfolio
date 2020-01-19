@@ -86,6 +86,7 @@
   animation-timing-function: linear;}  
 }
 
+/* SVG ANIMATION */
 .intro {
   bottom: -50px; 
   position: absolute;
@@ -95,8 +96,6 @@
   animation-delay: 0s;
 }
 
-
-/////////////
 svg.intro {
   width: 95%;
   max-width: 800px;
@@ -190,6 +189,7 @@ svg.intro {
   }
 }
 
+/* JOB ANIMATION */
 .job {
   height: 23px;
   padding: 14px;
