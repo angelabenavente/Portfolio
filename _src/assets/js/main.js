@@ -216,7 +216,7 @@ const seePlaceButton = document.querySelector('#seePlaceButton');
 const seeCodeButton = document.querySelector('#seeCodeButton');
 const contactLinksHeader = document.querySelector('#contactLinksHeader');
 
-function showList(){
+/* function showList(){
   const listNavigation = document.querySelector('.navigation__list');
   if(listNavigation.classList.contains('showItems')){
   listNavigation.classList.remove('showItems');
@@ -227,11 +227,7 @@ function showList(){
     listNavigation.style.width = '100vw'
   }
 }
-navigationButton.addEventListener('click', showList)
-//navigationLink.addEventListener('click', showList)
-let arrowNavigationWorks = document.querySelector('.arrowNavigationWorks');
-//let navigationLink = document.querySelectorAll('.navigation__list');
-let arrowNavigationWorksNext = document.querySelector('.arrowNavigationWorksNext');
+navigationButton.addEventListener('click', showList) */
 
 
 //////////////////////////
@@ -462,7 +458,6 @@ const startIntersectionObserver = () => {
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelector('#home').classList.add('hidden'); // hide hero
-    document.querySelector('.works-scroll').style.display = "block"
   
     startIntersectionObserver();
   }, 7000);
@@ -480,20 +475,3 @@ function loadFunction() {
 }
 
 window.addEventListener('load', loadFunction);
-
-// document.onkeydown = function(event) {
-//   switch (event.keyCode) {
-//      case 37:
-//           alert('Left key pressed');
-//         break;
-//      case 38:
-//           alert('Up key pressed');
-//         break;
-//      case 39:
-//           alert('Right key pressed');
-//         break;
-//      case 40:
-
-//         break;
-//   }
-// };

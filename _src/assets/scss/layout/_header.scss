@@ -21,11 +21,6 @@
   }
 }
 
-span {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   width: 100%;
   height: 0;
@@ -119,30 +114,21 @@ span {
     justify-content: space-around;
     width: 100px;
     margin-top: 1px;
-    color: white;
     color: black;
-    @include tablet {
-      font-size: 15px;
-      margin-top: 13px;
-      border: 1px solid white;
-      width: 130px;
+      @include tablet {
+        font-size: 15px;
+        margin-top: 13px;
+        border: 1px solid white;
+        width: 130px;
+      }
+      .btn-text {
+        color: white;
+      }
     }
-    .btn-text {
-      color: white;
-    }
-    }
-
-    
   }
   
-  .contactLink:hover{
+  .contactLink:hover {
     transform: scale(1.3);
-  }
-  .header__navigation-tablet {
-    display: none;
-    @include tablet {
-      display: block !important;
-    }
   }
   .header__navigation {
     width: 60px;
@@ -150,73 +136,6 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    .menu {
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-      text-align:center;
-    } 
-    .menu-bg {
-      @extend .menu;
-      background: #663399;
-      pointer-events: none;
-      transition: .3s; 
-      right:40px;
-      top:40px;
-      transform:translate3d(50%,-50%,0); 
-      transform-origin: center center;
-      &.fs{
-        transform:translate3d(50%,-50%,0);  
-        width:300vw; 
-        height:300vw;
-      }
-    }
-    .menu-burger {
-      @extend .menu;
-      color: white;
-      -webkit-user-select: none;
-      cursor: pointer;
-      transition: .4s;
-      transform-origin: center;
-      position: relative;
-      width: 55px !important;
-      height: 32px !important;
-      font-size: 18px;
-      border-top: 2px solid white;
-      border-bottom: 2px solid white;
-      &.fs {
-        transform: rotate(-180deg) translateY(10px);
-      }
-    }
-    .menu-items{
-      position:absolute;
-      font-weight: bold;
-      font-size: 40px;
-      letter-spacing:10px;
-      color: white;
-      width: 100vw;
-      text-align: center;
-      opacity:0;
-      transition: .4s;
-      margin-top:100px;
-      transform: translateY(-200%);
-      pointer-events:none;
-      div {
-        transition: 1s;
-        opacity: 0;
-        margin-top: 0px;
-      }
-      &.fs {
-        transform: translateY(0);
-        pointer-events:auto;
-        opacity: 1;
-        div{
-          opacity: 1;
-          margin-top: 75px;
-        }
-      }
-    }
   }
   .header__logo-aboutMe__navigation {
     background-color: rgb(37, 37, 37);
@@ -245,7 +164,7 @@ span {
       color: white;
       margin: 0 7px;
     }
-    }
+  }
   .navigation__checkbox {
     display: none;
   }
@@ -270,25 +189,32 @@ span {
   }
   
   .navigation__background {
+    position: fixed;
     background-color: rgb(37, 37, 37);
     height: 35px;
     width: 35px;
     opacity: 2;
-    position: fixed;
     background-image: radial-gradient(#02020202, #0202020d );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
   
   .navigation__nav {
+    position: fixed;
+    overflow: hidden;
     background-color: rgb(37, 37, 37);
     height: 100vh;
-    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1500;
     opacity: 0;
     width: 0;
+    z-index: 1500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    will-change: opacity, width;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
@@ -296,13 +222,10 @@ span {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
-    width: 0;
+    width: 100vw;
+
     &__section {
       font-size: 1.7rem;
       color: white;
@@ -311,7 +234,6 @@ span {
       margin: auto;
       margin-top: 12px;
       margin-bottom: 5px;
-      //text-decoration: underline;
       text-transform: uppercase;
       width: fit-content;
       border-bottom: 1px solid white;
@@ -321,7 +243,6 @@ span {
   .navigation__item {
     display: inline-block;
     margin: auto;
-    //margin-bottom: 5px;
     margin-top: 4px;
     width: fit-content;
     font-size: 2.2rem;
@@ -340,27 +261,14 @@ span {
     padding-top: 0;
     color: #fff;
     text-decoration: none;
-    //text-transform: uppercase;
   }
-    .singleWork {
-      font-size: 2rem;
-    }
-  .navigation__link:link span, .navigation__link:visited span {
-    display: inline-block;
+  .singleWork {
+    font-size: 2rem;
   }
   
   .navigation__link:hover, .navigation__link:active {
     color: #fff;
     font-weight: 700;
-  }
-  
-  .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(80);
-  }
-
-  .navigation__checkbox:checked ~ .navigation__nav {
-    opacity: 1;
-    width: 100vw;
   }
   
   .navigation__icon {
@@ -370,43 +278,54 @@ span {
     width: 3rem;
     height: 2px;
     background-color: #fff;
-    display: inline-block; }
+    display: inline-block;
+  }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all .2s;
+  }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -.8rem;
+  }
   .navigation__icon::after {
-    top: .8rem; }
+    top: .8rem;
+  }
   
   .navigation__button:hover .navigation__icon::before {
-    top: -1rem; }
+    top: -1rem;
+  }
   
   .navigation__button:hover .navigation__icon::after {
-    top: 1rem; }
-  
-  .navigation__checkbox:checked + .navigation__button .navigation__icon {
-    background-color: transparent; }
-  
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(135deg); }
-  
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-135deg); }
-  
-  .navigation__button:active{
-    background-color: transparent;
+    top: 1rem;
   }
-  .navigation__button:active > .navigation__list {
-    width: 100vw;
-    height: 100vh;
-  }
-}
 
-.showItems {
-  width: 100%;
+  .navigation__checkbox:checked {
+    & ~ .navigation__background {
+      transform: scale(80);
+    }
+
+    & ~ .navigation__nav {
+      opacity: 1;
+      width: 100vw;
+    }
+
+    & + .navigation__button {
+      background-color: transparent !important;
+    }
+
+    & + .navigation__button .navigation__icon {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+    }
+  }
 }
