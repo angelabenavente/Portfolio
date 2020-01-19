@@ -2685,7 +2685,6 @@ body .main .about-us-image {
 .unselected:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  margin-left: 19px;
 }
 
 .unselected:hover > .workTitle {
@@ -2931,6 +2930,7 @@ body .main .about-us-image {
 
   .job {
     bottom: 20%;
+    font-size: 30px;
   }
 
   body .main {
