@@ -1,5 +1,5 @@
 .main{
-  
+
   &__aboutMe {
     position: relative;
     top: 0;
@@ -68,12 +68,12 @@
             margin-top: 20px;
           }
 
-          &-bootcampView {
+          &-header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
 
-            padding: 3px 5px;
+            padding: 3px 10px;
             margin-top: 10px;
             border-bottom: 1px solid #33323242;
             border-left: 1px solid #33323242;
@@ -84,83 +84,14 @@
             }
           }
 
-          &-master {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            margin-top: 10px;
-            border-bottom: 1px solid #33323242;
-            border-left: 1px solid #33323242;
-            cursor: pointer;
-
-            &:hover  > .button-form {
-              color: orange;
-            }
-          }
-
-          &-masterWrapper {
-            padding: 3px 5px;
+          &-wrapper {
+            padding: 3px 10px;
             border-bottom: 1px solid #33323242;
             border-left: 1px solid #33323242;
             font-size: 14px;
 
             @include tablet{
               font-size: 15px;
-            }
-          }
-
-          &-gradeWrapper {
-            padding: 3px 5px;
-            border-bottom: 1px solid #33323242;
-            border-left: 1px solid #33323242;
-            font-size: 14px;
-
-            @include tablet{
-              font-size: 15px;
-            }
-          }
-
-          &-coursesWrapper {
-            padding: 3px 5px;
-            border-bottom: 1px solid #33323242;
-            border-left: 1px solid #33323242;
-            font-size: 14px;
-
-            @include tablet{
-              font-size: 15px;
-            }
-          }
-
-          &-gradeHeader {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            padding: 3px 5px;
-            margin-top: 10px;
-            border-bottom: 1px solid #33323242;
-            border-left: 1px solid #33323242;
-            cursor: pointer;
-
-            &:hover  > .button-form {
-              color: orange;
-            }
-          }
-
-          &-coursesHeader {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            padding: 3px 5px;
-            margin-top: 10px;
-            border-bottom: 1px solid #33323242;
-            border-left: 1px solid #33323242;
-            cursor: pointer;
-
-            &:hover  > .formation__courses-arrow {
-              color: orange;
             }
           }
         }

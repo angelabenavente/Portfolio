@@ -900,7 +900,7 @@ svg.intro.go .text-stroke:nth-child(6) {
   border-left: 2px solid #00000042;
 }
 
-.main__aboutMe__content-formation-box-bootcampView {
+.main__aboutMe__content-formation-box-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,101 +911,22 @@ svg.intro.go .text-stroke:nth-child(6) {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 3px 5px;
+  padding: 3px 10px;
   margin-top: 10px;
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   cursor: pointer;
 }
 
-.main__aboutMe__content-formation-box-bootcampView:hover > .formation__bootcamp-arrow {
+.main__aboutMe__content-formation-box-header:hover > .formation__bootcamp-arrow {
   color: orange;
 }
 
-.main__aboutMe__content-formation-box-master {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 10px;
-  border-bottom: 1px solid #33323242;
-  border-left: 1px solid #33323242;
-  cursor: pointer;
-}
-
-.main__aboutMe__content-formation-box-master:hover > .button-form {
-  color: orange;
-}
-
-.main__aboutMe__content-formation-box-masterWrapper {
-  padding: 3px 5px;
+.main__aboutMe__content-formation-box-wrapper {
+  padding: 3px 10px;
   border-bottom: 1px solid #33323242;
   border-left: 1px solid #33323242;
   font-size: 14px;
-}
-
-.main__aboutMe__content-formation-box-gradeWrapper {
-  padding: 3px 5px;
-  border-bottom: 1px solid #33323242;
-  border-left: 1px solid #33323242;
-  font-size: 14px;
-}
-
-.main__aboutMe__content-formation-box-coursesWrapper {
-  padding: 3px 5px;
-  border-bottom: 1px solid #33323242;
-  border-left: 1px solid #33323242;
-  font-size: 14px;
-}
-
-.main__aboutMe__content-formation-box-gradeHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 3px 5px;
-  margin-top: 10px;
-  border-bottom: 1px solid #33323242;
-  border-left: 1px solid #33323242;
-  cursor: pointer;
-}
-
-.main__aboutMe__content-formation-box-gradeHeader:hover > .button-form {
-  color: orange;
-}
-
-.main__aboutMe__content-formation-box-coursesHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 3px 5px;
-  margin-top: 10px;
-  border-bottom: 1px solid #33323242;
-  border-left: 1px solid #33323242;
-  cursor: pointer;
-}
-
-.main__aboutMe__content-formation-box-coursesHeader:hover > .formation__courses-arrow {
-  color: orange;
 }
 
 .main__aboutMe__content-downloadCV {
@@ -2601,15 +2522,7 @@ body .main .about-us-image {
     margin-top: 20px;
   }
 
-  .main__aboutMe__content-formation-box-masterWrapper {
-    font-size: 15px;
-  }
-
-  .main__aboutMe__content-formation-box-gradeWrapper {
-    font-size: 15px;
-  }
-
-  .main__aboutMe__content-formation-box-coursesWrapper {
+  .main__aboutMe__content-formation-box-wrapper {
     font-size: 15px;
   }
 
