@@ -179,8 +179,8 @@ function toggleCourses () {
 courses.addEventListener('click', toggleCourses);
 
 const author = document.getElementById('author');
-const pageCategoryAbout = document.querySelector('.pageCategoryAbout');
-const pageCategoryWork = document.querySelector('.pageCategoryWork');
+const pageCategoryAbout = document.getElementById('pageCategoryAbout');
+const pageCategoryWork = document.getElementById('pageCategoryWork');
 
 function resizeAuthor () {
   if (windowSize.matches) { // If media query matches
@@ -231,7 +231,7 @@ navigationButton.addEventListener('click', showList) */
 
 
 //////////////////////////
-const headerTitle = document.querySelector('.header__logo');
+const headerTitle = document.getElementById('navigationInline');
 
 /* Código limpio START */
 const navigationProperties = {
@@ -470,7 +470,7 @@ window.addEventListener('DOMContentLoaded', () => {
     return true;
   };
 
-  header.querySelectorAll('.navigation__link').forEach(link => {
+  header.querySelectorAll('.singleItem').forEach(link => {
     link.addEventListener('click', hideMenu);
   });
 });
