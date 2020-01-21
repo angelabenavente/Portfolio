@@ -893,17 +893,8 @@ a:hover {
 
 .header__socialIcons__button-link {
   color: white;
-}
-
-.hero {
+}/*----ANIMATIONS----*//*----HERO----*/.hero {
   position: relative;
-  z-index: 800;
-  height: 100vh;
-  width: 100%;
-  padding: 0 25px;
-  background-color: #070707;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,6 +912,13 @@ a:hover {
   -ms-flex-line-pack: center;
   align-content: center;
   overflow: hidden;
+  z-index: 800;
+  height: 100vh;
+  width: 100%;
+  padding: 0 25px;
+  background-color: #070707;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-animation: notShow 1s ease-in-out;
   animation: notShow 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -937,20 +935,20 @@ a:hover {
   padding: 0 25px;
   top: 0;
   left: 0;
+  will-change: translate;
   -webkit-animation: translateTop 1s ease-in-out;
   animation: translateTop 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 5.4s;
   animation-delay: 5.4s;
-  will-change: translate;
 }
 
 .hero__background {
   position: absolute;
-  width: 60vw;
   top: 50vw;
   left: 12vh;
+  width: 60vw;
   -webkit-animation-name: spin;
   animation-name: spin;
   -webkit-animation-duration: 60s;
@@ -959,9 +957,9 @@ a:hover {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-}/* SVG ANIMATION */.intro {
-  bottom: -50px;
+}/*----SVG----*/.intro {
   position: absolute;
+  bottom: -50px;
   -webkit-animation: intro 3s ease-in-out;
   animation: intro 3s ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -971,14 +969,14 @@ a:hover {
 }
 
 svg.intro {
-  width: 95%;
-  max-width: 800px;
   top: 40%;
   left: 50%;
+  z-index: 2;
+  width: 95%;
+  max-width: 800px;
+  background-color: #0c0c0c;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 2;
-  background-color: #0c0c0c;
   -webkit-animation: intro 3s ease-in-out;
   animation: intro 3s ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -1022,12 +1020,6 @@ svg.intro.go .text-stroke:nth-child(2) {
 svg.intro.go .text-stroke:nth-child(3) {
   -webkit-animation-delay: .8s;
   animation-delay: .8s;
-}
-
-svg.intro.go .text-stroke-2 {
-  stroke: #f6bdfa;
-  -webkit-animation-delay: 5.1s;
-  animation-delay: 5.1s;
 }
 
 svg.intro.go .text-stroke-2 {
@@ -1084,7 +1076,7 @@ svg.intro.go .text-stroke:nth-child(6) {
   position: relative;
   top: -2px;
   vertical-align: middle;
-}/* JOB ANIMATION */.job {
+}/*----JOB----*/.job {
   position: absolute;
   bottom: 41%;
   left: 0;

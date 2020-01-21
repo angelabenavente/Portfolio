@@ -1,3 +1,5 @@
+/*----ANIMATIONS----*/
+
 @keyframes notShow {
   0% {
     height: 100vh;
@@ -57,15 +59,10 @@
   }
 }
 
+/*----HERO----*/
+
 .hero {
   position: relative;
-  z-index: 800;
-  height: 100vh;
-  width: 100%; // width: 100vw; - con vw cuenta también el scroll y se descentra
-  padding: 0 25px;
-  background-color: #070707;
-  background-size:cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +70,15 @@
   align-items: center;
   align-content: center;
   overflow: hidden;
+  z-index: 800;
 
+  height: 100vh;
+  width: 100%; // width: 100vw; - con vw cuenta también el scroll y se descentra
+  padding: 0 25px;
+  background-color: #070707;
+  background-size:cover;
+  background-repeat: no-repeat;
+  
   animation: notShow 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 5.4s;
@@ -87,17 +92,18 @@
     top: 0;
     left: 0;
 
+    will-change: translate;
     animation: translateTop 1s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 5.4s;
-    will-change: translate;
   }
   
   &__background {
     position: absolute;
-    width: 60vw;
     top: 50vw;
     left: 12vh;
+
+    width: 60vw;
 
     animation-name: spin;
     animation-duration: 60s;
@@ -131,10 +137,12 @@
   }
 }
 
-/* SVG ANIMATION */
+/*----SVG----*/
+
 .intro {
-  bottom: -50px; 
   position: absolute;
+  bottom: -50px; 
+
   -webkit-animation: intro 3s ease-in-out;
   animation: intro 3s ease-in-out;
   animation-fill-mode: forwards;
@@ -142,17 +150,20 @@
 }
 
 svg.intro {
-  width: 95%;
-  max-width: 800px;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
+
+  width: 95%;
+  max-width: 800px;
   background-color: #0c0c0c;
+  transform: translate(-50%, -50%);
+
   -webkit-animation: intro 3s ease-in-out;
   animation: intro 3s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0s;
+
   @include tablet {
     top: 45%;
   }
@@ -163,8 +174,10 @@ svg.intro {
 
   &.go {
     background-color: transparent;
+
     .text {
       display: block;
+
       font-family: 'Cuprum', sans-serif;
       font-size: 20px;
       text-transform: uppercase;
@@ -178,21 +191,23 @@ svg.intro {
       stroke: white;
       stroke-linecap: butt;
       stroke-linejoin: round;
+      
       animation: dash 1.8s ease-in-out forwards;
+
       &:nth-child(2) {
         animation-delay: .2s;
       }
+
       &:nth-child(3) {
         animation-delay: .8s;
       }
-      &-2 {
-        stroke: #f6bdfa;
-        animation-delay: 5.1s;
-      }
+
       &-2 {
         stroke: white;
+
         animation-delay: 2.1s;
       }
+
       &:nth-child(5) {
         animation-delay: 2.1s;
       }
@@ -234,7 +249,8 @@ svg.intro {
   }
 }
 
-/* JOB ANIMATION */
+/*----JOB----*/
+
 .job {
   position: absolute;
   bottom: 41%;
