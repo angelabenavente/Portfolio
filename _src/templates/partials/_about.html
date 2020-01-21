@@ -3,20 +3,20 @@
     <div class=main__aboutMe__cover></div>
     
     <article class="main__aboutMe__content">
-      <h2 class="heading-secondary">Who I am?</h2>
-      <p>I am a enthusiastic, creative Frontend developer with Graphic Design tolls experience that enjoy experimenting with the new development trends. I'm working regularly on my own and colaboratibe Web development projects.</p>
+      <h2>Who I am?</h2>
+      <p>Hi! I'm Ángela, a enthusiastic, creative Frontend developer with Graphic Design tolls experience that enjoy experimenting with the new development trends. I'm working regularly on my own and colaboratibe Web development projects.</p>
 
-      <section class="main__aboutMe__content--formation">
-        <h2 class="heading-secondary">Formation</h2>
-        <div class="main__aboutMe__content--formation--box">
-          <div id="js-toggle" class="bootcamp-view">
+      <section class="main__aboutMe__content-formation">
+        <h2>Formation</h2>
+        <div class="main__aboutMe__content-formation-box">
+          <div id="js-toggle" class="main__aboutMe__content-formation-box-bootcampView">
             <div class="view-left">
               <div class="studiesWrapper">
-                <p class="formation__bootcamp--title">FrontEnd development Bootcamp</p>
+                <p class="formation__bootcamp-title">FrontEnd development Bootcamp</p>
                 <span class=study-place>in Adalab</span>
               </div>
             </div>
-          <div class="formation__bootcamp--arrow">
+          <div class="formation__bootcamp-arrow">
             <span>
               <i class="bootcamp-arrow-button fas fa-chevron-down"></i>
             </span>
@@ -35,8 +35,8 @@
           </ul>
         </div>
       </div>
-      <div class="main__aboutMe__content--formation--box">
-        <div class="master__header-container">
+      <div class="main__aboutMe__content-formation-box">
+        <div id="masterHeader" class="main__aboutMe__content-formation-box-master">
           <div class="master__header">
             <div class="studiesWrapper">
               <p class="master__title">Web and Ghaphic Design Master</p>
@@ -49,7 +49,7 @@
             </span>
           </div>
         </div>
-        <form class="master__form hidden" action="" method="post">
+        <form id="masterFormation" class="main__aboutMe__content-formation-box-masterWrapper hidden" action="" method="post">
           <ul>
             <li>- Web development.</li>
             <li>- Wordpress</li>
@@ -60,9 +60,9 @@
         </form>
       </div>
   
-      <div class="main__aboutMe__content--formation--box">
-        <div class="formation__grade">
-          <div class="formation-container">
+      <div class="main__aboutMe__content-formation-box">
+        <div class="main__aboutMe__content-formation-box-grade">
+          <div id="gradeHeader" class="main__aboutMe__content-formation-box-gradeHeader">
             <div class="studiesWrapper">
               <p class="title">Languages & Communication Grade</p>
               <span class=study-place>in Universidad Autónoma de Madrid</span>
@@ -73,7 +73,7 @@
               </span>
             </div>
           </div>
-          <div id="formation-button-section" class="validateInputsSection hidden">
+          <div id="formation-button-section" class="main__aboutMe__content-formation-box-gradeWrapper hidden">
             <ul>
               <li>- Communication techniques. </li>
               <li>- Trading and Mediation.</li>
@@ -88,21 +88,21 @@
         </div>
       </div>
   
-      <div class="main__aboutMe__content--formation--box">
-        <div id="js-toggle-courses" class="courses-view">
+      <div class="main__aboutMe__content-formation-box">
+        <div id="js-toggle-courses" class="main__aboutMe__content-formation-box-coursesHeader">
           <div class="view-left">
             <div class="studiesWrapper">
-              <p class="formation__courses--title">Especialize courses</p>
+              <p class="formation__courses-title">Especialize courses</p>
               <span class=study-place>Self-learning</span>
             </div>
           </div>
-          <div class="formation__courses--arrow">
+          <div class="formation__courses-arrow">
             <span>
               <i class="courses-arrow-button fas fa-chevron-down"></i>
             </span>
           </div>
         </div>
-        <div class="view-hidden hidden" id="toggle-courses">
+        <div class="main__aboutMe__content-formation-box-coursesWrapper hidden" id="toggle-courses">
           <ul>
             <li>- Complete JavaScript (45h). Udemy</li>
             <li>- Advanced CSS and Sass (28h). Udemy</li>   
@@ -203,39 +203,38 @@
       </div>
     </section>
 
-        <h2 class="heading-secondary paragraph-linkedin">More details in my...</h2>
-        <div class="download-cv-button">
-          <a class="download-cv-link" target="_blank" href="./assets/docs/CV_AngelaBenavente_Developer.pdf" download="CV_AngelaBenavente.PDF">
-            <i class="fas fa-download"></i>&nbsp  Curriculum Vitae (PDF)
-          </a>
-        </div>
-        <!-- https://takeafile.com/?f=gijoyaxise -->
-      <h2>Contact</h2>
-      <p class="heading-final u-margin-bottom-small"> If you have a project or want to collaborate you are very welcome to contact me.<br>I am available for freelance projects and full-time employment.</p>
-      <div class="contact-button">
-        <a class="btn-text">
-          <i class="social-icon fas fa-map-marker-alt"></i>&nbsp Madrid, Spain
+    <h2 class="main__aboutMe__content-downloadCV">More details in my...</h2>
+    <div class="main__aboutMe__content-downloadCV-button">
+      <a class="main__aboutMe__content-downloadCV-link" target="_blank" href="./assets/docs/CV_AngelaBenavente_Developer.pdf" download="CV_AngelaBenavente.PDF">
+        <i class="fas fa-download"></i>&nbsp  Curriculum Vitae (PDF)
+      </a>
+    </div>
+    <h2>Contact</h2>
+    <p class="heading-final u-margin-bottom-small"> If you have a project or want to collaborate you are very welcome to contact me.<br>I am available for freelance projects and full-time employment.</p>
+    <div class="contact-button">
+      <a class="btn-text">
+        <i class="social-icon fas fa-map-marker-alt"></i>&nbsp Madrid, Spain
+      </a>
+    </div>
+    <div class="contact-button">
+      <a href="https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/" target="_blank" class="btn-text">
+        <i class="social-icon fab fa-linkedin"></i>&nbsp Ángela Benavente Almazán
+      </a>
+    </div>
+    <div class="contact-button">
+        <a href="https://github.com/angelabenavente" target="_blank" class="btn-text">
+          <i class="social-icon fab fa-github"></i>&nbsp @angelabenavente
         </a>
-      </div>
-      <div class="contact-button">
-        <a href="https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/" target="_blank" class="btn-text">
-          <i class="social-icon fab fa-linkedin"></i>&nbsp Ángela Benavente Almazán
-        </a>
-      </div>
-      <div class="contact-button">
-          <a href="https://github.com/angelabenavente" target="_blank" class="btn-text">
-            <i class="social-icon fab fa-github"></i>&nbsp @angelabenavente
-          </a>
-      </div>
-      <div class="contact-button">
-        <a href="mailto:angela.b.almazan@gmail.com" target="_blank" class="btn-text">
-          <i class="social-icon fas fa-envelope-square"></i>&nbsp  angela.b.almazan@gmail.com
-        </a>
-      </div>
-      <div class="contact-button">
-        <a href="tel:644154842" target="_blank" class="btn-text">
-          <i class="social-icon fas fa-phone-square-alt"></i> &nbsp+0034 644154842
-        </a>
-      </div>
+    </div>
+    <div class="contact-button">
+      <a href="mailto:angela.b.almazan@gmail.com" target="_blank" class="btn-text">
+        <i class="social-icon fas fa-envelope-square"></i>&nbsp  angela.b.almazan@gmail.com
+      </a>
+    </div>
+    <div class="contact-button">
+      <a href="tel:644154842" target="_blank" class="btn-text">
+        <i class="social-icon fas fa-phone-square-alt"></i> &nbsp+0034 644154842
+      </a>
+    </div>
   </article>
 </section>

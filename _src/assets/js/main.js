@@ -45,8 +45,8 @@ div.addEventListener('click', toggle);
 
 //Desplegar formulario
 const arrowActiveForm = document.querySelector('.arrow-button-form');
-const form = document.querySelector('.master__form')
-const headerForm = document.querySelector('.master__header-container')
+const form = document.getElementById('masterFormation')
+const headerForm = document.getElementById('masterHeader')
 const formationmaster = document.querySelector('.formation__fill');
 
 function hideNotFormElements () {
@@ -88,7 +88,7 @@ headerForm.addEventListener('click', showOrHideForm);
 //Desplegar share card
 const formationButton = document.querySelector('.formation-button');
 const shareSection = document.querySelector('.formation__share');
-const formationIntroElement = document.querySelector('.formation-container');
+const formationIntroElement = document.getElementById('gradeHeader');
 const arrowActiveShare = document.querySelector('.arrow-button-share');
 const formationCardButton = document.querySelector('#formation-button');
 const formationCardSection = document.querySelector('#formation-button-section');

@@ -1,267 +1,198 @@
 .main{
-&__aboutMe {
-  width: 100%;
-  z-index: 800;
-  position: relative;
   
-  background-color: #252525;
-  &__cover{
-    z-index: 800;
-    z-index: 0;
+  &__aboutMe {
+    position: relative;
     top: 0;
-    display: table;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    text-transform: uppercase;
-    color: white;
+    z-index: 10;
+
     width: 100%;
-    height: 100vh;
-    background-color:#f7484e;
-    @include tablet {
-      width: 49.95vw;
-    }
-    @include desktopMin {
-      width: 50.1vw;
-    }
-  }
-  &__content {
-    z-index: -1;
-    background-color: #00000075;
     background-color: #252525;
-    color: white;
-    //color: #0c0c0c;
-    padding: 50px 25px;
+    font-size: 16px;
+
     @include tablet {
-      z-index: -1;
-      padding: 50px;
-        width: 50vw;
+      display: flex;
+      flex-direction: row;
+
+      font-size: 18px;
     }
-    &--formation {
-      padding: 15px 0;
-      color:  #0c0c0c;
-      color: white;
-      &--box {
-        background-color: #27272773;
-        //box-shadow: 5px 5px 5px #2f434470;
-        box-shadow: #000000b5 5px 5px 5px;
-        border-bottom: 2px solid #00000042;
-        border-left: 2px solid #00000042;
-        .bootcamp-view {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          margin-top: 10px;
-          cursor: pointer;
-          &:hover  > .formation__bootcamp--arrow {
-            color: orange;
-          }
-        }
-        .master__header-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          margin-top: 10px;
-          cursor: pointer;
-          &:hover  > .button-form {
-            color: orange;
-          }
-        }
-        .master__form {
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          font-size: 14px;
-          @include tablet{
-            font-size: 15px;
-          }
-          
-        }
-        .validateInputsSection {
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          font-size: 14px;
-          @include tablet{
-            font-size: 15px;
-          }
-         
-        }
-        .view-hidden {
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          font-size: 14px;
-          @include tablet{
-            font-size: 15px;
-          }
-        }
-        .formation-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          margin-top: 10px;
-          cursor: pointer;
-          &:hover  > .button-form {
-            color: orange;
-          }
-        }
-        .courses-view {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          border-bottom: 1px solid #33323242;
-          border-left: 1px solid #33323242;
-          padding: 3px 5px;
-          margin-top: 10px;
-          cursor: pointer;
-          &:hover  > .formation__courses--arrow {
-            color: orange;
-          }
-        }
-      }
-    }
-    .paragraph-linkedin {
-      padding: 24px 0 10px;
-      cursor: pointer;
-    }
-    .download-cv-button {
-      color: white;
-     padding: 2px;
-      text-align: center;
-      width: 210px;
-      margin: auto;
-      margin-bottom:20px;
-      border: 3px solid #33323242;
-      box-shadow: 5px 5px 5px #2f434470;
-      box-shadow: #000000b5 5px 5px 5px;
-      border: 3px solid #00000042;
-      background: linear-gradient(0deg, rgba(39,39,39,1) 0%, rgba(37,37,37,1) 100%);
-      cursor: pointer;
-      &:hover > a{
-        color: orange;
-      }
-      a {
-        color:  #0c0c0c;
-        color: white;
-        padding: 8px, 12px;
-      }
-       
-    }
-   
-  }
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-    &__cover{
-      width: 50vw;
+
+    &__cover {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      top: 0;
+
+      width: 100%;
       height: 100vh;
-      position: sticky;
+      padding-bottom: 60px;
+      background-image: url('/assets/images/perfilCover.png');
+      background-size: cover;
+      background-position-x: center;
+      background-color: white;
+      text-transform: uppercase;
+      color: white;
+      
+      @include tablet {
+        position: sticky;
+        width: 49.95vw;
+        height: 100vh;
+      }
+
+      @include desktopMin {
+        width: 50.05vw;
+      }
     }
-    &__content{
-      width: 50vw;
-      .skillsContainer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .main__aboutMe__content--formation--box {
-          margin-top: 20px;
+    
+    &__content {
+      padding: 50px 25px;
+      background-color: #252525;
+      color: white;
+
+      @include tablet {
+          width: 50vw;
+          padding: 50px;
+      }
+
+      &-formation {
+        padding: 15px 0;
+        color: white;
+
+        &-box {
+          background-color: #27272773;
+          box-shadow: #000000b5 5px 5px 5px;
+          border-bottom: 2px solid #00000042;
+          border-left: 2px solid #00000042;
+
+          @include tablet {
+            margin-top: 20px;
+          }
+
+          &-bootcampView {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 3px 5px;
+            margin-top: 10px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            cursor: pointer;
+
+            &:hover  > .formation__bootcamp-arrow {
+              color: orange;
+            }
+          }
+
+          &-master {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            margin-top: 10px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            cursor: pointer;
+
+            &:hover  > .button-form {
+              color: orange;
+            }
+          }
+
+          &-masterWrapper {
+            padding: 3px 5px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            font-size: 14px;
+
+            @include tablet{
+              font-size: 15px;
+            }
+          }
+
+          &-gradeWrapper {
+            padding: 3px 5px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            font-size: 14px;
+
+            @include tablet{
+              font-size: 15px;
+            }
+          }
+
+          &-coursesWrapper {
+            padding: 3px 5px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            font-size: 14px;
+
+            @include tablet{
+              font-size: 15px;
+            }
+          }
+
+          &-gradeHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 3px 5px;
+            margin-top: 10px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            cursor: pointer;
+
+            &:hover  > .button-form {
+              color: orange;
+            }
+          }
+
+          &-coursesHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 3px 5px;
+            margin-top: 10px;
+            border-bottom: 1px solid #33323242;
+            border-left: 1px solid #33323242;
+            cursor: pointer;
+
+            &:hover  > .formation__courses-arrow {
+              color: orange;
+            }
+          }
         }
-        .skillsWraper{
-          width: 248px;
+      }
+
+      &-downloadCV {
+        padding: 24px 0 10px;
+        cursor: pointer;
+
+        &-button {
+          width: 210px;
+          padding: 2px;
+          margin: auto;
+          margin-bottom:20px;
+          border: 3px solid #33323242;
+          box-shadow: #000000b5 5px 5px 5px;
+          border: 3px solid #00000042;
+          background: linear-gradient(0deg, rgba(39,39,39,1) 0%, rgba(37,37,37,1) 100%);
+          text-align: center;
+          color: white;
+          cursor: pointer;
+  
+          &:hover > a{
+            color: orange;
+          }
+  
+          &-link {
+            color: white;
+            padding: 8px, 12px;
+          }
         }
       }
     }
   }
 }
-  .heading-final{
-    margin-bottom: 10px;
-  }
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-
-.text--transparent {
-  fill: transparent;
-}
-
-.anim-shape {
-  -webkit-transform-origin: 0x 150px;
-  -ms-transform-origin: 0x 150px;
-  transform-origin: 0x 150px;
-  -webkit-transform: scale(0, 1) translate(0, 0);
-  -ms-transform: scale(0, 1) translate(0, 0);
-  transform: scale(0, 1) translate(0, 0);
-  -webkit-animation: moving-panel 5s ease-in-out alternate;
-  animation: moving-panel 5s ease-in-out alternate;
-}
-
-.colortext .anim-shape:nth-child(1) {
-  fill: #0E1826;
-}
-
-.colortext .anim-shape:nth-child(2) {
-  fill: #166973;
-  //fill: #F26444;
-}
-
-.colortext .anim-shape:nth-child(3) {
-  fill: #65BFA6;
-  //fill: #F26444;
-}
-
-.colortext .anim-shape:nth-child(4) {
-  fill: #F2CD5C;
-}
-
-.colortext .anim-shape:nth-child(5) {
-  fill: #F26444;
-}
-
-.shadow {
-  -webkit-transform: translate(10px, 10px);
-  -ms-transform: translate(10px, 10px);
-  transform: translate(10px, 10px);
-}
-
-.anim-shape--shadow {
-  fill: #000;
-  fill-opacity: .2;
-}
-
-.showWorks {
-  width: 100vw;
-  text-align: center;
- bottom: 9vh;
-  position: sticky;
-  color: white;
-  z-index: 1;
-  left:-0.6%;
-  &:hover {
-    color: white;
-  }
-}
-@-webkit-keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
-
-@keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
-
