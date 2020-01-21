@@ -1,3 +1,5 @@
+/*----ANIMATIONS----*/
+
 @keyframes showHeader {
   0% {
     height: 0;
@@ -21,11 +23,9 @@
   }
 }
 
+/*----HEADER-WRAPPER----*/
+
 .header {
-  width: 100%;
-  height: 0;
-  padding-right: 24px;
-  margin: 0;
   position: fixed;
   top: -90px;
   display: flex;
@@ -33,27 +33,37 @@
   justify-content: space-between;
   align-items: center;
   justify-content: baseline;
+  z-index: 999;
+
+  width: 100%;
+  height: 0;
+  padding-right: 24px;
+  margin: 0;
   background-color: transparent;
   font-family: 'Cuprum', sans-serif;
-  z-index: 999;
   color: white;
+
   animation: showHeader 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 5.8s;
+
+  /*----NAVIGATION-WRAPPER----*/
 
   &__navigation {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     color: black;
 
     &__burger {
-      width: 60px;
-      height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      width: 60px;
+      height: 60px;
 
       &-checkbox {
         display: none;
@@ -88,41 +98,52 @@
       }
 
       &-button {
-        background-color: rgb(37, 37, 37);
-        height: 60px;
-        width: 60px;
-        margin-right: 15px;
         position: fixed;
-        z-index: 2000;
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 2000;
+
+        height: 60px;
+        width: 60px;
+        margin-right: 15px;
+        background-color: rgb(37, 37, 37);
         text-align: center;
-        cursor: pointer;
         color: white;
+        cursor: pointer;
+
+        &:hover .navigationIcon::before {
+          top: -1rem;
+        }
+        
+        &:hover .navigationIcon::after {
+          top: 1rem;
+        }
 
         &-icon {
           position: relative;
-        
-          &-icon::before {
+
+          &::before {
             top: -.8rem;
           }
 
-          &-icon::after {
+          &::after {
             top: .8rem;
           }
 
           &, &::before, &::after {
+            display: inline-block;
+
             width: 3rem;
             height: 2px;
             background-color: #fff;
-            display: inline-block;
           }
 
           &::before, &::after {
             content: "";
             position: absolute;
             left: 0;
+
             transition: all .2s;
           }
         }
@@ -130,30 +151,34 @@
 
       &-background {
         position: fixed;
-        background-color: rgb(37, 37, 37);
+        z-index: 1000;
+
         height: 35px;
         width: 35px;
         opacity: 2;
+        background-color: rgb(37, 37, 37);
         background-image: radial-gradient(#02020202, #0202020d );
-        z-index: 1000;
+
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
       }
+
+/*----NAVIGATION-ACTIVE-WRAPPER----*/
 
       &-wrapper {
         position: fixed;
         overflow: hidden;
-        background-color: rgb(37, 37, 37);
-        height: 100vh;
         top: 0;
         left: 0;
-        opacity: 0;
-        width: 0;
-        z-index: 1500;
-    
         display: flex;
         align-items: center;
         justify-content: center;
-    
+        z-index: 1500;
+
+        background-color: rgb(37, 37, 37);
+        height: 100vh;
+        width: 0;
+        opacity: 0;
+
         will-change: opacity, width;
         transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -161,24 +186,26 @@
           overflow: hidden;
           display: flex;
           flex-direction: column;
-          list-style: none;
-          text-align: center;
+
           width: 100vw;
-      
+          text-align: center;
+          list-style: none;
+
           &-section {
+            margin: auto;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            width: fit-content;
+            border-bottom: 1px solid white;
+            text-transform: uppercase;
             font-size: 1.7rem;
             color: white;
             letter-spacing: .2em;
             font-weight: 600;
-            margin: auto;
-            margin-top: 12px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            width: fit-content;
-            border-bottom: 1px solid white;
 
             &-item {
               display: inline-block;
+
               margin: auto;
               margin-top: 4px;
               width: fit-content;
@@ -188,6 +215,7 @@
 
               &:hover {
                 box-shadow: inset 230px 0 0 0 #08B;
+
                 transition: all 0.6s;
               } 
 
@@ -196,10 +224,11 @@
               
                 &:link, &:visited {
                   display: inline-block;
-                  font-size: 2.1rem;
-                  font-weight: 350;
+
                   padding: 0rem 2rem;
                   padding-top: 0;
+                  font-size: 2.1rem;
+                  font-weight: 350;
                   color: #fff;
                   text-decoration: none;
                 }
@@ -213,44 +242,37 @@
           }
 
           &-social {
-            background-color: rgb(37, 37, 37);
-            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
-            border: none;
-            margin: auto;
-            z-index: 10;
-            opacity: .85;
-            letter-spacing: .2em;
-            padding: 5px 10px;
-            padding-top: 4.5px;
-            font-size: 13px;
-            text-transform: uppercase;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            z-index: 10;
+
             width: 100px;
+            padding: 5px 10px;
+            padding-top: 4.5px;
+            border: none;
             margin: auto;
+            opacity: .85;
+            background-color: rgb(37, 37, 37);
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
+            letter-spacing: .2em;
+            font-size: 13px;
+            text-transform: uppercase;
             color: white;
 
             @include tablet {
-              font-size: 19px;
               margin-top: 8px;
               width: 130px;
+              font-size: 19px;
             }
 
             &-button:hover {
               transform: scale(1.3);
             }
 
-            &:hover .navigationIcon::before {
-              top: -1rem;
-            }
-            
-            &:hover .navigationIcon::after {
-              top: 1rem;
-            }
-
             &-link {
               margin: 0 7px;
+
               &:hover {
                 color: white;
               }
@@ -260,15 +282,18 @@
       }
     }
 
+/*----NAVIGATION-INLINE-WRAPPER----*/
+
     &__inline {
-      height: fit-content;
-      margin-left: 8px;
-      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.55);
-      background-color: #0202020d;
-      border-radius: 15px;
       z-index: 10;
-      letter-spacing: .2em;
+
+      height: fit-content;
       padding: 5px 8px;
+      margin-left: 8px;
+      border-radius: 15px;
+      background-color: #0202020d;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.55);
+      letter-spacing: .2em;
       font-size: 12px;
       text-transform: uppercase;
 
@@ -281,11 +306,12 @@
       }
 
       &-about{
+        display: none;
+
+        border-bottom: 2px solid black;
         text-transform: capitalize;
         font-weight: 600;
-        border-bottom: 2px solid black;
         color: black;
-        display: none;
 
         &:hover {
           text-shadow: 1px 2px 2px rgba(136, 206, 191, 0.69);
@@ -297,9 +323,9 @@
       }
 
       &-work {
+        display: none;
         text-transform: capitalize;
         color: black;
-        display: none;
 
         &:hover {
           text-shadow: 1px 2px 2px rgba(136, 206, 191, 0.69);
@@ -312,30 +338,33 @@
     } 
   }
 
+/*----SOCIAL-ICONS-WRAPPER----*/
+
   &__socialIcons {
-    background-color: rgb(37, 37, 37);
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
-    border: 1px solid white;
-    border: none;
-    z-index: 10;
-    opacity: .85;
-    letter-spacing: .2em;
-    padding: 5px 10px;
-    padding-top: 4.5px;
-    font-size: 13px;
-    text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    z-index: 10;
+
     width: 100px;
+    padding: 5px 10px;
+    padding-top: 4.5px;
     margin-top: 1px;
+    border: 1px solid white;
+    border: none;
+    background-color: rgb(37, 37, 37);
+    opacity: .85;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.966);
+    letter-spacing: .2em;
+    font-size: 13px;
+    text-transform: uppercase;
     color: black;
 
     @include tablet {
-      font-size: 15px;
+      width: 130px;
       margin-top: 13px;
       border: 1px solid white;
-      width: 130px;
+      font-size: 15px;
     }
     
     &__button-link {
