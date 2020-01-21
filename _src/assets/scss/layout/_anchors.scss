@@ -1,0 +1,183 @@
+.main {
+
+  &__anchors {
+    position: fixed;
+    top: 40vh;
+    left: 20px;
+    z-index: 2;
+
+    animation: opacity-appear 1s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 6.8s;
+
+    a:hover{
+      color: white;
+    }
+
+    &__workTitle {
+      display: none;
+
+      padding-left: 5px;
+      font-family: 'Cuprum', sans-serif;
+      letter-spacing: .18em;
+      font-weight: 300;
+      text-shadow: 1.5px 1px 1.5px #191a1b;
+        @include tablet {
+        display: inline-block;
+        }
+      }
+    }
+
+    .selected {
+      position: relative;
+
+      margin: 7;
+      margin-left: 8px;
+      font-size: 15px;
+      text-shadow: 1.5px 1px 1.5px #191a1b;
+      cursor: pointer;
+
+      &:hover {
+      color: #e0dfdf;
+      }
+      
+      @include tablet {
+
+        &:hover >  .title{
+          display: inline-block;
+
+          color: #e0dfdf;
+        }
+      }
+    }
+
+    .unselected {
+      position: relative;
+      top: -1.4px;
+
+      margin: 7;
+      margin-left:12px;
+      font-size: 7px;
+      color: #e0dfdf;
+      text-shadow: 1.5px 1px 1.5px #191a1b;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(248, 248, 120);
+      }
+
+      &:hover >  .title{
+        display: none;
+        color: white;
+      }
+
+      @include tablet{
+        &:hover >  .title{
+        display: inline-block;
+        font-size: 13px;
+        }
+      }
+
+      .title{
+        display: none;
+      }
+    }
+    
+    .fa-angle-down {
+      width: 40px;
+      height: 40px;
+      margin: auto;
+      padding-top: 3px;
+      background-color: #00000045;
+      font-size: 35px;
+
+      @include tablet {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        padding-bottom: 11px;
+        font-size: 40px;
+      }
+
+      &:hover{
+        color: white;
+        transform: scale(1.2);
+        border: 1px solid rgba(255, 255, 255, 0.562);
+      }
+    }
+    
+    .fa-angle-up {
+      width: 40px;
+      height: 40px;
+      padding-top: 3px;
+      margin: auto;
+      background-color: #00000045;
+      font-size: 35px;
+
+      @include tablet {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        padding-bottom: 11px;
+        font-size: 40px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        border: 1px solid rgba(255, 255, 255, 0.562);
+        color: white;
+      }
+    }
+    
+    .linkToProjects {
+      display: none;
+      position: fixed;
+      top: 82%;
+      z-index: 10;
+
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      
+      @include tablet {
+        display: block;
+      }
+    }
+    
+    .linkToProjectsContent {
+
+      @include mobileXXS {
+        top: 84vh;
+        width: 100%;
+        text-align: center;
+        position: inherit;
+        display: flex;
+        flex-direction: column;   
+        z-index: 10;
+
+        margin-top: 40px;
+        text-transform: uppercase;
+      }
+      
+      @include tablet {
+        display: none;
+        z-index: -10;
+
+        width: 0;
+      }
+    }
+    
+    .nextSection {
+      position: absolute;
+      top: 89vh;
+      left: 0;
+
+      width: 100%;
+      background-color: transparent;
+
+      &:hover{
+        color: white;
+      }
+    }
+  }
+    

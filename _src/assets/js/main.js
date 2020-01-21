@@ -349,7 +349,7 @@ const UNSELECTED_NAV_CLASS = 'unselected';
 
 const selectNavLink = (navLinkId) => {
   // first, we unselect current selected nav link
-  const selectedNavs = document.querySelectorAll(`.nav-work-link.${SELECTED_NAV_CLASS}`);
+  const selectedNavs = document.querySelectorAll(`.navigation__item.${SELECTED_NAV_CLASS}`);
 
   selectedNavs.forEach((nav) => {
     nav.classList.remove(SELECTED_NAV_CLASS);

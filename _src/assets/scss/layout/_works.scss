@@ -1,1024 +1,163 @@
 .main {
 
-    &__project {
-      position: relative;
+  &__project {
+    position: relative;
 
-      @include tablet {
-        display: flex;
-        flex-direction: row;
-      }
-
-      &__description{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-        height: 50vh;
-        padding: 0 34px;
-        text-align: center;
-        background-image: url('/assets/images/firstWorkImage.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        background-color: #2a4d68;
-        font-family: 'Cuprum', sans-serif;
-        font-size: 16px;
-
-        @include tablet  {
-          width: 50vw;
-          height: 100vh;
-          font-size: 20px;
-        }
-
-        &-title{
-          font-size: 20px;
-
-          @include tablet  {
-            font-size: 28px;
-          }
-        }
-
-        &-links {
-          display: flex;
-          flex-direction: row;
-          justify-content: center; 
-
-          padding-top: 10px;
-          padding-bottom: 15px;
-          font-size: 14px;
-
-          @include tablet {
-            font-size: 15px;
-          }
-        
-        .seeMore-button {
-          position: relative;
-          display: inline;
-
-          margin: 10px;
-          border: 2px solid white;
-          background-color: transparent;
-          cursor: pointer;
-   
-          @include tablet  {
-            width: 106px;
-            font-size: 16px;
-          }
-
-          &:hover {
-            transform: scale(1.1);
-          }
-
-          .linkToProject {
-            padding: 8px;
-            color: white;
-            text-transform: uppercase;
-            padding: 8px;
-          }
-        }
-      }
-    }
-  .first-proyect-image{
-    height: 50vh;
-    background-image: url('/assets/images/proxyCover.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    .cardCover{
-      width: 90%;
-      height: 70%;
-    }
-    @include tablet  {
-      height: 100vh;
-      width: 50vw;
-      font-size: 28px;
-    }
-    small {
-      font-size: 12px;
-      @include tablet  {
-        font-size: 18px;
-      }
-    }
-  }
+    @include tablet {
+      display: flex;
+      flex-direction: row;
     }
 
-
-    &__content {
-      padding: 35px;
-      color: #0c0c0c;
-    }
-    .heading-secondary-works {
-      padding-left: 24px;
-    }
-    .information {
-      margin-top: 15px;
-      background-color: #2d9;
-    }
-    .adalab-about-us{
-      width: 100%;
-      position: relative;
-      display:flex;
-      justify-content: center;
-      } 
-    }  
-      .about-us-image {
-        width: 100%;
-        margin: auto;
-      }
-    
+    &__image{
+      height: 50vh;
+      background-image: url('/assets/images/proxyCover.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
   
-    
-
-  .create {
-
-    &__design {
-      text-transform: uppercase;
-      border-bottom: rem(1) solid black;
-      cursor: pointer;
-
-      &--title {
-        font-weight: 600;
-      }
-    }
-}
-
-.design-view{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.view-left {
-    display: flex;
-    flex-direction: row;
-}
-
-.hidden {
-    display: none;
-}
-
-////////////
-@include tablet {
-  .first-proyect-image {
-    width: 50vw;
-    height: 100vh;
-  }
-  .image {
-    width: 50vw;
-    height: 100vh;
-  }
-  .main__work {
-  display: flex;
-  flex-direction: column;
-  .description {
-    width: 50vw;
-  }
-  &__cover {
-  height: 100vh; 
-  }
-}
-.proyect {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.image{
-  width: 50vw;
-  height: auto;
-}
-.first-proyect-image {
-  width: 50vw;
-  height: auto;
-}
-.third-proyect-image {
-  width: 50vw;
-  height: 100vh;
-}
-.description {
-  width: 50vw;
-  height: 100vh;
-}
-}
-
-//////////////
-.worksBackground{
-  width: 50%;
-  height: 50%;
-  position: absolute;
-}
-
-.textWorks{
-  z-index: 1;
-}
-
-.worksBackground{
-  width: 150vw;
-  height: 150vh;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.4;
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 60s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-name: spin;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;}
-
-
-  .second-proyect{
-    position: relative;
-    background-color: #eef5f7;
-    // position: absolute;
-    // top: 0;
-    // left: 100%;
-    // right: 0;
-  }
-  .second-proyect-description{
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50vh;
-    background-image: url('/assets/images/secondWorkImage.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #173d31;
-    font-family: 'Cuprum', sans-serif;
-    font-size: 16px;
-    @include tablet  {
-      height: 100vh;
-      font-size: 20px;
-    }
-    .second-seeMore-button {
-      width: 160px;
-      display: inline;
-      padding: 10px;
-      margin: 10px;
-      align-self: center;
-      border: 2px solid white;
-      background-color: transparent;
-      cursor: pointer;
       @include tablet  {
-        font-size: 14px;
-      }
-      &:hover {
-        transform: scale(1.1);
-      }
-      a{
-        padding: 8px;
-        color: white;
-        text-transform: uppercase;
+        height: 100vh;
+        width: 50vw;
+        font-size: 28px;
       }
     }
-  }
-  .second-proyect-image{
-    background-color: #eef5f7;
-    //margin: 0 20px;
-    color: #e17334;
-    font-family: 'Merriweather', serif;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    flex-direction: column;
-    text-align: right;
-    height: 50vh;
-    background-image: url('/assets/images/CardsImageCover.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  @include tablet  {
-    height: 100vh;
-  }
-  .cardIcons{
-    position: relative;
-    top: 40px;
-    font-size: 18px;
-    i{
-      margin: 3px;
-    }
-  }
-  }
 
-  .third-proyect{
-    position: relative;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-  }
-  .third-proyect-description{
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50vh;
-    background-image: url('/assets/images/thirdWorkImage.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #3e0c15;
-    @include tablet  {
-      height: 100vh;
-      font-size: 18px;
-    }
-    .third-seeMore-button {
-      width: 160px;
-      display: inline;
-      padding: 10px;
-      margin: 10px;
-      align-self: center;
-      border: 2px solid white;
-      background-color: transparent;
-      cursor: pointer;
-      @include tablet  {
-        font-size: 14px;
-      }
-      &:hover {
-        transform: scale(1.1);
-      }
-      a{
-        padding: 8px;
-        color: white;
-        text-transform: uppercase;
-      }
-    }
-  }
-  .third-proyect-image{
-    height: 50vh;
-    background-image: url('/assets/images/diceGameCover.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Audiowide', cursive;
-    font-size: 22px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    @include tablet  {
-      height: 100vh;
-    }
-    .diceGame {
-      background-color: black;
-      border: 5px solid white;
-      text-align: center;
-      padding: 15px;
+    &__description{
       display: flex;
       justify-content: center;
       flex-direction: column;
-      width: 250px;
-      height: 220px;
-      @include tablet {
-        width: 300px;
-        height: 270px;
-        font-size: 28px;
-      }
-      .gameHero {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        .gameTitle {
-          display: inline-block;
-          width: 50%;
-          text-align: left;
-        }
-        img {
-          width: 71px;
-          margin: auto;
-          margin-right: 0;
-          transform: rotate(100deg);
-          @include tablet {
-            width: 91px;
-          }
-        }
-      }
-      
-    }
-    .rollUp {
-      text-align: center;
-      background-color: black;
-      border: 2px solid white;
-      border-radius: 20px;
-      width: 80px;
-      font-size: 14px;
-      margin: auto;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      @include tablet {
-        width: 120px;
-        font-size: 18px;
-      }
-    }
-  }
-  .fourth-proyect {
-    position: relative;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-  }
-  .fourth-proyect-description{
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50vh;
-    background-image: url('/assets/images/fourthWorkImage.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #1a4127;
-    font-family: 'Cuprum', sans-serif;
-        font-size: 16px;
-        @include tablet  {
-          height: 100vh;
-          font-size: 20px;
-        }
-    .fourth-seeMore-button {
-      width: 160px;
-      display: inline;
-      padding: 10px;
-      margin: 10px;
-      align-self: center;
-      border: 2px solid white;
-      background-color: transparent;
-      cursor: pointer;
-      @include tablet  {
-        font-size: 14px;
-      }
-      &:hover {
-        transform: scale(1.1);
-        border-radius: 20px;
-      }
-      
-      a{
-        padding: 8px;
-        color: white;
-        text-transform: uppercase;
-      }
-    }
-  }
-  .fourth-proyect-image{
-    height: 50vh;
-    background-color: rgb(228, 228, 228);
-    background-image: url('/assets/images/fourthProjectCover.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Audiowide', cursive;
-    font-size: 16px;
-    color: white;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    @include tablet  {
-      height: 100vh;
-      img {
-        height: 65%;
-        width: 99%;
-        position: relative;
-        top: 30px;
-      }
-    }
-    
-    .contactMenu {
-      background-color: #099d8d;
-      width: 100%;
-      font-family: 'Rubik', sans-serif;
-      text-transform: uppercase;
-      display: flex;
-      font-size: 10px;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px;
-      font-weight: 500;
+
+      height: 50vh;
+      padding: 0 34px;
+      text-align: center;
+      background-image: url('/assets/images/firstWorkImage.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      background-color: #2a4d68;
+      font-family: 'Cuprum', sans-serif;
+      font-size: 16px;
+
       @include tablet {
-        height: 40px;
-        font-size: 12px;
+        width: 50vw;
+        height: 100vh;
+        font-size: 20px;
       }
-      &-items{
+
+      &-title {
+        font-size: 20px;
+
+        @include tablet {
+          font-size: 28px;
+        }
+      }
+
+      &-links {
         display: flex;
         flex-direction: row;
-        span {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          top: 2px;
-          position: relative;
-          padding-left: 5px;
-          @include tablet {
-            padding-left: 8px;
-          }
-        }
-      }
-      .contactIcon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 9px;
-        position: relative;
-        border-radius: 5px;
-        border: 1px solid white;
-        font-weight: 600;
-        padding: 1px 2px 0;
+        justify-content: center; 
+
+        padding-top: 10px;
+        padding-bottom: 15px;
+        font-size: 14px;
+
         @include tablet {
-          font-size: 12px;
+          font-size: 15px;
         }
       }
-    }
-    .frontSide {
-      color: #099d8d;
-      font-size: 20px;
-      margin-top: 7px;
-      text-shadow: 0px 3px 3px rgb(240, 243, 192); 
-      //text-decoration-line: underline;
-      @include tablet {
-        font-size: 40px;
-        margin-top: 30px;
-      }
-      .fa-shoe-prints {
-        transform: rotate(-90deg);
-        padding-bottom: 3px;
-        
-      }
-    }
-    .about-us-image-inside{
-      height: 70%;
     }
   }
-
-.linksInfoProject {
-          padding-top: 10px;
-          padding-bottom: 15px;
-          display: flex;
-          flex-direction: row;
-          justify-content: center; 
-          font-size: 14px;
-          @include tablet {
-            font-size: 15px;
-          }
-        }
-        .seeMore-button {
-          padding: 8px;
-          margin: 10px;
-          display: inline;
-          border: 2px solid white;
-          background-color: transparent;
-          cursor: pointer;
-          @include tablet  {
-            width: 106px;
-            font-size: 16px;
-          }
-          &:hover {
-            transform: scale(1.1);
-          }
-          a{
-            padding: 8px;
-            color: white;
-            text-transform: uppercase;
-          }
-        }
-  
-        .fifth-proyect{
-          position: relative;
-          background-color: #eef5f7;
-          // position: absolute;
-          // top: 0;
-          // left: 100%;
-          // right: 0;
-        }
-        .fifth-proyect-description{
-          text-align: center;
-          color: white;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          height: 50vh;
-          background-image: url('/assets/images/fifthWorkImage.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-color: #472c22;
-          font-family: 'Cuprum', sans-serif;
-          font-size: 16px;
-          @include tablet  {
-            height: 100vh;
-            font-size: 20px;
-          }
-          .fifth-seeMore-button {
-            width: 160px;
-            display: inline;
-            padding: 10px;
-            margin: 10px;
-            align-self: center;
-            border: 2px solid white;
-            background-color: transparent;
-            cursor: pointer;
-            @include tablet  {
-              font-size: 14px;
-            }
-            &:hover {
-              transform: scale(1.1);
-            }
-            a{
-              padding: 8px;
-              color: white;
-              text-transform: uppercase;
-            }
-          }
-        }
-        .fifth-proyect-image{
-          background-color: #eef5f7;
-          //margin: 0 20px;
-          color: #e17334;
-          font-family: 'Merriweather', serif;
-          font-weight: 900;
-          display: flex;
-          justify-content: center;
-          align-items: right;
-          flex-direction: column;
-          text-align: right;
-          height: 50vh;
-          background-image: url('/assets/images/fifthProjectImage.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        @include tablet  {
-          height: 100vh;
-        }
-        .cardIcons{
-          position: relative;
-          top: 40px;
-          font-size: 18px;
-          i{
-            margin: 3px;
-          }
-        }
-        }
-        .sixth-proyect{
-          position: relative;
-          background-color: #eef5f7;
-          // position: absolute;
-          // top: 0;
-          // left: 100%;
-          // right: 0;
-        }
-        .sixth-proyect-description{
-          text-align: center;
-          color: white;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          height: 50vh;
-          background-image: url('/assets/images/seventhWorkImage.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-color: #194a52;
-          font-family: 'Cuprum', sans-serif;
-          font-size: 16px;
-          @include tablet  {
-            height: 100vh;
-            font-size: 20px;
-          }
-          .fifth-seeMore-button {
-            width: 160px;
-            display: inline;
-            padding: 10px;
-            margin: 10px;
-            align-self: center;
-            border: 2px solid white;
-            background-color: transparent;
-            cursor: pointer;
-            @include tablet  {
-              font-size: 14px;
-            }
-            &:hover {
-              transform: scale(1.1);
-            }
-            a{
-              padding: 8px;
-              color: white;
-              text-transform: uppercase;
-            }
-          }
-        }
-        .sixth-proyect-image{
-          background-color: #eef5f7;
-          //margin: 0 20px;
-          color: #e17334;
-          font-family: 'Merriweather', serif;
-          font-weight: 900;
-          display: flex;
-          justify-content: center;
-          align-items: right;
-          flex-direction: column;
-          text-align: right;
-          height: 50vh;
-          background-image: url('/assets/images/seventhProjectImage.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        @include tablet  {
-          height: 100vh;
-        }
-        .cardIcons{
-          position: relative;
-          top: 40px;
-          font-size: 18px;
-          i{
-            margin: 3px;
-          }
-        }
-        }
-        .seventh-proyect{
-          position: relative;
-          background-color: #eef5f7;
-          // position: absolute;
-          // top: 0;
-          // left: 100%;
-          // right: 0;
-        }
-        .seventh-proyect-description{
-          text-align: center;
-          color: white;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          height: 50vh;
-          background-image: url('/assets/images/sixthWorkImage.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-color: #473213;
-          font-family: 'Cuprum', sans-serif;
-          font-size: 16px;
-          @include tablet  {
-            height: 100vh;
-            font-size: 20px;
-          }
-          .seventh-seeMore-button {
-            width: 160px;
-            display: inline;
-            padding: 10px;
-            margin: 10px;
-            align-self: center;
-            border: 2px solid white;
-            background-color: transparent;
-            cursor: pointer;
-            @include tablet  {
-              font-size: 14px;
-            }
-            &:hover {
-              transform: scale(1.1);
-            }
-            a{
-              padding: 8px;
-              color: white;
-              text-transform: uppercase;
-            }
-          }
-        }
-        .seventh-proyect-image{
-          background-color: #eef5f7;
-          //margin: 0 20px;
-          color: #e17334;
-          font-family: 'Merriweather', serif;
-          font-weight: 900;
-          display: flex;
-          justify-content: center;
-          align-items: right;
-          flex-direction: column;
-          text-align: right;
-          height: 50vh;
-          background-image: url('/assets/images/sixthProjectImage.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        @include tablet  {
-          height: 100vh;
-        }
-        .cardIcons{
-          position: relative;
-          top: 40px;
-          font-size: 18px;
-          i{
-            margin: 3px;
-          }
-        }
-      }
-
-.works-scroll {
-position: fixed;
-top: 40vh;
-left: 20px;
-z-index: 2;
-animation: opacity-appear 1s ease-in-out;
-animation-fill-mode: both;
-animation-delay: 6.8s;
 }
 
-.workTitle {
-padding-left: 5px;
-font-family: 'Cuprum', sans-serif;
-letter-spacing: .18em;
-font-weight: 300;
-text-shadow: 1.5px 1px 1.5px #191a1b;
-display: none;
-@include tablet {
-display: inline-block;
-}
+////SINGLE-WORKS-STYLES////
+
+.second-proyect-description{
+  background-image: url('/assets/images/secondWorkImage.png');
+  background-color: #173d31;
 }
 
-.selected {
-//margin-left: 2px;
-// margin-right: 10px;
-position: relative;
-margin: 7;
-margin-left: 8px;
-cursor: pointer;
-font-size: 15px;
-text-shadow: 1.5px 1px 1.5px #191a1b;
-&:hover {
-color: #e0dfdf;
+.second-proyect-image{
+  background-image: url('/assets/images/CardsImageCover.jpg');
 }
 
-@include tablet {
-&:hover >  .workTitle{
-  display: inline-block;
-  color: #e0dfdf;
-}
-}
-}
-.unselected {
-margin: 7;
-margin-left:12px;
-// margin-right: 10px;
-position: relative;
-top: -1.4px;
-font-size: 7px;
-color: #e0dfdf;
-text-shadow: 1.5px 1px 1.5px #191a1b;
-cursor: pointer;
-.workTitle{
-display: none;
-}
-&:hover {
-transform: scale(1.1);
-}
-&:hover >  .workTitle{
-display: none;
-}
-@include tablet{
-&:hover >  .workTitle{
-display: inline-block;
-font-size: 13px;
-}
-}
+.third-proyect-description{
+  background-image: url('/assets/images/thirdWorkImage.png');
+  background-color: #3e0c15;
 }
 
-.project-image {
-width: 50vw;
-position: absolute;
--webkit-animation-name: spin;
--webkit-animation-duration: 80s;
--webkit-animation-iteration-count: infinite;
--webkit-animation-timing-function: linear;
-animation-name: spin;
-animation-duration: 80s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+.third-proyect-image{
+  background-image: url('/assets/images/diceGameCover.jpg'); 
 }
 
-.works-scroll {
-a:hover{
-color: white;
+.fourth-proyect-description{
+  background-image: url('/assets/images/fourthWorkImage.png');
+  background-color: #1a4127;
 }
-}
-
-.arrowContainer {
-border: 1px solid white;
-width: 50px;
-height: 50px;
-margin: auto;
-margin-right: auto;
-background-color: transparent;
-&:hover{
-transform: scale(1.5);
-
-}
-&:hover > .fa-angle-down {
-width: 30px;
-height: 30px
-}
+.fourth-proyect-image{
+  background-image: url('/assets/images/fourthProjectCover.jpg');
 }
 
-.fa-angle-down {
-background-color: #00000045;
-width: 40px;
-height: 40px;
-padding-top: 3px;
-font-size: 35px;
-margin: auto;
-@include tablet {
-width: 50px;
-padding: 5px;
-padding-bottom: 11px;
-height: 50px;
-font-size: 40px;
-}
-&:hover{
-color: white;
-transform: scale(1.2);
-border: 1px solid rgba(255, 255, 255, 0.562);
-}
+.fifth-proyect-description{
+  background-image: url('/assets/images/fifthWorkImage.png');
+  background-color: #472c22;
 }
 
-.fa-angle-up {
-background-color: #00000045;
-width: 40px;
-height: 40px;
-padding-top: 3px;
-font-size: 35px;
-margin: auto;
-@include tablet {
-width: 50px;
-padding: 5px;
-padding-bottom: 11px;
-height: 50px;
-font-size: 40px;
-}
-&:hover{
-color: white;
-transform: scale(1.2);
-border: 1px solid rgba(255, 255, 255, 0.562);
-}
+.fifth-proyect-image {
+  background-image: url('/assets/images/fifthProjectImage.jpg');
 }
 
-.linkToProjects {
-top: 82%;
-width: 100%;
-text-align: center;
-z-index: 10;
-display: none;
-position: fixed;
-text-transform: uppercase;
-
-@include tablet {
-display: block;
-}
+.sixth-proyect-description {
+  background-image: url('/assets/images/seventhWorkImage.png');
+  background-color: #194a52;
 }
 
-.linkToProjectsContent {
-@include mobileXXS {
-top: 84vh;
-width: 100%;
-text-align: center;
-z-index: 10;
-text-transform: uppercase;
-position: inherit;
-display: flex;
-flex-direction: column;
-margin-top: 40px;
+.sixth-proyect-image {
+  background-image: url('/assets/images/seventhProjectImage.jpg');
 }
 
-@include tablet {
-display: none;
-z-index: -10;
-width: 0;
-}
+.seventh-proyect-description {
+  background-image: url('/assets/images/sixthWorkImage.png');
+  background-color: #473213;
 }
 
-.backToHome {
-font-size: 18px;
-margin: 5px;
+.seventh-proyect-image {
+  background-image: url('/assets/images/sixthProjectImage.jpg');
 }
 
-.linkToHome {
-top: 84vh;
+////BUTTONS-TO-PROJECTS////
+
+.seeMore-button {
+  position: relative;
+  display: inline;
+
+  margin: 10px;
+  padding: 8px;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include tablet  {
+    width: 106px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .linkToProject {
+    color: white;
+    text-transform: uppercase;
+    padding: 8px;
+  }
 }
 
-.nextSection {
-top: 89vh;
-left: 0;
-position: absolute;
-width: 100%;
-background-color: transparent;
-&:hover{
-color: white;
-}
-}
+
+////
+
+
 
 .margin-top {
 margin-top: 15px;
