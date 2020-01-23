@@ -954,9 +954,9 @@ svg.intro.go .text-stroke:nth-child(6) {
   color: orange;
 }
 
-.main__aboutMe__content-downloadCV-button-link {
+.main__aboutMe__content-downloadCV-link {
   color: white;
-  padding: 8px, 12px;
+  padding: 9px 10px;
 }
 
 .hidden {
